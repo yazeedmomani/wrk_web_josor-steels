@@ -1,8 +1,12 @@
+import { useContext } from "react";
 import { Helmet } from "react-helmet-async";
+import LangContext from "../context/lang-context";
 
 function DefaultHelmet(){
+    const langContext = useContext(LangContext);
+  
     return ( 
-    <Helmet htmlAttributes={{ lang : 'en', dir: 'ltr' }}>
+    <Helmet htmlAttributes={{ lang : langContext.lang, dir: langContext.dir }}>
         {/* HTML Meta Tags */}
         <meta charset="UTF-8" />
 
