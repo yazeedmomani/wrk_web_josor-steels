@@ -5,6 +5,9 @@ import {
   RouterProvider,
   Outlet,
 } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import Home from "./Home";
+import Test from "./Test";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -13,19 +16,24 @@ const router = createBrowserRouter(
       errorElement={<h1>Error</h1>}
       element={
         <>
-          <h1>Root</h1>
+          <Helmet>
+            <meta
+              name="description"
+              content="Helmet application"
+            />
+          </Helmet>
           <Outlet />
         </>
       }>
       <Route
         index
-        element={<h1>Home</h1>}
+        element={<Home />}
       />
       <Route
         path="/test"
         element={
           <>
-            <h1>Test</h1>
+            <Test />
             <Outlet />
           </>
         }>
