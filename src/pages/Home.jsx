@@ -1,11 +1,11 @@
 import { Helmet } from "react-helmet-async";
 
+import HomeHelmet from "../helmets/HomeHelmet";
+
 function Home() {
   return (
     <>
-        <Helmet>
-            <title>Home</title>
-        </Helmet>
+      <HomeHelmet />
       <h1>Home</h1>
     </>
   );
