@@ -6,7 +6,7 @@ function DefaultHelmet(){
     const langContext = useContext(LangContext);
   
     return ( 
-    <Helmet htmlAttributes={{ lang : langContext.lang, dir: langContext.dir }}>
+    <Helmet htmlAttributes={{ lang : langContext.lang, dir: langContext.dir }} titleTemplate="%s | Josor Steels">
         {/* HTML Meta Tags */}
         <meta charset="UTF-8" />
 
@@ -42,9 +42,6 @@ function DefaultHelmet(){
         <meta name="twitter:image" content="TODO" />
         <meta name="twitter:image:alt" content="TODO" />
         <meta name="twitter:creator" content="@yaz_momani" />
-
-        {/* Title */}
-        <title>Josor Steels</title>
   </Helmet>
   )
 };

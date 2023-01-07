@@ -4,7 +4,7 @@ function Home() {
   return (
     <>
         <Helmet>
-            <title>Josor Steels</title>
+            <title>Home</title>
         </Helmet>
       <h1>Home</h1>
     </>
