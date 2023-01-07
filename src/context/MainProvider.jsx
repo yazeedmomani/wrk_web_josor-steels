@@ -1,10 +1,13 @@
 import LangProvider from "./LangProvider";
 import ArabicProvider from "./ArabicProvider";
+import EnglishProvider from "./EnglishProvider";
 
 function MainProvider(props) {
   return (
     <LangProvider>
-      <ArabicProvider>{props.children}</ArabicProvider>
+      <ArabicProvider>
+        <EnglishProvider>{props.children}</EnglishProvider>
+      </ArabicProvider>
     </LangProvider>
   );
 }
