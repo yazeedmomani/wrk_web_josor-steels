@@ -1,9 +1,9 @@
-import MainHelmet from "../helmets/MainHelmet";
+import DynamicHelmet from "../helmets/DynamicHelmet";
 
 function AboutUs() {
   return (
     <>
-      <MainHelmet page="aboutUs"/>
+      <DynamicHelmet page="aboutUs" />
       <h1>About us</h1>
     </>
   );

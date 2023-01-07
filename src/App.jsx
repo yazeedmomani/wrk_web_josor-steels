@@ -6,7 +6,7 @@ import {
   Outlet,
 } from "react-router-dom";
 
-import DefaultHelmet from "./helmets/DefaultHelmet";
+import RootHelmet from "./helmets/RootHelmet";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 
@@ -17,7 +17,7 @@ const router = createBrowserRouter(
       errorElement={<h1>Error</h1>}
       element={
         <>
-          <DefaultHelmet />
+          <RootHelmet />
           <Outlet />
         </>
       }>

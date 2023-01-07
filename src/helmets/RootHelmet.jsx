@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet-async";
 import ContentContext from "../contexts/content-context";
 import LangContext from "../contexts/lang-context";
 
-function DefaultHelmet() {
+function RootHelmet() {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
 
@@ -16,4 +16,4 @@ function DefaultHelmet() {
   );
 }
 
-export default DefaultHelmet;
+export default RootHelmet;
