@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 
 function DefaultHelmet(){
     return ( 
-    <Helmet>
+    <Helmet htmlAttributes={{ lang : 'en', dir: 'ltr' }}>
         {/* HTML Meta Tags */}
         <meta charset="UTF-8" />
 
