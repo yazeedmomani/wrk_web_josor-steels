@@ -1,0 +1,63 @@
+.en {
+  font-family: var(--font-family-en-sans-serif);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-p);
+}
+
+.en .h1,
+.en .h2,
+.en .h3,
+.en .h4,
+.en .h5,
+.en .h6 {
+  font-family: var(--font-family-en-serif);
+  font-weight: var(--font-weight-bold);
+}
+
+.en .h1 {
+  font-size: var(--font-size-h2);
+}
+
+.en .h2 {
+  font-size: var(--font-size-h3);
+}
+
+.en .h3 {
+  font-size: var(--font-size-h4);
+}
+
+.en .h4 {
+  font-size: var(--font-size-h5);
+}
+
+.ar {
+  font-family: var(--font-family-ar-sans-serif);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-h5);
+}
+
+.ar .h1,
+.ar .h2,
+.ar .h3,
+.ar .h4,
+.ar .h5,
+.ar .h6 {
+  font-family: var(--font-family-ar-serif);
+  font-weight: var(--font-weight-bold);
+}
+
+.ar .h1 {
+  font-size: var(--font-size-h1);
+}
+
+.ar .h2 {
+  font-size: var(--font-size-h2);
+}
+
+.ar .h3 {
+  font-size: var(--font-size-h3);
+}
+
+.ar .h4 {
+  font-size: var(--font-size-h4);
+}

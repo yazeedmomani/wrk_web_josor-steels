@@ -1,0 +1,45 @@
+:root {
+  --color-primary-light: #a65b5b;
+  --color-primary: #8c0303;
+  --color-primary-dark: #730202;
+  --color-primary-grey-light: #f2f2f2;
+  --color-primary-grey-dark: #8c8c8c;
+
+  --color-white: #fff;
+  --color-black: #333;
+
+  --color-grey-light-01: #eee;
+  --color-grey-light-02: #ccc;
+
+  --color-backdrop: rgba(0, 0, 0, 0.9);
+  --color-image-gradient: linear-gradient(
+    to bottom right,
+    rgba(166, 91, 91, 0.25),
+    rgba(140, 3, 3, 0.25)
+  );
+
+  --font-family-en-serif: "Lora", serif;
+  --font-family-en-sans-serif: "Roboto", sans-serif;
+  --font-family-ar-serif: "Markazi Text", serif;
+  --font-family-ar-sans-serif: "Cairo", sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  --font-size-h0: 9.6rem;
+  --font-size-h1: 7.2rem;
+  --font-size-h2: 4.8rem;
+  --font-size-h3: 3.2rem;
+  --font-size-h4: 2.4rem;
+  --font-size-h5: 1.8rem;
+  --font-size-p: 1.6rem;
+
+  --border-radius: 1.5rem;
+
+  --content-horizontal-margin: 3.6rem;
+  --content-space-width: calc(100vw - var(--content-horizontal-margin) * 2);
+
+  --box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.08);
+  --box-shadow-hover: 0 1.5rem 3rem rgba(0, 0, 0, 0.08);
+  --box-shadow-active: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.08);
+}
