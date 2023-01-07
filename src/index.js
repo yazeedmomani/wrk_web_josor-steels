@@ -7,13 +7,16 @@ import "./variables.css";
 import "./typography.css";
 import "./index.css";
 
+import MainProvider from "./context/MainProvider";
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <HelmetProvider>
-      <App />
-    </HelmetProvider>
+    <MainProvider>
+      <HelmetProvider>
+        <App />
+      </HelmetProvider>
+    </MainProvider>
   </React.StrictMode>
 );
