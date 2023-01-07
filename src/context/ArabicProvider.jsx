@@ -5,7 +5,7 @@ function ArabicProvider(props) {
     helmet:{
         defaultTemplate: '%s | شركة الجسور',
         homeTitle: 'الرئيسية',
-        aboutUsTitle: 'عن شركة الجسور'
+        aboutUsTitle: 'عنا'
     }
   };
 
