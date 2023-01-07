@@ -1,11 +1,9 @@
-import { Helmet } from "react-helmet-async";
-
-import HomeHelmet from "../helmets/HomeHelmet";
+import MainHelmet from "../helmets/MainHelmet";
 
 function Home() {
   return (
     <>
-      <HomeHelmet />
+      <MainHelmet page="home"/>
       <h1>Home</h1>
     </>
   );

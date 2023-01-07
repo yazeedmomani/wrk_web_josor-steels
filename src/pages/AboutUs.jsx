@@ -1,12 +1,9 @@
-import { Helmet } from "react-helmet-async";
+import MainHelmet from "../helmets/MainHelmet";
 
 function AboutUs() {
   return (
     <>
-      <Helmet>
-        <title>About us | Josor Steels</title>
-        <meta name="description" content="About us" />
-      </Helmet>
+      <MainHelmet page="aboutUs"/>
       <h1>About us</h1>
     </>
   );
