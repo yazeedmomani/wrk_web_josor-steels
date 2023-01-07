@@ -5,7 +5,8 @@ import {
   RouterProvider,
   Outlet,
 } from "react-router-dom";
-import { Helmet } from "react-helmet";
+
+import DefaultHelmet from "./helmets/DefaultHelmet";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 
@@ -16,17 +17,7 @@ const router = createBrowserRouter(
       errorElement={<h1>Error</h1>}
       element={
         <>
-          <Helmet>
-            <meta
-              name="description"
-              content="Helmet application"
-            />
-            <meta charset="utf-8" />
-            <meta
-              name="viewport"
-              content="width=device-width, initial-scale=1"
-            />
-          </Helmet>
+          <DefaultHelmet />
           <Outlet />
         </>
       }>
