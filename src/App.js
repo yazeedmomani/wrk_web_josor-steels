@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Home from "./Home";
-import Test from "./Test";
+import AboutUs from "./AboutUs";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -30,18 +30,13 @@ const router = createBrowserRouter(
         element={<Home />}
       />
       <Route
-        path="/test"
+        path="/about-us"
         element={
           <>
-            <Test />
-            <Outlet />
+            <AboutUs />
           </>
-        }>
-        <Route
-          path="/test/sec"
-          element={<h1>Test 2</h1>}
-        />
-      </Route>
+        }
+      />
     </Route>
   )
 );
