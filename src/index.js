@@ -7,7 +7,7 @@ import "./variables.css";
 import "./typography.css";
 import "./index.css";
 
-import MainProvider from "./context/MainProvider";
+import MainProvider from "./contexts/MainProvider";
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
