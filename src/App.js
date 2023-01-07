@@ -6,8 +6,8 @@ import {
   Outlet,
 } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import Home from "./Home";
-import AboutUs from "./AboutUs";
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
