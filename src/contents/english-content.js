@@ -21,6 +21,11 @@ const englishContent = {
       primaryButton: "Contact us",
       secondaryButton: "Learn more",
     },
+    services: {
+      span: "Professional services",
+      title: "We take on a wide variety of projects",
+      projectCat: ["Hangers", "Bridges", "Tubes", "Canopies", "Other"],
+    },
   },
 };
 

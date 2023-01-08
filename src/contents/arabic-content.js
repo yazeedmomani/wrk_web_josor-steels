@@ -21,6 +21,11 @@ const arabicContent = {
       primaryButton: "تواصل معنا",
       secondaryButton: "المزيد",
     },
+    services: {
+      span: "خدمتنا الاحترافية",
+      title: "نتولى مجموعة متنوعة من المشاريع",
+      projectCat: ["هناجر", "جسور", "أنابيب", "مظلات", "أخرى"],
+    },
   },
 };
 
