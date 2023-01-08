@@ -1,0 +1,7 @@
+.nav {
+  margin: 0 var(--content-horizontal-margin);
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
