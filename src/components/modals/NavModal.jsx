@@ -64,7 +64,9 @@ function NavModal(props) {
           </li>
         </ul>
       </div>
-      <div className={styles["lang-changer-container"]}>
+      <div
+        className={styles["lang-changer-container"]}
+        onClick={props.setShowModal.bind(null, false)}>
         <LangChanger />
       </div>
     </>,
