@@ -18,6 +18,7 @@ function LangChanger() {
   return (
     <span className={styles["lang-changer"]}>
       <span
+        role="button"
         className={`${styles.english} ${
           langContext.lang === "en" && styles.selected
         }`}
@@ -25,6 +26,7 @@ function LangChanger() {
         English
       </span>
       <span
+        role="button"
         className={`${styles.arabic} ${
           langContext.lang === "ar" && styles.selected
         }`}

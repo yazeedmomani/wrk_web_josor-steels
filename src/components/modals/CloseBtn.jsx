@@ -3,6 +3,7 @@ import styles from "./CloseBtn.module.css";
 function CloseBtn(props) {
   return (
     <svg
+      role="button"
       onClick={props.onClick}
       className={styles.icon}
       xmlns="http://www.w3.org/2000/svg"
