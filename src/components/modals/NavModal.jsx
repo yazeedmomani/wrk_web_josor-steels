@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import CloseBtn from "./CloseBtn";
 import Backdrop from "./Backdrop";
+import LangChanger from "../LangChanger";
 import Expand from "react-expand-animated";
 
 import styles from "./NavModal.module.css";
@@ -61,6 +62,9 @@ function NavModal(props) {
             <Link>Contact</Link>
           </li>
         </ul>
+      </div>
+      <div className={styles['lang-changer-container']}>
+        <LangChanger />
       </div>
     </>,
     document.querySelector("#NavModal")

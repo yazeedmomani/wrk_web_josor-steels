@@ -1,0 +1,24 @@
+.lang-changer {
+  color: var(--color-white);
+  font-weight: var(--font-weight-bold);
+}
+
+.english,
+.arabic {
+  display: inline-block;
+}
+
+.english {
+  font-family: var(--font-family-en-sans-serif);
+  padding-right: 1.2rem;
+  border-right: 1px solid var(--color-white);
+}
+
+.arabic {
+  font-family: var(--font-family-ar-sans-serif);
+  padding-left: 1.2rem;
+}
+
+.selected{
+    color: var(--color-grey-light-02);
+}
