@@ -7,10 +7,30 @@ import styles from "./LangChanger.module.css";
 function LangChanger() {
   const langContext = useContext(LangContext);
 
+  function handleArabicClick() {
+    langContext.changeLang("ar");
+  }
+
+  function handleEnglishClick() {
+    langContext.changeLang("en");
+  }
+
   return (
     <span className={styles["lang-changer"]}>
-      <span className={`${styles.english} ${langContext.lang === 'en' && styles.selected}`}>English</span>
-      <span className={`${styles.arabic} ${langContext.lang === 'ar' && styles.selected}`}>العربية</span>
+      <span
+        className={`${styles.english} ${
+          langContext.lang === "en" && styles.selected
+        }`}
+        onClick={handleEnglishClick}>
+        English
+      </span>
+      <span
+        className={`${styles.arabic} ${
+          langContext.lang === "ar" && styles.selected
+        }`}
+        onClick={handleArabicClick}>
+        العربية
+      </span>
     </span>
   );
 }
