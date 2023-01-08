@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 
 import RootHelmet from "../helmets/RootHelmet";
-import Nav from "../components/Nav";
+import Nav from "../components/main-navigation/Nav";
 
 function Root() {
   return (

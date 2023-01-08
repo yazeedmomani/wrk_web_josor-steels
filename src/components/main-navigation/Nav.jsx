@@ -5,7 +5,7 @@ import { useState } from "react";
 
 import Logo from "./Logo";
 import MenuButton from "./MenuButton";
-import NavModal from "./modals/NavModal";
+import NavModal from "../modals/NavModal";
 
 function Nav() {
   const [showModal, setShowModal] = useState(false);
