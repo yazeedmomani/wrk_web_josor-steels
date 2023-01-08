@@ -25,7 +25,9 @@ function HomeHeader() {
         onClick={navigate.bind(null, "/contact")}>
         {contentContext[langContext.lang].home.header.primaryButton}
       </Button>
-      <Button type="secondary">
+      <Button
+        type="secondary"
+        href="#HomeServices">
         {contentContext[langContext.lang].home.header.secondaryButton}
       </Button>
     </header>
