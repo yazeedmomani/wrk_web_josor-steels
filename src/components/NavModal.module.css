@@ -27,18 +27,41 @@
   padding: 1.2rem 0;
   font-size: var(--font-size-h3);
   font-weight: var(--font-weight-bold);
-  color: white;
+  color: var(--color-white);
   cursor: pointer;
 }
 
 .list:not(:last-child) {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--color-white);
+}
+
+.list ul {
+  overflow: hidden;
+}
+
+.list .hidden {
+  height: 0;
+}
+
+.list li {
+  font-size: var(--font-size-h4);
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--color-white);
+}
+
+.list li:first-child {
+  margin-top: 1.2rem;
+  padding: 1.2rem 0 1.2rem;
+}
+
+.list li:last-child {
+  padding: 1.2rem 0 0;
 }
 
 .modal a:link,
 .modal a:visited,
 .modal a:hover,
 .modal a:active {
-  color: white;
+  color: var(--color-white);
   cursor: pointer;
 }
