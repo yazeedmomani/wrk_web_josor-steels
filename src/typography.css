@@ -3,17 +3,12 @@ body {
   font-size: var(--font-size-p);
 }
 
-.h0,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5 {
-  font-weight: var(--font-weight-bold);
-}
-
 html[lang="en"] body {
   font-family: var(--font-family-en-sans-serif);
+}
+
+html[lang="ar"] body {
+  font-family: var(--font-family-ar-sans-serif);
 }
 
 html[lang="en"] .h0,
@@ -25,30 +20,6 @@ html[lang="en"] .h5 {
   font-family: var(--font-family-en-serif);
 }
 
-html[lang="en"] .h1 {
-  font-size: var(--font-size-h1);
-}
-
-html[lang="en"] .h2 {
-  font-size: var(--font-size-h2);
-}
-
-html[lang="en"] .h3 {
-  font-size: var(--font-size-h3);
-}
-
-html[lang="en"] .h4 {
-  font-size: var(--font-size-h4);
-}
-
-html[lang="en"] .h5 {
-  font-size: var(--font-size-h5);
-}
-
-html[lang="ar"] body {
-  font-family: var(--font-family-ar-sans-serif);
-}
-
 html[lang="ar"] .h0,
 html[lang="ar"] .h1,
 html[lang="ar"] .h2,
@@ -58,22 +29,31 @@ html[lang="ar"] .h5 {
   font-family: var(--font-family-ar-serif);
 }
 
-html[lang="ar"] .h1 {
-  font-size: var(--font-size-h0);
+.h0,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  font-weight: var(--font-weight-bold);
 }
 
-html[lang="ar"] .h2 {
+.h1 {
   font-size: var(--font-size-h1);
 }
 
-html[lang="ar"] .h3 {
+.h2 {
   font-size: var(--font-size-h2);
 }
 
-html[lang="ar"] .h4 {
+.h3 {
   font-size: var(--font-size-h3);
 }
 
-html[lang="ar"] .h5 {
+.h4 {
   font-size: var(--font-size-h4);
+}
+
+.h5 {
+  font-size: var(--font-size-h5);
 }
