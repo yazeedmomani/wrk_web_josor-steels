@@ -14,6 +14,14 @@ const arabicContent = {
     ourFacility: "منشأتنا",
     contact: "تواصل معنا",
   },
+  home: {
+    header: {
+      title: "شركة الجسور",
+      subTitle: "أطلق العنان لخيالك مع فولاذنا الثابت القوي",
+      primaryButton: "تواصل معنا",
+      secondaryButton: "المزيد",
+    },
+  },
 };
 
 export default arabicContent;
