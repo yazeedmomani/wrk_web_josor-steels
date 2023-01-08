@@ -13,14 +13,18 @@ function NavModal(props) {
 
   return createPortal(
     <>
-      <Backdrop onClick={props.setShowModal.bind(null, false)}/>
+      <Backdrop onClick={props.setShowModal.bind(null, false)} />
       <div className={styles.content}>
-        <div className={styles["btn-container"]}  onClick={props.setShowModal.bind(null, false)}>
-          <CloseBtn/>
+        <div
+          className={styles["btn-container"]}
+          onClick={props.setShowModal.bind(null, false)}>
+          <CloseBtn />
         </div>
         <ul className={styles.modal}>
-          <li className={styles.list}>
-            <Link>About us</Link>
+          <li
+            className={styles.list}
+            onClick={props.setShowModal.bind(null, false)}>
+            <Link to="/about-us">About us</Link>
           </li>
           <li
             className={styles.list}
@@ -28,28 +32,32 @@ function NavModal(props) {
             Projects
             <Expand open={showProjects}>
               <ul>
-                <li>
+                <li onClick={props.setShowModal.bind(null, false)}>
                   <Link>Hungers</Link>
                 </li>
-                <li>
+                <li onClick={props.setShowModal.bind(null, false)}>
                   <Link>Bridges</Link>
                 </li>
-                <li>
+                <li onClick={props.setShowModal.bind(null, false)}>
                   <Link>Tubes</Link>
                 </li>
-                <li>
+                <li onClick={props.setShowModal.bind(null, false)}>
                   <Link>Canopy</Link>
                 </li>
-                <li>
+                <li onClick={props.setShowModal.bind(null, false)}>
                   <Link>Other</Link>
                 </li>
               </ul>
             </Expand>
           </li>
-          <li className={styles.list}>
+          <li
+            className={styles.list}
+            onClick={props.setShowModal.bind(null, false)}>
             <Link>Our facility</Link>
           </li>
-          <li className={styles.list}>
+          <li
+            className={styles.list}
+            onClick={props.setShowModal.bind(null, false)}>
             <Link>Contact</Link>
           </li>
         </ul>
