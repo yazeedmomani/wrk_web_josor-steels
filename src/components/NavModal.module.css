@@ -1,15 +1,3 @@
-.backdrop {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.backdrop {
-  background-color: var(--color-backdrop);
-}
-
 .btn-container {
   height: 7rem;
   display: flex;

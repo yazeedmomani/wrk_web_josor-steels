@@ -3,6 +3,7 @@ import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
 
 import CloseBtn from "./CloseBtn";
+import Backdrop from "./Backdrop";
 import Expand from "react-expand-animated";
 
 import styles from "./NavModal.module.css";
@@ -12,9 +13,9 @@ function NavModal() {
 
   return createPortal(
     <>
-      <div className={styles.backdrop}></div>
+      <Backdrop />
       <div className={styles.content}>
-        <div className={styles['btn-container']}>
+        <div className={styles["btn-container"]}>
           <CloseBtn />
         </div>
         <ul className={styles.modal}>
