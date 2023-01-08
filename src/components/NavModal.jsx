@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
+import Expand from "react-expand-animated";
 
 import styles from "./NavModal.module.css";
 
@@ -19,23 +20,25 @@ function NavModal() {
             className={styles.list}
             onClick={setShowProjects.bind(null, (prev) => !prev)}>
             Projects
-            <ul className={`${!showProjects && styles.hidden}`}>
-              <li>
-                <Link>Hungers</Link>
-              </li>
-              <li>
-                <Link>Bridges</Link>
-              </li>
-              <li>
-                <Link>Tubes</Link>
-              </li>
-              <li>
-                <Link>Canopy</Link>
-              </li>
-              <li>
-                <Link>Other</Link>
-              </li>
-            </ul>
+            <Expand open={showProjects}>
+              <ul>
+                <li>
+                  <Link>Hungers</Link>
+                </li>
+                <li>
+                  <Link>Bridges</Link>
+                </li>
+                <li>
+                  <Link>Tubes</Link>
+                </li>
+                <li>
+                  <Link>Canopy</Link>
+                </li>
+                <li>
+                  <Link>Other</Link>
+                </li>
+              </ul>
+            </Expand>
           </li>
           <li className={styles.list}>
             <Link>Our facility</Link>
