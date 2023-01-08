@@ -45,6 +45,10 @@
   padding: 1.2rem 0 0;
 }
 
+html[lang="ar"] .list li:last-child {
+  padding: 1.2rem 0 .6rem;
+}
+
 .modal a:link,
 .modal a:visited,
 .modal a:hover,
