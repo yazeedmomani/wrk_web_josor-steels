@@ -1,9 +1,44 @@
-.backdrop {
+.backdrop,
+.modal-container {
   width: 100vw;
   height: 100vh;
-  z-index: 5;
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.backdrop {
   background-color: var(--color-backdrop);
+}
+
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  text-align: center;
+  width: 100%;
+  margin: 0 var(--content-horizontal-margin);
+}
+
+.list {
+  padding: 1.2rem 0;
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-bold);
+  color: white;
+  cursor: pointer;
+}
+
+.list:not(:last-child) {
+  border-bottom: 1px solid white;
+}
+
+.modal a:link,
+.modal a:visited,
+.modal a:hover,
+.modal a:active {
+  color: white;
+  cursor: pointer;
 }
