@@ -8,15 +8,15 @@ import Expand from "react-expand-animated";
 
 import styles from "./NavModal.module.css";
 
-function NavModal() {
+function NavModal(props) {
   const [showProjects, setShowProjects] = useState(false);
 
   return createPortal(
     <>
-      <Backdrop />
+      <Backdrop onClick={props.setShowModal.bind(null, false)}/>
       <div className={styles.content}>
-        <div className={styles["btn-container"]}>
-          <CloseBtn />
+        <div className={styles["btn-container"]}  onClick={props.setShowModal.bind(null, false)}>
+          <CloseBtn/>
         </div>
         <ul className={styles.modal}>
           <li className={styles.list}>
