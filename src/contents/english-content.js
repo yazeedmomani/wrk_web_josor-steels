@@ -8,7 +8,7 @@ const englishContent = {
     aboutUs: "About us",
     projects: {
       title: "Projects",
-      cat: ["Hungers", "Bridges", "Tubes", "Canopies", "Other"],
+      cat: ["Hangers", "Bridges", "Tubes", "Canopies", "Other"],
     },
     ourFacility: "Our facility",
     contact: "Contact",
