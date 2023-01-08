@@ -3,10 +3,9 @@ import {
   createRoutesFromElements,
   Route,
   RouterProvider,
-  Outlet,
 } from "react-router-dom";
 
-import RootHelmet from "./helmets/RootHelmet";
+import Root from "./pages/Root";
 import Home from "./pages/home/Home";
 import AboutUs from "./pages/AboutUs";
 
@@ -15,12 +14,7 @@ const router = createBrowserRouter(
     <Route
       path="/"
       errorElement={<h1>Error</h1>}
-      element={
-        <>
-          <RootHelmet />
-          <Outlet />
-        </>
-      }>
+      element={<Root />}>
       <Route
         index
         element={<Home />}
