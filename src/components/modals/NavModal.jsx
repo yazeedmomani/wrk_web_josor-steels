@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
 
@@ -8,9 +8,14 @@ import LangChanger from "../LangChanger";
 import Expand from "react-expand-animated";
 
 import styles from "./NavModal.module.css";
+import LangContext from "../../contexts/lang-context";
+import ContentContext from "../../contexts/content-context";
 
 function NavModal(props) {
   const [showProjects, setShowProjects] = useState(false);
+
+  const langContext = useContext(LangContext);
+  const contentContext = useContext(ContentContext);
 
   return createPortal(
     <>
@@ -25,45 +30,39 @@ function NavModal(props) {
           <li
             className={styles.list}
             onClick={props.setShowModal.bind(null, false)}>
-            <Link to="/about-us">About us</Link>
+            <Link to="/about-us">
+              {contentContext[langContext.lang].nav.aboutUs}
+            </Link>
           </li>
           <li
             className={styles.list}
             onClick={setShowProjects.bind(null, (prev) => !prev)}>
-            Projects
+            {contentContext[langContext.lang].nav.projects.title}
             <Expand open={showProjects}>
               <ul>
-                <li onClick={props.setShowModal.bind(null, false)}>
-                  <Link>Hungers</Link>
-                </li>
-                <li onClick={props.setShowModal.bind(null, false)}>
-                  <Link>Bridges</Link>
-                </li>
-                <li onClick={props.setShowModal.bind(null, false)}>
-                  <Link>Tubes</Link>
-                </li>
-                <li onClick={props.setShowModal.bind(null, false)}>
-                  <Link>Canopy</Link>
-                </li>
-                <li onClick={props.setShowModal.bind(null, false)}>
-                  <Link>Other</Link>
-                </li>
+                {contentContext[langContext.lang].nav.projects.cat.map(
+                  (cur) => (
+                    <li onClick={props.setShowModal.bind(null, false)}>
+                      <Link>{cur}</Link>
+                    </li>
+                  )
+                )}
               </ul>
             </Expand>
           </li>
           <li
             className={styles.list}
             onClick={props.setShowModal.bind(null, false)}>
-            <Link>Our facility</Link>
+            <Link>{contentContext[langContext.lang].nav.ourFacility}</Link>
           </li>
           <li
             className={styles.list}
             onClick={props.setShowModal.bind(null, false)}>
-            <Link>Contact</Link>
+            <Link>{contentContext[langContext.lang].nav.contact}</Link>
           </li>
         </ul>
       </div>
-      <div className={styles['lang-changer-container']}>
+      <div className={styles["lang-changer-container"]}>
         <LangChanger />
       </div>
     </>,
