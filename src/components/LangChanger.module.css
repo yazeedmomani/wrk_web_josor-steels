@@ -6,6 +6,7 @@
 .english,
 .arabic {
   display: inline-block;
+  cursor: pointer;
 }
 
 .english {
