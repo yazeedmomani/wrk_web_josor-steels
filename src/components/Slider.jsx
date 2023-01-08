@@ -1,6 +1,10 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+import { useContext } from "react";
+
+import LangContext from "../contexts/lang-context";
+
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -22,9 +26,12 @@ const responsive = {
 };
 
 function Slider(props) {
+    const langContext = useContext(LangContext);
+    
   return (
     <Carousel
       responsive={responsive}
+      rtl={langContext.dir === 'rtl' && true}
       keyBoardControl="true">
       {props.children}
     </Carousel>

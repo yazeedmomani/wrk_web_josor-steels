@@ -8,6 +8,7 @@
   transition: all 3s;
   animation: 300ms show-modal forwards;
   cursor: pointer;
+  z-index: 5000;
 }
 
 @keyframes show-modal {

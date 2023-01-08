@@ -5,6 +5,7 @@
   width: 100vw;
   padding: 0 var(--content-horizontal-margin);
   animation: 300ms show-modal forwards;
+  z-index: 10000;
 }
 
 .btn-container {
@@ -64,6 +65,7 @@ html[lang="ar"] .list li:last-child {
   width: 100%;
   text-align: center;
   direction: ltr;
+  z-index: 10000;
 }
 
 @keyframes show-modal {

@@ -28,3 +28,8 @@
   right: 0;
   padding: 0.6rem 1.2rem;
 }
+
+html[lang=ar] .container span{
+  right: auto;
+  left: 0;
+}
