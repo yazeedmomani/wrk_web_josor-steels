@@ -1,5 +1,4 @@
-.backdrop,
-.modal-container {
+.backdrop {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -11,16 +10,13 @@
   background-color: var(--color-backdrop);
 }
 
-.modal-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .modal {
-  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: inline-block;
   width: 100%;
-  margin: 0 var(--content-horizontal-margin);
+  margin-left: var(--content-horizontal-margin);
 }
 
 .list {
