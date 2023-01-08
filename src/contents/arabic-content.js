@@ -3,6 +3,7 @@ const arabicContent = {
     defaultTemplate: "%s | شركة الجسور",
     homeTitle: "الرئيسية",
     aboutUsTitle: "عنا",
+    ContactTitle: "تواصل معنا",
   },
   nav: {
     aboutUs: "عنا",

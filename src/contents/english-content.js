@@ -3,6 +3,7 @@ const englishContent = {
     defaultTemplate: "%s | Josor Steels",
     homeTitle: "Home",
     aboutUsTitle: "About us",
+    contactTitle: "Contact",
   },
   nav: {
     aboutUs: "About us",

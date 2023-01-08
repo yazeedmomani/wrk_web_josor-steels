@@ -58,7 +58,9 @@ function NavModal(props) {
           <li
             className={styles.list}
             onClick={props.setShowModal.bind(null, false)}>
-            <Link>{contentContext[langContext.lang].nav.contact}</Link>
+            <Link to="/contact">
+              {contentContext[langContext.lang].nav.contact}
+            </Link>
           </li>
         </ul>
       </div>

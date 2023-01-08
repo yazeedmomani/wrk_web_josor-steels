@@ -8,6 +8,7 @@ import {
 import Root from "./pages/Root";
 import Home from "./pages/home/Home";
 import AboutUs from "./pages/AboutUs";
+import Contact from "./pages/Contact";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +25,14 @@ const router = createBrowserRouter(
         element={
           <>
             <AboutUs />
+          </>
+        }
+      />
+      <Route
+        path="/contact"
+        element={
+          <>
+            <Contact />
           </>
         }
       />
