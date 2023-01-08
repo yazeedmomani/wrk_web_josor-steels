@@ -10,13 +10,20 @@
   background-color: var(--color-backdrop);
 }
 
-.modal {
+.btn-container {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.content {
   position: fixed;
   top: 0;
   left: 0;
-  display: inline-block;
-  width: 100%;
-  margin-left: var(--content-horizontal-margin);
+  width: 100vw;
+  height: 100vh;
+  padding: 0 var(--content-horizontal-margin);
 }
 
 .list {
