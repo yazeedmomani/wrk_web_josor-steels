@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import RootHelmet from "./helmets/RootHelmet";
-import Home from "./pages/Home";
+import Home from "./pages/home/Home";
 import AboutUs from "./pages/AboutUs";
 
 const router = createBrowserRouter(

@@ -1,4 +1,4 @@
-import DynamicHelmet from "../helmets/DynamicHelmet";
+import DynamicHelmet from "../../helmets/DynamicHelmet";
 
 function Home() {
   return (
