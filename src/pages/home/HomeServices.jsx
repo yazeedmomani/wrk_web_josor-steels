@@ -25,11 +25,11 @@ function HomeServices() {
       <SectionSpan>{contentContext[langContext.lang].home.services.span}</SectionSpan>
       <h2 className="h3">{contentContext[langContext.lang].home.services.title}</h2>
       <Slider>
-        <Image img={image01} alt="Hanger">{contentContext[langContext.lang].home.services.projectCat[0]}</Image>
-        <Image img={image02} alt="Bridge">{contentContext[langContext.lang].home.services.projectCat[1]}</Image>
-        <Image img={image03} alt="Tube">{contentContext[langContext.lang].home.services.projectCat[2]}</Image>
-        <Image img={image04} alt="Canopy">{contentContext[langContext.lang].home.services.projectCat[3]}</Image>
-        <Image img={image01} alt="Other">{contentContext[langContext.lang].home.services.projectCat[4]}</Image>
+        <Image src={image01} alt="Hanger" title={contentContext[langContext.lang].home.services.projectCat[0]}/>
+        <Image src={image01} alt="Bridge" title={contentContext[langContext.lang].home.services.projectCat[1]}/>
+        <Image src={image01} alt="Tube" title={contentContext[langContext.lang].home.services.projectCat[2]}/>
+        <Image src={image01} alt="Canopy" title={contentContext[langContext.lang].home.services.projectCat[3]}/>
+        <Image src={image01} alt="Other" title={contentContext[langContext.lang].home.services.projectCat[4]}/>
       </Slider>
     </section>
   );

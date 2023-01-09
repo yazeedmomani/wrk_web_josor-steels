@@ -4,17 +4,17 @@ function Image(props) {
   return (
     <div className={`${styles.container} ${props.styles}`}>
       <img
-        src={props.img}
+        src={props.src}
         alt={props.alt}
         className={styles.img}
       />
       <div className={styles.gradient}></div>
-      <span
+      {props.title && <span
         className="h3"
         role="heading"
         aria-level="3">
-        {props.children}
-      </span>
+        {props.title}
+      </span>}
     </div>
   );
 }
