@@ -1,0 +1,7 @@
+.section {
+  margin: 0 var(--content-horizontal-margin);
+}
+
+.section h2 {
+  margin-top: 1.2rem;
+}
