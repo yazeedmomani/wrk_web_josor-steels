@@ -1,4 +1,4 @@
-function ConstructIcon() {
+function DUMMY03() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -15,4 +15,4 @@ function ConstructIcon() {
   );
 }
 
-export default ConstructIcon;
+export default DUMMY03;

@@ -1,4 +1,4 @@
-function DesignIcon() {
+function DUMMY02() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -14,4 +14,4 @@ function DesignIcon() {
   );
 }
 
-export default DesignIcon;
+export default DUMMY02;

@@ -1,4 +1,4 @@
-function DeliveryIcon() {
+function DUMMY04() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -15,4 +15,4 @@ function DeliveryIcon() {
   );
 }
 
-export default DeliveryIcon;
+export default DUMMY04;
