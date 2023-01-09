@@ -1,6 +1,6 @@
 import SectionSpan from "../../components/SectionSpan";
 import Image from "../../components/Image";
-
+import PrimaryLink from "../../components/PrimaryLink";
 import styles from "./HomeAbout.module.css";
 
 import img from "../../images/03.jpeg";
@@ -19,6 +19,7 @@ function HomeAbout() {
         src={img}
         alt="Hanger"
       />
+      <PrimaryLink to="/about-us">Learn more &rarr;</PrimaryLink>
     </section>
   );
 }

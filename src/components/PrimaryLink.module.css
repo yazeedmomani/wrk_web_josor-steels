@@ -1,0 +1,12 @@
+.link a:link,
+.link a:visited {
+  font-size: var(--font-size-h5);
+  color: var(--color-primary);
+  text-decoration: underline;
+  font-weight: var(--font-weight-bold);
+}
+
+.link a:hover,
+.link a:active {
+  color: var(--color-primary-dark);
+}
