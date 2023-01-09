@@ -25,6 +25,11 @@
   border-left: 4px solid var(--color-primary);
 }
 
+html[dir="rtl"] .icon div div:last-child {
+  border-left: none;
+  border-right: 4px solid var(--color-primary);
+}
+
 .step svg {
   width: 5rem;
   margin-top: auto;
@@ -32,6 +37,11 @@
 
 .step article {
   margin-left: 4.8rem;
+}
+
+html[dir="rtl"] .step article {
+  margin-right: 4.8rem;
+  margin-left: 0;
 }
 
 .step article div {
