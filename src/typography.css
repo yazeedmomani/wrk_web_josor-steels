@@ -5,6 +5,7 @@ body {
 
 html[lang="en"] body {
   font-family: var(--font-family-en-sans-serif);
+  line-height: 1.5;
 }
 
 html[lang="ar"] body {
@@ -28,7 +29,7 @@ html[lang="ar"] .h3,
 html[lang="ar"] .h4,
 html[lang="ar"] .h5 {
   font-family: var(--font-family-ar-serif);
-  line-height: 1;
+  line-height: 1.25;
 }
 
 .h0,
