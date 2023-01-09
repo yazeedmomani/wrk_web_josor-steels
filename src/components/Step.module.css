@@ -1,0 +1,52 @@
+.step {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icon div {
+  height: 4.8rem;
+  width: 5rem;
+  display: flex;
+  margin-top: auto;
+}
+
+.icon div div {
+  width: 2.5rem;
+  height: 100%;
+}
+
+.icon div div:last-child {
+  border-left: 4px solid var(--color-primary);
+}
+
+.step svg {
+  width: 5rem;
+  margin-top: auto;
+}
+
+.step article {
+  margin-left: 4.8rem;
+}
+
+.step article div {
+  width: 100%;
+  height: 4.8rem;
+}
+
+.step p {
+  margin-top: 1.2rem;
+}
+
+.step.last {
+  margin-bottom: 4.8rem;
+}
+
+.step.last svg {
+  margin-top: 0;
+}
