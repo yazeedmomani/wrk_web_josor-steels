@@ -2,6 +2,7 @@ import DynamicHelmet from "../../helmets/DynamicHelmet";
 import HomeHeader from "./HomeHeader";
 import HomeServices from "./HomeServices";
 import HomeSteps from "./HomeSteps";
+import HomeAbout from "./HomeAbout";
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <HomeHeader />
       <HomeServices />
       <HomeSteps />
+      <HomeAbout />
     </>
   );
 }
