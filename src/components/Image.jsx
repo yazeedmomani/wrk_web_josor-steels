@@ -1,6 +1,6 @@
-import styles from "./ProjectCat.module.css";
+import styles from "./Image.module.css";
 
-function ProjectCat(props) {
+function Image(props) {
   return (
     <div className={`${styles.container} ${props.styles}`}>
       <img
@@ -19,4 +19,4 @@ function ProjectCat(props) {
   );
 }
 
-export default ProjectCat;
+export default Image;
