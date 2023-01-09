@@ -26,6 +26,32 @@ const englishContent = {
       title: "We take on a wide variety of projects",
       projectCat: ["Hangers", "Bridges", "Tubes", "Canopies", "Other"],
     },
+    steps: {
+      span: "How it works",
+      title: "Construct in 4 simple steps",
+      steps: [
+        {
+          title: "Application",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+        {
+          title: "Design",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+        {
+          title: "Construction",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+        {
+          title: "Delivery",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+      ],
+    },
   },
 };
 
