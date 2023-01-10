@@ -1,40 +1,20 @@
 .container {
   width: 3.6rem;
   height: calc(100% - 19.2rem);
-  background-image: linear-gradient(
-    to left,
-    var(--color-black) 80%,
-    var(--color-white)
-  );
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  padding-right: 0.3rem;
-  opacity: 0.5;
+  align-items: center;
   transition: all 0.5s;
-  cursor: pointer;
-}
-
-.container:hover {
-  opacity: 0.8;
-}
-
-.left {
-  background-image: linear-gradient(
-    to right,
-    var(--color-black) 80%,
-    var(--color-white)
-  );
-  align-items: flex-start;
-  padding: 0 0 0 0.3rem;
 }
 
 .icon {
   width: 2.4rem;
   height: 2.4rem;
+  cursor: pointer;
 }
 
 .icon path {
-  fill: var(--color-white);
+  fill: var(--color-grey-light-02);
+  transition: all 0.5s;
 }

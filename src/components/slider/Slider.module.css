@@ -1,3 +1,7 @@
+.container:hover path {
+  fill: var(--color-black);
+}
+
 .right {
   position: absolute;
   top: 0;

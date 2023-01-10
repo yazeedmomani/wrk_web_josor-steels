@@ -56,7 +56,7 @@ function Slider(props) {
       autoPlay={true}
       rewind={true}
       rewindWithAnimation={true}
-      containerClass={props.containerClass}
+      containerClass={`${styles.container} ${props.containerClass}`}
       showDots={true}
       customDot={<CustomDot />}
       dotListClass={props.dotListClass}
