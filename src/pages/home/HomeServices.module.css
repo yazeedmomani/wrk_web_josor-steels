@@ -1,12 +1,12 @@
-.section {
-  margin: 0 var(--content-horizontal-margin) 19.2rem;
+.center {
+  margin: 0 var(--content-horizontal-margin) 7.2rem;
 }
 
 .section h2 {
-  margin: 1.2rem 0 7.2rem;
+  margin: 1.2rem 0;
 }
 
-.container{
-    padding: 0 var(--content-horizontal-margin);
-    padding-bottom: 19.2rem;
+.container {
+  padding: 0 var(--content-horizontal-margin);
+  padding-bottom: 19.2rem;
 }

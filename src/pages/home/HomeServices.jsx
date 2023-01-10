@@ -19,17 +19,18 @@ function HomeServices() {
   const contentContext = useContext(ContentContext);
 
   return (
-    <>
-      <section
-        className={styles.section}
-        id="HomeServices">
+    <section
+      className={styles.section}
+      id="HomeServices">
+      <div className={styles.center}>
         <SectionSpan>
           {contentContext[langContext.lang].home.services.span}
         </SectionSpan>
         <h2 className="h3">
           {contentContext[langContext.lang].home.services.title}
         </h2>
-      </section>
+      </div>
+
       <Slider containerClass={styles.container}>
         <Image
           src={image01}
@@ -57,7 +58,7 @@ function HomeServices() {
           title={contentContext[langContext.lang].home.services.projectCat[4]}
         />
       </Slider>
-    </>
+    </section>
   );
 }
 
