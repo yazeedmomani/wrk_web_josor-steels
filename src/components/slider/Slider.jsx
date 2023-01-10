@@ -67,6 +67,7 @@ function Slider(props) {
       customLeftArrow={
         langContext.dir === "rtl" ? <CustomRightArrow /> : <CustomLeftArrow />
       }
+      removeArrowOnDeviceType={["tablet", "mobile"]}
       responsive={responsive}
       rtl={langContext.dir === "rtl" && true}
       keyBoardControl="true">
