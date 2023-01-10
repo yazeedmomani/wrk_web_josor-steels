@@ -30,7 +30,11 @@ function Slider(props) {
 
   return (
     <Carousel
+      autoPlay={true}
+      rewind={true}
+      rewindWithAnimation={true}
       containerClass={props.containerClass}
+      renderDotsOutside={true}
       responsive={responsive}
       rtl={langContext.dir === "rtl" && true}
       keyBoardControl="true">
