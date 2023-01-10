@@ -1,3 +1,7 @@
+.section {
+  padding-top: 7rem;
+}
+
 .center {
   margin: 0 var(--content-horizontal-margin) 7.2rem;
 }
@@ -11,6 +15,6 @@
   padding-bottom: 19.2rem;
 }
 
-.dots{
-    bottom: 14.4rem;
+.dots {
+  bottom: 14.4rem;
 }
