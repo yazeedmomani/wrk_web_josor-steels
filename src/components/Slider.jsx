@@ -26,12 +26,13 @@ const responsive = {
 };
 
 function Slider(props) {
-    const langContext = useContext(LangContext);
-    
+  const langContext = useContext(LangContext);
+
   return (
     <Carousel
+      containerClass={props.containerClass}
       responsive={responsive}
-      rtl={langContext.dir === 'rtl' && true}
+      rtl={langContext.dir === "rtl" && true}
       keyBoardControl="true">
       {props.children}
     </Carousel>

@@ -19,19 +19,45 @@ function HomeServices() {
   const contentContext = useContext(ContentContext);
 
   return (
-    <section
-      className={styles.section}
-      id="HomeServices">
-      <SectionSpan>{contentContext[langContext.lang].home.services.span}</SectionSpan>
-      <h2 className="h3">{contentContext[langContext.lang].home.services.title}</h2>
-      <Slider>
-        <Image src={image01} alt="Hanger" title={contentContext[langContext.lang].home.services.projectCat[0]}/>
-        <Image src={image01} alt="Bridge" title={contentContext[langContext.lang].home.services.projectCat[1]}/>
-        <Image src={image01} alt="Tube" title={contentContext[langContext.lang].home.services.projectCat[2]}/>
-        <Image src={image01} alt="Canopy" title={contentContext[langContext.lang].home.services.projectCat[3]}/>
-        <Image src={image01} alt="Other" title={contentContext[langContext.lang].home.services.projectCat[4]}/>
+    <>
+      <section
+        className={styles.section}
+        id="HomeServices">
+        <SectionSpan>
+          {contentContext[langContext.lang].home.services.span}
+        </SectionSpan>
+        <h2 className="h3">
+          {contentContext[langContext.lang].home.services.title}
+        </h2>
+      </section>
+      <Slider containerClass={styles.container}>
+        <Image
+          src={image01}
+          alt="Hanger"
+          title={contentContext[langContext.lang].home.services.projectCat[0]}
+        />
+        <Image
+          src={image01}
+          alt="Bridge"
+          title={contentContext[langContext.lang].home.services.projectCat[1]}
+        />
+        <Image
+          src={image01}
+          alt="Tube"
+          title={contentContext[langContext.lang].home.services.projectCat[2]}
+        />
+        <Image
+          src={image01}
+          alt="Canopy"
+          title={contentContext[langContext.lang].home.services.projectCat[3]}
+        />
+        <Image
+          src={image01}
+          alt="Other"
+          title={contentContext[langContext.lang].home.services.projectCat[4]}
+        />
       </Slider>
-    </section>
+    </>
   );
 }
 

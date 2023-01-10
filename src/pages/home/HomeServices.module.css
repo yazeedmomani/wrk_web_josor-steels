@@ -6,8 +6,7 @@
   margin: 1.2rem 0 7.2rem;
 }
 
-.test{
-    width: 150px;
-    height: 150px;
-    background-color: blue;
+.container{
+    padding: 0 var(--content-horizontal-margin);
+    padding-bottom: 19.2rem;
 }
