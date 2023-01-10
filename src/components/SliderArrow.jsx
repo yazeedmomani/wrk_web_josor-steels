@@ -7,7 +7,8 @@ function SliderArrow(props) {
     <div
       className={`${styles.container} ${props.isLeft && styles.left} ${
         props.styles
-      }`}>
+      }`}
+      role="button">
       <Arrow
         isLeft={props.isLeft}
         iconStyles={styles.icon}
