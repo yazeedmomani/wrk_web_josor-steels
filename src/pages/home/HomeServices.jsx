@@ -31,7 +31,7 @@ function HomeServices() {
         </h2>
       </div>
 
-      <Slider containerClass={styles.container}>
+      <Slider containerClass={styles.container} dotListClass={styles.dots}>
         <Image
           src={image01}
           alt="Hanger"

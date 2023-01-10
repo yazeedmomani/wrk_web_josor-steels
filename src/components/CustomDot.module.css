@@ -1,0 +1,12 @@
+.dot {
+  width: .9rem;
+  height: .9rem;
+  background-color: var(--color-grey-light-02);
+  border-radius: 50%;
+  margin-right: 0.6rem;
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--color-black);
+}

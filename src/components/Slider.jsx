@@ -1,6 +1,7 @@
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import CustomDot from "./CustomDot";
 
+import "react-multi-carousel/lib/styles.css";
 import { useContext } from "react";
 
 import LangContext from "../contexts/lang-context";
@@ -34,7 +35,9 @@ function Slider(props) {
       rewind={true}
       rewindWithAnimation={true}
       containerClass={props.containerClass}
-      renderDotsOutside={true}
+      showDots={true}
+      customDot={<CustomDot />}
+      dotListClass={props.dotListClass}
       responsive={responsive}
       rtl={langContext.dir === "rtl" && true}
       keyBoardControl="true">
