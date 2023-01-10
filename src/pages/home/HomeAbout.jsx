@@ -1,8 +1,8 @@
 import { useContext } from "react";
 
-import SectionSpan from "../../components/SectionSpan";
-import Image from "../../components/Image";
-import PrimaryLink from "../../components/PrimaryLink";
+import SectionSpan from "../../components/general/SectionSpan";
+import Image from "../../components/general/Image";
+import PrimaryLink from "../../components/buttons/PrimaryLink";
 
 import styles from "./HomeAbout.module.css";
 

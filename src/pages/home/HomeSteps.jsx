@@ -1,7 +1,7 @@
 import { useContext } from "react";
 
-import SectionSpan from "../../components/SectionSpan";
-import Step from "../../components/Step";
+import SectionSpan from "../../components/general/SectionSpan";
+import Step from "../../components/general/Step";
 
 import ContentContext from "../../contexts/content-context";
 import LangContext from "../../contexts/lang-context";

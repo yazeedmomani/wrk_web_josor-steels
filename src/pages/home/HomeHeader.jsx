@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 
 import styles from "./HomeHeader.module.css";
 
-import Button from "../../components/Button";
+import Button from "../../components/buttons/Button";
 
 import LangContext from "../../contexts/lang-context";
 import ContentContext from "../../contexts/content-context";

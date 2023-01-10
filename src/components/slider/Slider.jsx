@@ -5,7 +5,7 @@ import SliderArrow from "./SliderArrow";
 import "react-multi-carousel/lib/styles.css";
 import { useContext } from "react";
 
-import LangContext from "../contexts/lang-context";
+import LangContext from "../../contexts/lang-context";
 
 import styles from "./Slider.module.css";
 

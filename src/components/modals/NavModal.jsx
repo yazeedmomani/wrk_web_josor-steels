@@ -2,9 +2,9 @@ import { useState, useContext } from "react";
 import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
 
-import CloseBtn from "./CloseBtn";
+import CloseBtn from "../../svg/CloseBtn";
 import Backdrop from "./Backdrop";
-import LangChanger from "../LangChanger";
+import LangChanger from "../buttons/LangChanger";
 import Expand from "react-expand-animated";
 
 import styles from "./NavModal.module.css";

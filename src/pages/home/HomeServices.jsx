@@ -1,8 +1,8 @@
 import { useContext } from "react";
 
-import SectionSpan from "../../components/SectionSpan";
-import Slider from "../../components/Slider";
-import Image from "../../components/Image";
+import SectionSpan from "../../components/general/SectionSpan";
+import Slider from "../../components/slider/Slider";
+import Image from "../../components/general/Image";
 
 import image01 from "../../images/01.jpeg";
 import image02 from "../../images/02.jpeg";
@@ -31,7 +31,9 @@ function HomeServices() {
         </h2>
       </div>
 
-      <Slider containerClass={styles.container} dotListClass={styles.dots}>
+      <Slider
+        containerClass={styles.container}
+        dotListClass={styles.dots}>
         <Image
           src={image01}
           alt="Hanger"

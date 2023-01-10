@@ -3,9 +3,9 @@ import styles from "./Nav.module.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-import Logo from "./Logo";
-import MenuButton from "./MenuButton";
-import NavModal from "../modals/NavModal";
+import Logo from "../../svg/Logo";
+import MenuButton from "../../svg/MenuButton";
+import NavModal from "../../components/modals/NavModal";
 
 function Nav() {
   const [showModal, setShowModal] = useState(false);
@@ -15,8 +15,8 @@ function Nav() {
       <Link to="/">
         <Logo theme="light" />
       </Link>
-      <MenuButton onClick={setShowModal.bind(null, true)}/>
-      {showModal && <NavModal setShowModal={setShowModal}/>}
+      <MenuButton onClick={setShowModal.bind(null, true)} />
+      {showModal && <NavModal setShowModal={setShowModal} />}
     </nav>
   );
 }
