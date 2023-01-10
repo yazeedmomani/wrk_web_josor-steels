@@ -60,8 +60,13 @@ function Slider(props) {
       showDots={true}
       customDot={<CustomDot />}
       dotListClass={props.dotListClass}
-      customRightArrow={<CustomRightArrow />}
-      customLeftArrow={<CustomLeftArrow />}
+      // NOTE Bug fix: Arrows switch when direction changes for some reason
+      customRightArrow={
+        langContext.dir === "rtl" ? <CustomLeftArrow /> : <CustomRightArrow />
+      }
+      customLeftArrow={
+        langContext.dir === "rtl" ? <CustomRightArrow /> : <CustomLeftArrow />
+      }
       responsive={responsive}
       rtl={langContext.dir === "rtl" && true}
       keyBoardControl="true">

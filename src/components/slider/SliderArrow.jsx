@@ -6,7 +6,7 @@ function SliderArrow(props) {
   return (
     <div
       onClick={props.onClick}
-      className={`${styles.container} ${props.isLeft && styles.left} ${
+      className={`${styles.container} ${
         props.styles
       }`}
       role="button">
