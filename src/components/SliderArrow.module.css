@@ -1,6 +1,6 @@
 .container {
   width: 3.6rem;
-  height: 30rem;
+  height: calc(100% - 19.2rem);
   background-image: linear-gradient(
     to left,
     var(--color-black) 80%,
@@ -9,7 +9,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  padding-right: 0.3rem;
   opacity: 0.5;
   transition: all 0.5s;
   cursor: pointer;
@@ -25,6 +26,8 @@
     var(--color-black) 80%,
     var(--color-white)
   );
+  align-items: flex-start;
+  padding: 0 0 0 0.3rem;
 }
 
 .icon {

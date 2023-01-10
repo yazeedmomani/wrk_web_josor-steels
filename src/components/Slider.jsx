@@ -1,10 +1,13 @@
 import Carousel from "react-multi-carousel";
 import CustomDot from "./CustomDot";
+import SliderArrow from "./SliderArrow";
 
 import "react-multi-carousel/lib/styles.css";
 import { useContext } from "react";
 
 import LangContext from "../contexts/lang-context";
+
+import styles from "./Slider.module.css";
 
 const responsive = {
   superLargeDesktop: {
@@ -26,6 +29,25 @@ const responsive = {
   },
 };
 
+function CustomRightArrow({ onClick }) {
+  return (
+    <SliderArrow
+      onClick={onClick}
+      styles={styles.right}
+    />
+  );
+}
+
+function CustomLeftArrow({ onClick }) {
+  return (
+    <SliderArrow
+      styles={styles.left}
+      onClick={onClick}
+      isLeft={true}
+    />
+  );
+}
+
 function Slider(props) {
   const langContext = useContext(LangContext);
 
@@ -38,6 +60,8 @@ function Slider(props) {
       showDots={true}
       customDot={<CustomDot />}
       dotListClass={props.dotListClass}
+      customRightArrow={<CustomRightArrow />}
+      customLeftArrow={<CustomLeftArrow />}
       responsive={responsive}
       rtl={langContext.dir === "rtl" && true}
       keyBoardControl="true">

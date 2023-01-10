@@ -5,6 +5,7 @@ import styles from "./SliderArrow.module.css";
 function SliderArrow(props) {
   return (
     <div
+      onClick={props.onClick}
       className={`${styles.container} ${props.isLeft && styles.left} ${
         props.styles
       }`}
