@@ -14,6 +14,12 @@ function HomeHeader() {
 
   const navigate = useNavigate();
 
+  function handlePrimaryClick(e) {
+    e.preventDefault();
+
+    navigate("/contact");
+  }
+
   return (
     <header className={styles.header}>
       <h1 className="h2">
@@ -22,7 +28,7 @@ function HomeHeader() {
       <p>{contentContext[langContext.lang].home.header.subTitle}</p>
       <Button
         type="primary"
-        onClick={navigate.bind(null, "/contact")}>
+        onClick={handlePrimaryClick}>
         {contentContext[langContext.lang].home.header.primaryButton}
       </Button>
       <Button
