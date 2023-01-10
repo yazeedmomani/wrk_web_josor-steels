@@ -38,17 +38,17 @@ function HomeServices() {
           title={contentContext[langContext.lang].home.services.projectCat[0]}
         />
         <Image
-          src={image01}
+          src={image02}
           alt="Bridge"
           title={contentContext[langContext.lang].home.services.projectCat[1]}
         />
         <Image
-          src={image01}
+          src={image03}
           alt="Tube"
           title={contentContext[langContext.lang].home.services.projectCat[2]}
         />
         <Image
-          src={image01}
+          src={image04}
           alt="Canopy"
           title={contentContext[langContext.lang].home.services.projectCat[3]}
         />
