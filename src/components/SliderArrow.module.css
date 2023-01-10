@@ -1,0 +1,37 @@
+.container {
+  width: 3.6rem;
+  height: 30rem;
+  background-image: linear-gradient(
+    to left,
+    var(--color-black) 80%,
+    var(--color-white)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.container:hover {
+  opacity: 0.8;
+}
+
+.left {
+  background-image: linear-gradient(
+    to right,
+    var(--color-black) 80%,
+    var(--color-white)
+  );
+}
+
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.icon path {
+  fill: var(--color-white);
+}
