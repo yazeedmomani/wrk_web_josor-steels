@@ -24,6 +24,8 @@ function Footer() {
           />
         </div>
         <ContactInfo styles={styles["contact-info"]} />
+        <LangChanger styles={styles["lang-changer"]} />
+        <p className={styles.copyright}>Josor Steels &copy; 2023</p>
       </div>
     </footer>
   );

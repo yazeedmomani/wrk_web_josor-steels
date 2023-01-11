@@ -4,7 +4,7 @@ import LangContext from "../../contexts/lang-context";
 
 import styles from "./LangChanger.module.css";
 
-function LangChanger() {
+function LangChanger(props) {
   const langContext = useContext(LangContext);
 
   function handleArabicClick() {
@@ -16,7 +16,7 @@ function LangChanger() {
   }
 
   return (
-    <span className={styles["lang-changer"]}>
+    <span className={`${styles["lang-changer"]} ${props.styles}`}>
       <span
         role="button"
         className={`${styles.english} ${
