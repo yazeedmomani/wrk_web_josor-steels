@@ -1,0 +1,36 @@
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  transition: all 100ms ease-in;
+  border-radius: var(--border-radius);
+}
+
+.icon:hover {
+  box-shadow: var(--box-shadow-hover);
+  transform: translateY(-2px);
+}
+
+.icon:active {
+  box-shadow: var(--box-shadow-active);
+  transform: translateY(-1px);
+}
+
+.icon path {
+  fill: var(--color-primary);
+}
+
+.icon:hover path,
+.icon:active path {
+  fill: var(--color-primary-dark);
+}
+
+.dark path {
+  fill: var(--color-white);
+}
+
+.dark:hover path,
+.dark:active path {
+  fill: var(--color-grey-light-01);
+}
