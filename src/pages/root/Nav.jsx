@@ -13,7 +13,7 @@ function Nav() {
   return (
     <nav className={styles.nav}>
       <Link to="/">
-        <Logo theme="light" />
+        <Logo />
       </Link>
       <MenuButton onClick={setShowModal.bind(null, true)} />
       {showModal && <NavModal setShowModal={setShowModal} />}

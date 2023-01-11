@@ -1,21 +1,21 @@
 .logo {
   width: 6rem;
-  height: 2.9rem;
+  height: 3rem;
   cursor: pointer;
 }
 
-.light .grey {
+.cls-1 {
   fill: var(--color-primary-grey-dark);
 }
 
-.light .primary {
+.cls-2 {
   fill: var(--color-primary);
 }
 
-.dark .grey {
+.dark .cls-1 {
   fill: var(--color-primary-grey-light);
 }
 
-.dark .primary {
+.dark .cls-2 {
   fill: var(--color-primary-grey-dark);
 }
