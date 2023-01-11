@@ -1,0 +1,18 @@
+.section {
+  padding: 7.2rem 0 9.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-black);
+  border-bottom: 1px solid #444;
+  margin-bottom: 9.6rem;
+}
+
+.section h2 {
+  margin: 0 0 7.2rem;
+  color: var(--color-white);
+}
+
+.section a {
+  align-self: center;
+}

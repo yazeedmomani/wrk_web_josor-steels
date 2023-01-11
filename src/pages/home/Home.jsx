@@ -3,6 +3,7 @@ import HomeHeader from "./HomeHeader";
 import HomeServices from "./HomeServices";
 import HomeSteps from "./HomeSteps";
 import HomeAbout from "./HomeAbout";
+import HomeContact from "./HomeContact";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <HomeServices />
       <HomeSteps />
       <HomeAbout />
+      <HomeContact />
     </>
   );
 }
