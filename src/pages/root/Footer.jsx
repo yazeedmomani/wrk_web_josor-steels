@@ -6,6 +6,9 @@ import ContactInfo from "../../components/general/ContactInfo";
 
 import styles from "./Footer.module.css";
 
+//TODO fix space under about us section. Make footer space dynamic to large and small
+//TODO add hover effect to LangChanger
+
 function Footer() {
   return (
     <footer className={styles.footer}>
