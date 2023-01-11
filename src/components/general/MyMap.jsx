@@ -1,4 +1,3 @@
-import React from "react";
 import { Map, Marker, ZoomControl } from "pigeon-maps";
 
 import styles from "./MyMap.module.css";
@@ -11,15 +10,16 @@ function MyMap(props) {
   }
 
   return (
-    <div className={`${styles.container} ${props.styles}`}>
+    <div
+      className={`${styles.container} ${!props.isLocked && styles.unlocked} ${
+        props.styles
+      }`}>
       <Map
         animate={true}
         provider={google}
         attribution={false}
-        metaWheelZoom={true}
-        metaWheelZoomWarning={null}
-        mouseEvents={false}
-        touchEvents={false}
+        mouseEvents={props.isLocked === true ? false : true}
+        touchEvents={props.isLocked === true ? false : true}
         defaultCenter={coords}
         defaultZoom={15}>
         <Marker
@@ -28,7 +28,7 @@ function MyMap(props) {
           style={{ cursor: "default" }}
           anchor={coords}
         />
-        {/* <ZoomControl /> */}
+        {!props.isLocked && <ZoomControl />}
       </Map>
     </div>
   );

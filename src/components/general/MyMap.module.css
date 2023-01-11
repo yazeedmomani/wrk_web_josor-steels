@@ -1,10 +1,10 @@
 .container {
   border-radius: var(--border-radius);
   overflow: hidden;
-  height: 30rem;
-  width: 30rem;
+  height: 24rem;
+  width: var(--content-space-width);
 }
 
-.container:hover {
-  /* cursor: move; */
+.unlocked:hover {
+  cursor: move;
 }
