@@ -3,3 +3,13 @@ html {
   width: 100vw;
   overflow-x: hidden;
 }
+
+::-moz-selection {
+  background-color: var(--color-primary-light);
+  color: var(--color-white);
+}
+
+::selection {
+  background-color: var(--color-primary-light);
+  color: var(--color-white);
+}
