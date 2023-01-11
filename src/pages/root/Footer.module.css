@@ -17,12 +17,8 @@
   margin-left: 1.2rem;
 }
 
-.tel-container {
+.contact-info {
   margin-top: 3.6rem;
-}
-
-.mail-container {
-  margin-top: 1.2rem;
 }
 
 .footer a:link,
@@ -30,7 +26,17 @@
   color: var(--color-white);
 }
 
+.footer a:link path,
+.footer a:visited path {
+  fill: var(--color-white);
+}
+
 .footer a:hover,
 .footer a:active {
   color: var(--color-grey-light-01);
+}
+
+.footer a:hover path,
+.footer a:active path {
+  fill: var(--color-grey-light-01);
 }
