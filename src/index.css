@@ -13,3 +13,8 @@ html {
   background-color: var(--color-primary-light);
   color: var(--color-white);
 }
+
+*:focus {
+  outline: 1px solid var(--color-primary-light);
+  outline-offset: .6rem;
+}

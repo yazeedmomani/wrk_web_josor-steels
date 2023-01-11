@@ -3,6 +3,7 @@ import styles from "./MenuButton.module.css";
 function MenuButton(props) {
   return (
     <svg
+      tabIndex="0"
       role="button"
       onClick={props.onClick}
       className={styles.icon}
