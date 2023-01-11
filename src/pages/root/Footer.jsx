@@ -22,7 +22,7 @@ function Footer() {
             isDark={true}
           />
         </div>
-        
+
       </div>
     </footer>
   );

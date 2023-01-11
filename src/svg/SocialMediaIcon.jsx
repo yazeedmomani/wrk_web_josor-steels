@@ -2,8 +2,8 @@ import styles from "./SocialMediaIcon.module.css";
 
 function SocialMediaIcon(props) {
   const iconStyles = `${styles.icon} ${props.isDark === true && styles.dark} ${
-    props.styles
-  }`;
+    props.isAnimated === true && styles.animated
+  } ${props.styles}`;
 
   const icons = {
     facebook: (
