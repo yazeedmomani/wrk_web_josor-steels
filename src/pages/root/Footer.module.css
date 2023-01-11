@@ -7,3 +7,11 @@
   background-color: var(--color-black);
   margin: 0 var(--content-horizontal-margin);
 }
+
+.icons-container{
+    margin-top: 2.4rem;
+}
+
+.icon:not(:first-child) {
+  margin-left: 1.2rem;
+}

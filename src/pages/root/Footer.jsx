@@ -10,14 +10,19 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={styles.center}>
         <Logo isDark={true} />
-        <SocialMediaIcon
-          type="facebook"
-          isDark={true}
-        />
-        <SocialMediaIcon
-          type="linkedIn"
-          isDark={true}
-        />
+        <div className={styles["icons-container"]}>
+          <SocialMediaIcon
+            styles={styles.icon}
+            type="linkedIn"
+            isDark={true}
+          />
+          <SocialMediaIcon
+            styles={styles.icon}
+            type="facebook"
+            isDark={true}
+          />
+        </div>
+        
       </div>
     </footer>
   );
