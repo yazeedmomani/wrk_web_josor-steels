@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 
 import DynamicHelmet from "../../helmets/DynamicHelmet";
 
-function Hangers() {
+function ProjectCategory() {
   const urlParam = useParams();
 
   return (
@@ -15,4 +15,4 @@ function Hangers() {
   );
 }
 
-export default Hangers;
+export default ProjectCategory;

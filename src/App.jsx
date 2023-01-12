@@ -9,7 +9,7 @@ import Root from "./pages/root/Root";
 import Home from "./pages/home/Home";
 import AboutUs from "./pages/AboutUs";
 import Projects from "./pages/projects/Projects";
-import Hangers from "./pages/projects/Hangers";
+import ProjectCategory from "./pages/projects/ProjectCategory";
 import OurFacility from "./pages/OurFacility";
 import Contact from "./pages/Contact";
 
@@ -43,7 +43,7 @@ const router = createBrowserRouter(
         path="/projects/:category"
         element={
           <>
-            <Hangers />
+            <ProjectCategory />
           </>
         }
       />
