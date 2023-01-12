@@ -3,17 +3,15 @@ const arabicContent = {
     defaultTemplate: "%s | شركة الجسور",
     homeTitle: "الرئيسية",
     aboutUsTitle: "عنا",
-    ContactTitle: "تواصل معنا",
+    projectsTitle: "مشاريع",
+    hangersTitle: "هناجر",
+    bridgesTitle: "جسور",
+    tubesTitle: "أنابيب",
+    canopiesTitle: "مظلات",
+    otherTitle: "أخرى",
+    ourFacilityTitle: "منشأتنا",
+    contactTitle: "تواصل معنا",
   },
-  // nav: {
-  //   aboutUs: "عنا",
-  //   projects: {
-  //     title: "مشاريع",
-  //     cat: ["هناجر", "جسور", "أنابيب", "مظلات", "أخرى"],
-  //   },
-  //   ourFacility: "منشأتنا",
-  //   contact: "تواصل معنا",
-  // },
   nav: [
     {
       isProjects: false,
