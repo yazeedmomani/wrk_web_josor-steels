@@ -13,10 +13,15 @@
   margin-top: 1.2rem;
 }
 
-.container a svg {
+html[dir="ltr"] .container a svg {
   margin-right: 1.2rem;
+}
+
+html[dir="rtl"] .container a svg {
+  margin-left: 1.2rem;
 }
 
 .container a span {
   display: inline-block;
+  direction: ltr;
 }

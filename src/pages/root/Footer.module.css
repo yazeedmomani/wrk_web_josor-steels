@@ -13,8 +13,12 @@
   margin-top: 2.4rem;
 }
 
-.icon:not(:first-child) {
+html[dir="ltr"] .icon:not(:first-child) {
   margin-left: 1.2rem;
+}
+
+html[dir="rtl"] .icon:not(:first-child) {
+  margin-right: 1.2rem;
 }
 
 .contact-info {
@@ -46,12 +50,20 @@
   display: flex;
 }
 
-.links > div:not(:first-child) {
+html[dir="ltr"] .links > div:not(:first-child) {
   margin-left: 7.2rem;
 }
 
-.links > div > ul {
+html[dir="rtl"] .links > div:not(:first-child) {
+  margin-right: 7.2rem;
+}
+
+html[dir="ltr"] .links > div > ul {
   margin-left: 2.4rem;
+}
+
+html[dir="rtl"] .links > div > ul {
+  margin-right: 2.4rem;
 }
 
 .links > div > ul > li {
