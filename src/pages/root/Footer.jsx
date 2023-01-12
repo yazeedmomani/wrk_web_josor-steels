@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import Logo from "../../svg/Logo";
 import LangChanger from "../../components/buttons/LangChanger";
 import PrimaryLink from "../../components/buttons/PrimaryLink";
@@ -13,7 +15,9 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.center}>
-        <Logo isDark={true} />
+        <Link to="/">
+          <Logo isDark={true} />
+        </Link>
         <div className={styles["icons-container"]}>
           <ContactIcon
             styles={styles.icon}
@@ -27,6 +31,45 @@ function Footer() {
           />
         </div>
         <ContactInfo styles={styles["contact-info"]} />
+        <div className={styles.links}>
+          <div>
+            <h2 className="h5">Pages</h2>
+            <ul>
+              <li>
+                <Link to="/about-us">About us</Link>
+              </li>
+              <li>
+                <Link>Projects</Link>
+              </li>
+              <li>
+                <Link>Our facility</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="h5">Projects</h2>
+            <ul>
+              <li>
+                <Link>Hangers</Link>
+              </li>
+              <li>
+                <Link>Bridges</Link>
+              </li>
+              <li>
+                <Link>Tubes</Link>
+              </li>
+              <li>
+                <Link>Canopies</Link>
+              </li>
+              <li>
+                <Link>Other</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
         <LangChanger styles={styles["lang-changer"]} />
         <p className={styles.copyright}>Josor Steels &copy; 2023</p>
       </div>

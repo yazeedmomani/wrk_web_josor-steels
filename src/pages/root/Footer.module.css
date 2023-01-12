@@ -41,11 +41,28 @@
   fill: var(--color-grey-light-01);
 }
 
+.links {
+  margin-top: 3.6rem;
+  display: flex;
+}
+
+.links > div:not(:first-child) {
+  margin-left: 7.2rem;
+}
+
+.links > div > ul {
+  margin-left: 2.4rem;
+}
+
+.links > div > ul > li {
+  margin-top: 1.2rem;
+}
+
 .lang-changer {
   display: inline-block;
   margin-top: 3.6rem;
 }
 
-.copyright{
-    margin-top: 3.6rem;
+.copyright {
+  margin-top: 3.6rem;
 }

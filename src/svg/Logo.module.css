@@ -5,17 +5,17 @@
 }
 
 .cls-1 {
-  fill: var(--color-primary-grey-dark);
+  fill: var(--color-primary-grey-dark) !important;
 }
 
 .cls-2 {
-  fill: var(--color-primary);
+  fill: var(--color-primary) !important;
 }
 
 .dark .cls-1 {
-  fill: var(--color-primary-grey-light);
+  fill: var(--color-primary-grey-light) !important;
 }
 
 .dark .cls-2 {
-  fill: var(--color-primary-grey-dark);
+  fill: var(--color-primary-grey-dark) !important;
 }
