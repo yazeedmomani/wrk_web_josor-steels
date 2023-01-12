@@ -179,7 +179,7 @@ const englishContent = {
             to: "/projects/canopies",
           },
           {
-            text: "other",
+            text: "Other",
             to: "/projects/other",
           },
         ],
