@@ -28,6 +28,7 @@ function HomeServices() {
       </div>
 
       <Slider
+        autoPlay={true}
         containerClass={styles.container}
         dotListClass={styles.dots}>
         {projectCatContext.map((cur, i) => (

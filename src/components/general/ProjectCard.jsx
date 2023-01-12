@@ -28,7 +28,11 @@ function ProjectCard(props) {
           {componentContext.button}
         </button>
       </div>
-      {showModal && <ImageModal setShowModal={setShowModal} />}
+      {showModal && (
+        <ImageModal
+          setShowModal={setShowModal}
+        />
+      )}
     </div>
   );
 }

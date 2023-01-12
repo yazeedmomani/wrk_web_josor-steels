@@ -53,9 +53,9 @@ function Slider(props) {
 
   return (
     <Carousel
-      autoPlay={true}
-      rewind={true}
-      rewindWithAnimation={true}
+      autoPlay={props.autoPlay}
+      rewind={props.autoPlay}
+      rewindWithAnimation={props.autoPlay}
       containerClass={`${styles.container} ${props.containerClass}`}
       showDots={true}
       customDot={<CustomDot />}
