@@ -35,65 +35,24 @@ function Footer() {
         </div>
         <ContactInfo styles={styles["contact-info"]} />
         <div className={styles.links}>
-          <div>
-            <h2 className={`${langContext.lang === "ar" ? "h4" : "h5"}`}>
-              {contentContext[langContext.lang].footer.links[0].title}
-            </h2>
-            <ul>
-              <li>
-                <Link to="/about-us">
-                  {contentContext[langContext.lang].footer.links[0].links[0]}
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  {contentContext[langContext.lang].footer.links[0].links[1]}
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  {contentContext[langContext.lang].footer.links[0].links[2]}
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact">
-                  {contentContext[langContext.lang].footer.links[0].links[3]}
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 className={`${langContext.lang === "ar" ? "h4" : "h5"}`}>
-              {contentContext[langContext.lang].footer.links[1].title}
-            </h2>
-            <ul>
-              <li>
-                <Link>
-                  {contentContext[langContext.lang].footer.links[1].links[0]}
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  {contentContext[langContext.lang].footer.links[1].links[1]}
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  {contentContext[langContext.lang].footer.links[1].links[2]}
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  {contentContext[langContext.lang].footer.links[1].links[3]}
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  {contentContext[langContext.lang].footer.links[1].links[4]}
-                </Link>
-              </li>
-            </ul>
-          </div>
+          {contentContext[langContext.lang].footer.links.map((cur, i) => (
+            <div>
+              <h2 className={`${langContext.lang === "ar" ? "h4" : "h5"}`}>
+                {cur.title}
+              </h2>
+              <ul>
+                {cur.links.map((cur, i) => (
+                  <li>
+                    <Link to="/about-us">
+                      {
+                        cur
+                      }
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
         <LangChanger styles={styles["lang-changer"]} />
         <p className={styles.copyright}>
