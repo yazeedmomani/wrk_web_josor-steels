@@ -36,7 +36,7 @@ function Footer() {
         <ContactInfo styles={styles["contact-info"]} />
         <div className={styles.links}>
           <div>
-            <h2 className="h5">
+            <h2 className={`${langContext.lang === "ar" ? "h4" : "h5"}`}>
               {contentContext[langContext.lang].footer.links[0].title}
             </h2>
             <ul>
@@ -63,7 +63,7 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <h2 className="h5">
+            <h2 className={`${langContext.lang === "ar" ? "h4" : "h5"}`}>
               {contentContext[langContext.lang].footer.links[1].title}
             </h2>
             <ul>
