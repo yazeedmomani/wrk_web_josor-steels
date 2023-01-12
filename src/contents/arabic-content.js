@@ -64,6 +64,25 @@ const arabicContent = {
       button: "تواصل معنا",
     },
   },
+  footer: {
+    links: [
+      {
+        title: "صفحات",
+        links: ["عنا", "مشاريع", "منشأتنا", "تواصل معنا"],
+      },
+      {
+        title: "مشاريع",
+        links: ["هناجر", "جسور", "أنابيب", "مظلات", "أخرى"],
+      },
+    ],
+    copyright: "شركة الجسور © 2023",
+  },
+  components: {
+    ContactInfo: {
+      phone: "+962791621064",
+      email: "example@fabricators.com",
+    },
+  },
 };
 
 export default arabicContent;

@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 
 import Logo from "../../svg/Logo";
@@ -7,7 +8,13 @@ import ContactInfo from "../../components/general/ContactInfo";
 
 import styles from "./Footer.module.css";
 
+import LangContext from "../../contexts/lang-context";
+import ContentContext from "../../contexts/content-context";
+
 function Footer() {
+  const langContext = useContext(LangContext);
+  const contentContext = useContext(ContentContext);
+
   return (
     <footer className={styles.footer}>
       <div className={styles.center}>
@@ -29,45 +36,69 @@ function Footer() {
         <ContactInfo styles={styles["contact-info"]} />
         <div className={styles.links}>
           <div>
-            <h2 className="h5">Pages</h2>
+            <h2 className="h5">
+              {contentContext[langContext.lang].footer.links[0].title}
+            </h2>
             <ul>
               <li>
-                <Link to="/about-us">About us</Link>
+                <Link to="/about-us">
+                  {contentContext[langContext.lang].footer.links[0].links[0]}
+                </Link>
               </li>
               <li>
-                <Link>Projects</Link>
+                <Link>
+                  {contentContext[langContext.lang].footer.links[0].links[1]}
+                </Link>
               </li>
               <li>
-                <Link>Our facility</Link>
+                <Link>
+                  {contentContext[langContext.lang].footer.links[0].links[2]}
+                </Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact">
+                  {contentContext[langContext.lang].footer.links[0].links[3]}
+                </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h2 className="h5">Projects</h2>
+            <h2 className="h5">
+              {contentContext[langContext.lang].footer.links[1].title}
+            </h2>
             <ul>
               <li>
-                <Link>Hangers</Link>
+                <Link>
+                  {contentContext[langContext.lang].footer.links[1].links[0]}
+                </Link>
               </li>
               <li>
-                <Link>Bridges</Link>
+                <Link>
+                  {contentContext[langContext.lang].footer.links[1].links[1]}
+                </Link>
               </li>
               <li>
-                <Link>Tubes</Link>
+                <Link>
+                  {contentContext[langContext.lang].footer.links[1].links[2]}
+                </Link>
               </li>
               <li>
-                <Link>Canopies</Link>
+                <Link>
+                  {contentContext[langContext.lang].footer.links[1].links[3]}
+                </Link>
               </li>
               <li>
-                <Link>Other</Link>
+                <Link>
+                  {contentContext[langContext.lang].footer.links[1].links[4]}
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         <LangChanger styles={styles["lang-changer"]} />
-        <p className={styles.copyright}>Josor Steels &copy; 2023</p>
+        <p className={styles.copyright}>
+          {contentContext[langContext.lang].footer.copyright}
+        </p>
       </div>
     </footer>
   );

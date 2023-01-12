@@ -64,6 +64,25 @@ const englishContent = {
       button: "Contact us",
     },
   },
+  footer: {
+    links: [
+      {
+        title: "Pages",
+        links: ["About us", "Projects", "Our facility", "Contact"],
+      },
+      {
+        title: "Projects",
+        links: ["Hangers", "Bridges", "Tubes", "Canopies", "Other"],
+      },
+    ],
+    copyright: "Josor Steels © 2023",
+  },
+  components: {
+    ContactInfo: {
+      phone: "+962791621064",
+      email: "example@fabricators.com",
+    },
+  },
 };
 
 export default englishContent;
