@@ -10,6 +10,20 @@
   align-items: center;
 }
 
+.btn-container {
+  height: 7rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  direction: ltr;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 var(--content-horizontal-margin);
+}
+
 .no-images {
   color: var(--color-white);
   font-size: var(--font-size-h4);
