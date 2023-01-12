@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 
 import RenderedItems from "./RenderedItems";
+import PaginationArrow from "./PaginationArrow";
 
 import styles from "./PaginatedItems.module.css";
 
-function PaginatedItems({ itemsPerPage, items }) {
+function PaginatedItems({ itemsPerPage, items, style }) {
   // Here we use item offsets; we could also use page offsets
   // following the API or data you're working with.
   const [itemOffset, setItemOffset] = useState(0);
@@ -31,15 +32,15 @@ function PaginatedItems({ itemsPerPage, items }) {
     <>
       <RenderedItems currentItems={currentItems} />
       <ReactPaginate
-        className={styles.container}
+        className={`${styles.container} ${style}`}
         breakLabel="..."
-        nextLabel="next >"
+        nextLabel={<PaginationArrow isLeft={false} />}
+        previousLabel={<PaginationArrow isLeft={true} />}
         onPageChange={handlePageClick}
         pageRangeDisplayed={5}
         pageCount={pageCount}
         pageClassName={styles.page}
         activeClassName={styles.active}
-        previousLabel="< previous"
         renderOnZeroPageCount={null}
       />
     </>
