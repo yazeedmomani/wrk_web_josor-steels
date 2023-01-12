@@ -24,7 +24,33 @@ const arabicContent = {
     services: {
       span: "خدماتنا الاحترافية",
       title: "نتولى مجموعة متنوعة من المشاريع",
-      projectCat: ["هناجر", "جسور", "أنابيب", "مظلات", "أخرى"],
+      projectCat: [
+        {
+          title: "هناجر",
+          alt: "هنجر",
+          to: "/projects/hangers",
+        },
+        {
+          title: "جسور",
+          alt: "جسر",
+          to: "/projects/bridges",
+        },
+        {
+          title: "أنابيب",
+          alt: "أنبوب",
+          to: "/projects/tubes",
+        },
+        {
+          title: "مظلات",
+          alt: "مظلة",
+          to: "/projects/canopies",
+        },
+        {
+          title: "أخرى",
+          alt: "أخرى",
+          to: "/projects/other",
+        },
+      ],
     },
     steps: {
       span: "خطوات العمل",

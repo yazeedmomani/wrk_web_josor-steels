@@ -24,7 +24,33 @@ const englishContent = {
     services: {
       span: "Professional services",
       title: "We take on a wide variety of projects",
-      projectCat: ["Hangers", "Bridges", "Tubes", "Canopies", "Other"],
+      projectCat: [
+        {
+          title: "Hangers",
+          alt: "Hanger",
+          to: "/projects/hangers",
+        },
+        {
+          title: "Bridges",
+          alt: "Bridge",
+          to: "/projects/bridges",
+        },
+        {
+          title: "Tubes",
+          alt: "tube",
+          to: "/projects/tubes",
+        },
+        {
+          title: "Canopies",
+          alt: "Canopy",
+          to: "/projects/canopies",
+        },
+        {
+          title: "Other",
+          alt: "other",
+          to: "/projects/other",
+        },
+      ],
     },
     steps: {
       span: "How it works",

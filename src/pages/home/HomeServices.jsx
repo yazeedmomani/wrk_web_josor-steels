@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 import SectionSpan from "../../components/general/SectionSpan";
 import Slider from "../../components/slider/Slider";
@@ -17,48 +18,31 @@ import ContentContext from "../../contexts/content-context";
 function HomeServices() {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
+  const servicesContext = contentContext[langContext.lang].home.services;
+  const projectCatContext = servicesContext.projectCat;
+  const projectImages = [image01, image02, image03, image04, image01];
 
   return (
     <section
       className={styles.section}
       id="HomeServices">
       <div className={styles.center}>
-        <SectionSpan>
-          {contentContext[langContext.lang].home.services.span}
-        </SectionSpan>
-        <h2 className="h3">
-          {contentContext[langContext.lang].home.services.title}
-        </h2>
+        <SectionSpan>{servicesContext.span}</SectionSpan>
+        <h2 className="h3">{servicesContext.title}</h2>
       </div>
 
       <Slider
         containerClass={styles.container}
         dotListClass={styles.dots}>
-        <Image
-          src={image01}
-          alt="Hanger"
-          title={contentContext[langContext.lang].home.services.projectCat[0]}
-        />
-        <Image
-          src={image02}
-          alt="Bridge"
-          title={contentContext[langContext.lang].home.services.projectCat[1]}
-        />
-        <Image
-          src={image03}
-          alt="Tube"
-          title={contentContext[langContext.lang].home.services.projectCat[2]}
-        />
-        <Image
-          src={image04}
-          alt="Canopy"
-          title={contentContext[langContext.lang].home.services.projectCat[3]}
-        />
-        <Image
-          src={image01}
-          alt="Other"
-          title={contentContext[langContext.lang].home.services.projectCat[4]}
-        />
+        {projectCatContext.map((cur, i) => (
+          <Link to={cur.to}>
+            <Image
+              src={projectImages[i]}
+              alt={cur.alt}
+              title={cur.title}
+            />
+          </Link>
+        ))}
       </Slider>
     </section>
   );
