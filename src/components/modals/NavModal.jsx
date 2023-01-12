@@ -16,57 +16,61 @@ function NavModal(props) {
 
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
+  const navContext = contentContext[langContext.lang].nav;
+  const projectsContext = navContext.projects;
+
+  function closeModal() {
+    props.setShowModal(false);
+  }
+
+  function toggleProjects() {
+    setShowProjects((prev) => !prev);
+  }
 
   return createPortal(
     <>
-      <Backdrop onClick={props.setShowModal.bind(null, false)} />
+      <Backdrop onClick={closeModal} />
       <div className={styles.content}>
         <div
           className={styles["btn-container"]}
-          onClick={props.setShowModal.bind(null, false)}>
+          onClick={closeModal}>
           <CloseBtn />
         </div>
         <ul className={styles.modal}>
           <li
             className={styles.list}
-            onClick={props.setShowModal.bind(null, false)}>
-            <Link to="/about-us">
-              {contentContext[langContext.lang].nav.aboutUs}
-            </Link>
+            onClick={closeModal}>
+            <Link to="/about-us">{navContext.aboutUs}</Link>
           </li>
           <li
             className={styles.list}
-            onClick={setShowProjects.bind(null, (prev) => !prev)}>
-            {contentContext[langContext.lang].nav.projects.title}
+            onClick={toggleProjects}>
+            {projectsContext.title}
             <Expand open={showProjects}>
               <ul>
-                {contentContext[langContext.lang].nav.projects.cat.map(
-                  (cur) => (
-                    <li onClick={props.setShowModal.bind(null, false)}>
-                      <Link>{cur}</Link>
-                    </li>
-                  )
-                )}
+                {projectsContext.cat.map((cur) => (
+                  <li onClick={closeModal}>
+                    <Link>{cur}</Link>
+                  </li>
+                ))}
               </ul>
             </Expand>
           </li>
           <li
             className={styles.list}
-            onClick={props.setShowModal.bind(null, false)}>
-            <Link>{contentContext[langContext.lang].nav.ourFacility}</Link>
+            onClick={closeModal}>
+            <Link>{navContext.ourFacility}</Link>
           </li>
           <li
             className={styles.list}
-            onClick={props.setShowModal.bind(null, false)}>
-            <Link to="/contact">
-              {contentContext[langContext.lang].nav.contact}
-            </Link>
+            onClick={closeModal}>
+            <Link to="/contact">{navContext.contact}</Link>
           </li>
         </ul>
       </div>
       <div
         className={styles["lang-changer-container"]}
-        onClick={props.setShowModal.bind(null, false)}>
+        onClick={closeModal}>
         <LangChanger />
       </div>
     </>,
