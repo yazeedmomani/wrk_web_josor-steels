@@ -68,11 +68,49 @@ const englishContent = {
     links: [
       {
         title: "Pages",
-        links: ["About us", "Projects", "Our facility", "Contact"],
+        links: [
+          {
+            text: "About us",
+            to: "/about-us",
+          },
+          {
+            text: "Projects",
+            to: "/projects",
+          },
+          {
+            text: "Our facility",
+            to: "/our-facility",
+          },
+          {
+            text: "Contact",
+            to: "/contact",
+          },
+        ],
       },
       {
         title: "Projects",
-        links: ["Hangers", "Bridges", "Tubes", "Canopies", "Other"],
+        links: [
+          {
+            text: "Hangers",
+            to: "/projects/hangers",
+          },
+          {
+            text: "Bridges",
+            to: "/projects/bridges",
+          },
+          {
+            text: "Tubes",
+            to: "/projects/tubes",
+          },
+          {
+            text: "Canopies",
+            to: "/projects/canopies",
+          },
+          {
+            text: "other",
+            to: "/projects/other",
+          },
+        ],
       },
     ],
     copyright: "Josor Steels © 2023",

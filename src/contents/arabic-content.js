@@ -69,10 +69,49 @@ const arabicContent = {
       {
         title: "صفحات",
         links: ["عنا", "مشاريع", "منشأتنا", "تواصل معنا"],
+        links: [
+          {
+            text: "عنا",
+            to: "/about-us",
+          },
+          {
+            text: "مشاريع",
+            to: "/projects",
+          },
+          {
+            text: "منشأتنا",
+            to: "/our-facility",
+          },
+          {
+            text: "تواصل معنا",
+            to: "/contact",
+          },
+        ],
       },
       {
         title: "مشاريع",
-        links: ["هناجر", "جسور", "أنابيب", "مظلات", "أخرى"],
+        links: [
+          {
+            text: "هناجر",
+            to: "/projects/hangers",
+          },
+          {
+            text: "جسور",
+            to: "/projects/bridges",
+          },
+          {
+            text: "أنابيب",
+            to: "/projects/tubes",
+          },
+          {
+            text: "مظلات",
+            to: "/projects/canopies",
+          },
+          {
+            text: "أخرى",
+            to: "/projects/other",
+          },
+        ],
       },
     ],
     copyright: "شركة الجسور © 2023",

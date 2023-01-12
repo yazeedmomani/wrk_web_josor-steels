@@ -43,9 +43,9 @@ function Footer() {
               <ul>
                 {cur.links.map((cur, i) => (
                   <li>
-                    <Link to="/about-us">
+                    <Link to={cur.to}>
                       {
-                        cur
+                        cur.text
                       }
                     </Link>
                   </li>
