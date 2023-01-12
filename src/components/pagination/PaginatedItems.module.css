@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page {
+  width: 1.8rem;
+  height: 1.8rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  background-color: var(--color-grey-light-02);
+  color: var(--color-black);
+  font-weight: var(--font-weight-bold);
+}
+
+.page:hover {
+  background-color: var(--color-grey-light-03);
+}
+
+.active{
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
