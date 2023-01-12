@@ -18,6 +18,11 @@
     rgba(166, 91, 91, 0.25),
     rgba(140, 3, 3, 0.25)
   );
+  --color-card-gradient: linear-gradient(
+    to bottom right,
+    rgba(166, 91, 91, 0.75),
+    rgba(140, 3, 3, 0.75)
+  );
 
   --font-family-en-serif: "Lora", serif;
   --font-family-en-sans-serif: "Roboto", sans-serif;

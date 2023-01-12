@@ -193,6 +193,9 @@ const arabicContent = {
       phone: "+962791621064",
       email: "example@fabricators.com",
     },
+    ProjectCard: {
+      button: "عرض الصور ←",
+    },
   },
 };
 

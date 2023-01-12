@@ -192,6 +192,9 @@ const englishContent = {
       phone: "+962791621064",
       email: "example@fabricators.com",
     },
+    ProjectCard: {
+      button: "View images →",
+    },
   },
 };
 
