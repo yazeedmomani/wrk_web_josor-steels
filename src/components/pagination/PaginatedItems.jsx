@@ -40,6 +40,7 @@ function PaginatedItems({ itemsPerPage, items, style }) {
         pageRangeDisplayed={5}
         pageCount={pageCount}
         pageClassName={styles.page}
+        pageLinkClassName={styles.link}
         activeClassName={styles.active}
         renderOnZeroPageCount={null}
       />
