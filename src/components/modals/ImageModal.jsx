@@ -11,10 +11,18 @@ function ImageModal(props) {
     props.setShowModal(false);
   }
 
+  function handleClick(e) {
+    if (e.target.className !== styles.container) return;
+
+    closeModal();
+  }
+
   return createPortal(
     <>
       <Backdrop onClick={closeModal} />
-      <div className={styles.container}>
+      <div
+        className={styles.container}
+        onClick={handleClick}>
         <div
           className={styles["btn-container"]}
           onClick={closeModal}>
