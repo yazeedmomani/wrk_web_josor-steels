@@ -6,10 +6,9 @@ import PrimaryLink from "../../components/buttons/PrimaryLink";
 
 import styles from "./HomeAbout.module.css";
 
-import img from "../../images/03.jpeg";
-
 import LangContext from "../../contexts/lang-context";
 import ContentContext from "../../contexts/content-context";
+import images from "../../contents/images";
 
 function HomeAbout() {
   const langContext = useContext(LangContext);
@@ -25,7 +24,7 @@ function HomeAbout() {
       </h2>
       <p>{contentContext[langContext.lang].home.about.paragraph}</p>
       <Image
-        src={img}
+        src={images.home.aboutUs}
         alt="Hanger"
       />
       <PrimaryLink to="/about-us" styles={styles['primary-link']}>

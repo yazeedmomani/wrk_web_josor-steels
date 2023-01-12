@@ -1,16 +1,13 @@
-import projectCategoryHangers from "../images/project-categories/hangers.jpeg";
-import projectCategoryBridges from "../images/project-categories/bridges.jpeg";
-import projectCategoryTubes from "../images/project-categories/tubes.jpeg";
-import projectCategoryCanopies from "../images/project-categories/canopies.jpeg";
-import projectCategoryOther from "../images/project-categories/other.jpeg";
-
 const images = {
+  home: {
+    aboutUs: require("../images/home/aboutUs.jpeg"),
+  },
   projectCategories: {
-    hangers: projectCategoryHangers,
-    bridges: projectCategoryBridges,
-    tubes: projectCategoryTubes,
-    canopies: projectCategoryCanopies,
-    other: projectCategoryOther,
+    hangers: require("../images/project-categories/hangers.jpeg"),
+    bridges: require("../images/project-categories/bridges.jpeg"),
+    tubes: require("../images/project-categories/tubes.jpeg"),
+    canopies: require("../images/project-categories/canopies.jpeg"),
+    other: require("../images/project-categories/other.jpeg"),
   },
 };
 
