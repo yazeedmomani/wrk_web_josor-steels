@@ -137,7 +137,7 @@ const englishContent = {
     },
   },
   // TODO add to arabic content Start here
-  Projects: {
+  projects: {
     categoryCards: [
       {
         title: "Hangers",
@@ -170,7 +170,7 @@ const englishContent = {
         image: "other",
       },
     ],
-    CategoryPages: {
+    categoryPages: {
       hangers: {
         title: "Hangers",
         projectCards: [

@@ -1,39 +1,35 @@
+import { useContext } from "react";
+
 import DynamicHelmet from "../../helmets/DynamicHelmet";
 import PaginatedItems from "../../components/pagination/PaginatedItems";
+import ProjectCard from "../../components/general/ProjectCard";
 
-function ProjectCategory() {
+import LangContext from "../../contexts/lang-context";
+import ContentContext from "../../contexts/content-context";
+import images from "../../contents/images";
+
+function ProjectCategory(props) {
+  const langContext = useContext(LangContext);
+  const contentContext = useContext(ContentContext);
+  const categoryContext =
+    contentContext[langContext.lang].projects.categoryPages[props.category];
+  console.log(images.projectImages[props.category][0]);
+  const imagesContext = images.projectImages[props.category];
+
   return (
     <>
-      <DynamicHelmet page="hangers" />
+      <DynamicHelmet page={props.category} />
+      <h1>{categoryContext.title}</h1>
       <PaginatedItems itemsPerPage={5}>
-        {[
-          1,
-          2,
-          3,
-          <h1>Hello</h1>,
-          5,
-          6,
-          <h2>test</h2>,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16,
-          17,
-          18,
-          19,
-          20,
-          21,
-          22,
-          23,
-          24,
-          25,
-          26,
-        ]}
+        {categoryContext.projectCards.map((cur, i) => (
+          <ProjectCard
+            key={i}
+            title={cur.title}
+            description={cur.description}
+            src={imagesContext[i][0]}
+            images={imagesContext[i]}
+          />
+        ))}
       </PaginatedItems>
     </>
   );

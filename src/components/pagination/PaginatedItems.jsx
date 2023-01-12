@@ -29,7 +29,7 @@ function PaginatedItems({ itemsPerPage, children, propsClassName }) {
 
   return (
     <>
-      {currentItems && currentItems.map((item) => <>{item}</>)}
+      {currentItems && currentItems.map((item, i) => <li key={i}>{item}</li>)}
       <ReactPaginate
         className={`${styles.container} ${propsClassName}`}
         breakLabel="..."
