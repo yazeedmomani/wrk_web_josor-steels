@@ -3,6 +3,13 @@ const englishContent = {
     defaultTemplate: "%s | Josor Steels",
     homeTitle: "Home",
     aboutUsTitle: "About us",
+    projectsTitle: "Projects",
+    hangersTitle: "Hangers",
+    bridgesTitle: "Bridges",
+    tubesTitle: "Tubes",
+    canopiesTitle: "Canopies",
+    otherTitle: "Other",
+    ourFacilityTitle: "Our Facility",
     contactTitle: "Contact",
   },
   nav: [
