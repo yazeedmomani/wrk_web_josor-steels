@@ -35,13 +35,13 @@ function Footer() {
         </div>
         <ContactInfo styles={styles["contact-info"]} />
         <div className={styles.links}>
-          {contentContext[langContext.lang].footer.links.map((cur, i) => (
+          {contentContext[langContext.lang].footer.links.map((cur) => (
             <div>
               <h2 className={`${langContext.lang === "ar" ? "h4" : "h5"}`}>
                 {cur.title}
               </h2>
               <ul>
-                {cur.links.map((cur, i) => (
+                {cur.links.map((cur) => (
                   <li>
                     <Link to={cur.to}>
                       {
