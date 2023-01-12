@@ -53,10 +53,6 @@ html[dir="rtl"] .step article {
   margin-top: 1.2rem;
 }
 
-.step.last {
-  margin-bottom: 4.8rem;
-}
-
 .step.last svg {
   margin-top: 0;
 }

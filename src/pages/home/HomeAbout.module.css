@@ -1,5 +1,5 @@
 .section {
-  margin: 0 var(--content-horizontal-margin) 19.2rem;
+  margin: 0 var(--content-horizontal-margin) 14.4rem;
 }
 
 .section h2 {
@@ -12,5 +12,8 @@
 
 .section span {
   display: inline-block;
+}
+
+.primary-link{
   margin-top: 9.6rem;
 }
