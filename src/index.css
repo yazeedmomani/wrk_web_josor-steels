@@ -19,6 +19,12 @@ html {
   outline-offset: 0.6rem;
 }
 
+@media screen and (max-width: 1024px) {
+  *:focus {
+    outline: none;
+  }
+}
+
 #root {
   min-height: 100vh;
   display: flex;
