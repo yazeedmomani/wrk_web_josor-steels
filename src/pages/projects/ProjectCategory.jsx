@@ -13,8 +13,9 @@ import images from "../../contents/images";
 function ProjectCategory(props) {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
+  //TODO add langcontext bellow
   const categoryContext =
-    contentContext[langContext.lang].projects.categoryPages[props.category];
+    contentContext["en"].projects.categoryPages[props.category];
   console.log(images.projectImages[props.category][0]);
   const imagesContext = images.projectImages[props.category];
 
@@ -22,7 +23,7 @@ function ProjectCategory(props) {
     <>
       <DynamicHelmet page={props.category} />
       <div className={styles.center}>
-        <h1>{categoryContext.title}</h1>
+        <h1 className="h2">{categoryContext.title}</h1>
         <PaginatedItems
           itemsPerPage={5}
           controlsClassName={styles.controls}

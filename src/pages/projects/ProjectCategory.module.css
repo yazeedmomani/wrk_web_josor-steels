@@ -2,6 +2,10 @@
   margin: 0 var(--content-horizontal-margin);
 }
 
+.center h1{
+    margin-top: 3.6rem;
+}
+
 .item {
   margin-bottom: 9.6rem;
 }
