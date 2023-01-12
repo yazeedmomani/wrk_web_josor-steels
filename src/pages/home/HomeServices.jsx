@@ -35,7 +35,7 @@ function HomeServices() {
         containerClass={styles.container}
         dotListClass={styles.dots}>
         {projectCatContext.map((cur, i) => (
-          <Link to={cur.to}>
+          <Link to={cur.to} key={cur.title}>
             <Image
               src={projectImages[i]}
               alt={cur.alt}

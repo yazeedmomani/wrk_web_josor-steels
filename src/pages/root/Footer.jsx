@@ -23,11 +23,13 @@ function Footer() {
         </Link>
         <div className={styles["icons-container"]}>
           <ContactIcon
+            key="linkedIn"
             styles={styles.icon}
             type="linkedIn"
             isDark={true}
           />
           <ContactIcon
+            key="facebook"
             styles={styles.icon}
             type="facebook"
             isDark={true}
@@ -35,19 +37,15 @@ function Footer() {
         </div>
         <ContactInfo styles={styles["contact-info"]} />
         <div className={styles.links}>
-          {contentContext[langContext.lang].footer.links.map((cur) => (
-            <div>
+          {contentContext[langContext.lang].footer.links.map((cur, i) => (
+            <div key={i}>
               <h2 className={`${langContext.lang === "ar" ? "h4" : "h5"}`}>
                 {cur.title}
               </h2>
               <ul>
-                {cur.links.map((cur) => (
-                  <li>
-                    <Link to={cur.to}>
-                      {
-                        cur.text
-                      }
-                    </Link>
+                {cur.links.map((cur, i) => (
+                  <li key={i}>
+                    <Link to={cur.to}>{cur.text}</Link>
                   </li>
                 ))}
               </ul>
