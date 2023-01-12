@@ -5,15 +5,58 @@ const arabicContent = {
     aboutUsTitle: "عنا",
     ContactTitle: "تواصل معنا",
   },
-  nav: {
-    aboutUs: "عنا",
-    projects: {
-      title: "مشاريع",
-      cat: ["هناجر", "جسور", "أنابيب", "مظلات", "أخرى"],
+  // nav: {
+  //   aboutUs: "عنا",
+  //   projects: {
+  //     title: "مشاريع",
+  //     cat: ["هناجر", "جسور", "أنابيب", "مظلات", "أخرى"],
+  //   },
+  //   ourFacility: "منشأتنا",
+  //   contact: "تواصل معنا",
+  // },
+  nav: [
+    {
+      isProjects: false,
+      text: "عنا",
+      to: "/about-us",
     },
-    ourFacility: "منشأتنا",
-    contact: "تواصل معنا",
-  },
+    {
+      isProjects: true,
+      text: "مشاريع",
+      links: [
+        {
+          text: "هناجر",
+          to: "/projects/hangers",
+        },
+        {
+          text: "جسور",
+          to: "/projects/brdiges",
+        },
+        {
+          text: "أنابيب",
+          to: "/projects/tubes",
+        },
+        {
+          text: "مظلات",
+          to: "/projects/canopies",
+        },
+        {
+          text: "أخرى",
+          to: "/projects/other",
+        },
+      ],
+    },
+    {
+      isProjects: false,
+      text: "منشأتنا",
+      to: "/our-facility",
+    },
+    {
+      isProjects: false,
+      text: "تواصل معنا",
+      to: "/contact",
+    },
+  ],
   home: {
     header: {
       title: "شركة الجسور",

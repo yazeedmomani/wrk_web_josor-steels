@@ -5,15 +5,49 @@ const englishContent = {
     aboutUsTitle: "About us",
     contactTitle: "Contact",
   },
-  nav: {
-    aboutUs: "About us",
-    projects: {
-      title: "Projects",
-      cat: ["Hangers", "Bridges", "Tubes", "Canopies", "Other"],
+  nav: [
+    {
+      isProjects: false,
+      text: "About us",
+      to: "/about-us",
     },
-    ourFacility: "Our facility",
-    contact: "Contact",
-  },
+    {
+      isProjects: true,
+      text: "Projects",
+      links: [
+        {
+          text: "Hangers",
+          to: "/projects/hangers",
+        },
+        {
+          text: "Bridges",
+          to: "/projects/brdiges",
+        },
+        {
+          text: "Tubes",
+          to: "/projects/tubes",
+        },
+        {
+          text: "Canopies",
+          to: "/projects/canopies",
+        },
+        {
+          text: "Other",
+          to: "/projects/other",
+        },
+      ],
+    },
+    {
+      isProjects: false,
+      text: "Our facility",
+      to: "/our-facility",
+    },
+    {
+      isProjects: false,
+      text: "Contact",
+      to: "/contact",
+    },
+  ],
   home: {
     header: {
       title: "Josor Steels",

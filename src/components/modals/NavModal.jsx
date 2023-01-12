@@ -17,7 +17,6 @@ function NavModal(props) {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
   const navContext = contentContext[langContext.lang].nav;
-  const projectsContext = navContext.projects;
 
   function closeModal() {
     props.setShowModal(false);
@@ -37,35 +36,36 @@ function NavModal(props) {
           <CloseBtn />
         </div>
         <ul className={styles.modal}>
-          <li
-            className={styles.list}
-            onClick={closeModal}>
-            <Link to="/about-us">{navContext.aboutUs}</Link>
-          </li>
-          <li
-            className={styles.list}
-            onClick={toggleProjects}>
-            {projectsContext.title}
-            <Expand open={showProjects}>
-              <ul>
-                {projectsContext.cat.map((cur) => (
-                  <li onClick={closeModal}>
-                    <Link>{cur}</Link>
-                  </li>
-                ))}
-              </ul>
-            </Expand>
-          </li>
-          <li
-            className={styles.list}
-            onClick={closeModal}>
-            <Link>{navContext.ourFacility}</Link>
-          </li>
-          <li
-            className={styles.list}
-            onClick={closeModal}>
-            <Link to="/contact">{navContext.contact}</Link>
-          </li>
+          {navContext.map((cur, i) => (
+            <>
+              {cur.isProjects === true ? (
+                <li
+                  key={i}
+                  className={styles.list}
+                  onClick={toggleProjects}>
+                  {cur.text}
+                  <Expand open={showProjects}>
+                    <ul>
+                      {cur.links.map((cur, i) => (
+                        <li
+                          key={i}
+                          onClick={closeModal}>
+                          <Link to={cur.to}>{cur.text}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </Expand>
+                </li>
+              ) : (
+                <li
+                  key={i}
+                  className={styles.list}
+                  onClick={closeModal}>
+                  <Link to={cur.to}>{cur.text}</Link>
+                </li>
+              )}
+            </>
+          ))}
         </ul>
       </div>
       <div
