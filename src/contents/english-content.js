@@ -28,7 +28,7 @@ const englishContent = {
         },
         {
           text: "Bridges",
-          to: "/projects/brdiges",
+          to: "/projects/bridges",
         },
         {
           text: "Tubes",

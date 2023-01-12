@@ -28,7 +28,7 @@ const arabicContent = {
         },
         {
           text: "جسور",
-          to: "/projects/brdiges",
+          to: "/projects/bridges",
         },
         {
           text: "أنابيب",
