@@ -23,27 +23,27 @@ function ImageModal(props) {
       <div
         className={styles.container}
         onClick={handleClick}>
-      <div
-        className={styles["btn-container"]}
-        onClick={closeModal}>
-        <CloseBtn />
-      </div>
-      {props.images ? (
-        <Slider
-          containerClass={styles.slider}
-          dotListClass={styles.dots}>
-          {props.images.map((cur, i) => (
-            <div>
-              <img
-                src={cur}
-                key={i}
-              />
-            </div>
-          ))}
-        </Slider>
-      ) : (
-        <p className={styles["no-images"]}>No images found</p>
-      )}
+        <div
+          className={styles["btn-container"]}
+          onClick={closeModal}>
+          <CloseBtn />
+        </div>
+        {props.images ? (
+          <Slider
+            containerClass={styles.slider}
+            dotListClass={styles.dots}>
+            {props.images.map((cur, i) => (
+              <div key={i}>
+                <img
+                  src={cur}
+                  key={i}
+                />
+              </div>
+            ))}
+          </Slider>
+        ) : (
+          <p className={styles["no-images"]}>No images found</p>
+        )}
       </div>
     </>,
     document.querySelector("#Modal")

@@ -16,7 +16,6 @@ function ProjectCategory(props) {
   //TODO add langcontext bellow
   const categoryContext =
     contentContext["en"].projects.categoryPages[props.category];
-  console.log(images.projectImages[props.category][0]);
   const imagesContext = images.projectImages[props.category];
 
   return (
