@@ -1,6 +1,8 @@
 .container {
   display: flex;
   flex-direction: column;
+  font-family: var(--font-family-en-sans-serif);
+  line-height: 1.5;
 }
 
 .container a:link,
