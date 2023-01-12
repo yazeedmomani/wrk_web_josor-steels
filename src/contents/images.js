@@ -29,6 +29,48 @@ const images = {
         require("../images/project-categories/other.jpeg"),
         require("../images/project-categories/canopies.jpeg"),
       ],
+      [
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/canopies.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+      ],
+      [
+        require("../images/project-categories/canopies.jpeg"),
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+      ],
+      [
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+        require("../images/project-categories/canopies.jpeg"),
+      ],
+      [
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/canopies.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+      ],
+      [
+        require("../images/project-categories/canopies.jpeg"),
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+      ],
+      [
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+        require("../images/project-categories/canopies.jpeg"),
+      ],
+      [
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+        require("../images/project-categories/canopies.jpeg"),
+      ],
     ],
     bridges: [
       [
@@ -41,6 +83,36 @@ const images = {
         require("../images/project-categories/canopies.jpeg"),
         require("../images/project-categories/tubes.jpeg"),
         require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+      ],
+      [
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+        require("../images/project-categories/canopies.jpeg"),
+      ],
+      [
+        require("../images/project-categories/canopies.jpeg"),
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+      ],
+      [
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/canopies.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+      ],
+      [
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+        require("../images/project-categories/canopies.jpeg"),
+      ],
+      [
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/canopies.jpeg"),
         require("../images/project-categories/other.jpeg"),
       ],
       [
@@ -69,6 +141,18 @@ const images = {
         require("../images/project-categories/other.jpeg"),
         require("../images/project-categories/canopies.jpeg"),
       ],
+      [
+        require("../images/project-categories/canopies.jpeg"),
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+      ],
+      [
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+        require("../images/project-categories/canopies.jpeg"),
+      ],
     ],
     canopies: [
       [
@@ -83,12 +167,6 @@ const images = {
         require("../images/project-categories/bridges.jpeg"),
         require("../images/project-categories/other.jpeg"),
       ],
-      [
-        require("../images/project-categories/tubes.jpeg"),
-        require("../images/project-categories/bridges.jpeg"),
-        require("../images/project-categories/other.jpeg"),
-        require("../images/project-categories/canopies.jpeg"),
-      ],
     ],
     other: [
       [
@@ -96,6 +174,84 @@ const images = {
         require("../images/project-categories/tubes.jpeg"),
         require("../images/project-categories/canopies.jpeg"),
         require("../images/project-categories/other.jpeg"),
+      ],
+      [
+        require("../images/project-categories/canopies.jpeg"),
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+      ],
+      [
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/canopies.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+      ],
+      [
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+        require("../images/project-categories/canopies.jpeg"),
+      ],
+      [
+        require("../images/project-categories/canopies.jpeg"),
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+      ],
+      [
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+        require("../images/project-categories/canopies.jpeg"),
+      ],
+      [
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/canopies.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+      ],
+      [
+        require("../images/project-categories/canopies.jpeg"),
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+      ],
+      [
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/canopies.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+      ],
+      [
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+        require("../images/project-categories/canopies.jpeg"),
+      ],
+      [
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/canopies.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+      ],
+      [
+        require("../images/project-categories/canopies.jpeg"),
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+      ],
+      [
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/canopies.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+      ],
+      [
+        require("../images/project-categories/tubes.jpeg"),
+        require("../images/project-categories/bridges.jpeg"),
+        require("../images/project-categories/other.jpeg"),
+        require("../images/project-categories/canopies.jpeg"),
       ],
       [
         require("../images/project-categories/canopies.jpeg"),

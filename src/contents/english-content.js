@@ -136,6 +136,274 @@ const englishContent = {
       button: "Contact us",
     },
   },
+  // TODO add to arabic content Start here
+  Projects: {
+    categoryCards: [
+      {
+        title: "Hangers",
+        alt: "Hanger",
+        to: "/projects/hangers",
+        image: "hangers",
+      },
+      {
+        title: "Bridges",
+        alt: "Bridge",
+        to: "/projects/bridges",
+        image: "bridges",
+      },
+      {
+        title: "Tubes",
+        alt: "tube",
+        to: "/projects/tubes",
+        image: "tubes",
+      },
+      {
+        title: "Canopies",
+        alt: "Canopy",
+        to: "/projects/canopies",
+        image: "canopies",
+      },
+      {
+        title: "Other",
+        alt: "other",
+        to: "/projects/other",
+        image: "other",
+      },
+    ],
+    CategoryPages: {
+      hangers: {
+        title: "Hangers",
+        projectCards: [
+          {
+            title: "Project 01",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 02",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 03",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 04",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 05",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 06",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 07",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 08",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 09",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 10",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+        ],
+      },
+      bridges: {
+        title: "Bridges",
+        projectCards: [
+          {
+            title: "Project 01",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 02",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 03",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 04",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 05",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 06",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 07",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 08",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+        ],
+      },
+      tubes: {
+        title: "Tubes",
+        projectCards: [
+          {
+            title: "Project 01",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 02",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 03",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 04",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 05",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+        ],
+      },
+      canopies: {
+        title: "Canopies",
+        projectCards: [
+          {
+            title: "Project 01",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 02",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+        ],
+      },
+      other: {
+        title: "Other",
+        projectCards: [
+          {
+            title: "Project 01",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 02",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 03",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 04",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 05",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 06",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 07",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 08",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 09",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 10",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 11",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 12",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 13",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 14",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 15",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            title: "Project 16",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+        ],
+      },
+    },
+  },
+  // End here
   footer: {
     links: [
       {
