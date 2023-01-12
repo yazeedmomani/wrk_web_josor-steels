@@ -17,7 +17,6 @@ function ProjectCard(props) {
     <div className={`${styles.container} ${props.styles}`}>
       <img
         src={props.src}
-        alt={props.alt}
         className={styles.img}
       />
       <div className={styles.gradient}></div>

@@ -9,7 +9,6 @@ function AboutUs() {
       <DynamicHelmet page="aboutUs" />
       <ProjectCard
         src={images.projectCategories.bridges}
-        alt="Hanger"
         title="Project 01"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         images={images.projectImages.hangers[0]}
