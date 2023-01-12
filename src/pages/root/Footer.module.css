@@ -2,6 +2,7 @@
   background-color: var(--color-black);
   color: var(--color-white);
   padding: 7.2rem 0 7.2rem;
+  margin-top: auto;
 }
 
 .center {

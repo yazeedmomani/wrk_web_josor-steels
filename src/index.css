@@ -16,5 +16,11 @@ html {
 
 *:focus {
   outline: 1px solid var(--color-primary-light);
-  outline-offset: .6rem;
+  outline-offset: 0.6rem;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
