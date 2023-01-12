@@ -74,7 +74,7 @@ function NavModal(props) {
         <LangChanger />
       </div>
     </>,
-    document.querySelector("#NavModal")
+    document.querySelector("#Modal")
   );
 }
 

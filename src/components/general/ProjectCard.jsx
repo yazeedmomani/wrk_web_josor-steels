@@ -1,18 +1,17 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import ContentContext from "../../contexts/content-context";
 import LangContext from "../../contexts/lang-context";
+import ImageModal from "../modals/ImageModal";
 
 import styles from "./ProjectCard.module.css";
 
 function ProjectCard(props) {
+  const [showModal, setShowModal] = useState(false);
+
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
   const componentContext =
     contentContext[langContext.lang].components.ProjectCard;
-
-  function handleClick(e) {
-    e.preventDefault();
-  }
 
   return (
     <div className={`${styles.container} ${props.styles}`}>
@@ -25,8 +24,11 @@ function ProjectCard(props) {
       <div className={styles.content}>
         <h2 className="h3">{props.title}</h2>
         <p>{props.description}</p>
-        <button onClick={handleClick}>{componentContext.button}</button>
+        <button onClick={setShowModal.bind(null, true)}>
+          {componentContext.button}
+        </button>
       </div>
+      {showModal && <ImageModal setShowModal={setShowModal} />}
     </div>
   );
 }
