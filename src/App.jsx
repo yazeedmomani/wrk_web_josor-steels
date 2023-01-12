@@ -2,6 +2,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
+  Outlet,
   RouterProvider,
 } from "react-router-dom";
 
@@ -19,10 +20,16 @@ const router = createBrowserRouter(
       path="/"
       errorElement={<h1>Error</h1>}
       element={<Root />}>
+      {/* ///////////////////////////////////// */}
+      {/* Home */}
+      {/* ///////////////////////////////////// */}
       <Route
         index
         element={<Home />}
       />
+      {/* ///////////////////////////////////// */}
+      {/* About us */}
+      {/* ///////////////////////////////////// */}
       <Route
         path="/about-us"
         element={
@@ -31,54 +38,83 @@ const router = createBrowserRouter(
           </>
         }
       />
+      {/* ///////////////////////////////////// */}
+      {/* Projects */}
+      {/* ///////////////////////////////////// */}
       <Route
         path="/projects"
         element={
           <>
-            <Projects />
+            <Outlet />
           </>
-        }
-      />
-      <Route
-        path="/projects/hangers"
-        element={
-          <>
-            <ProjectCategory />
-          </>
-        }
-      />
-      <Route
-        path="/projects/bridges"
-        element={
-          <>
-            <ProjectCategory />
-          </>
-        }
-      />
-      <Route
-        path="/projects/tubes"
-        element={
-          <>
-            <ProjectCategory />
-          </>
-        }
-      />
-      <Route
-        path="/projects/canopies"
-        element={
-          <>
-            <ProjectCategory />
-          </>
-        }
-      />
-      <Route
-        path="/projects/other"
-        element={
-          <>
-            <ProjectCategory />
-          </>
-        }
-      />
+        }>
+        <Route
+          index
+          element={
+            <>
+              <Projects />
+            </>
+          }
+        />
+        {/* ///////////////////////////////////// */}
+        {/* Hangers */}
+        {/* ///////////////////////////////////// */}
+        <Route
+          path="/hangers"
+          element={
+            <>
+              <ProjectCategory />
+            </>
+          }
+        />
+        {/* ///////////////////////////////////// */}
+        {/* Bridges */}
+        {/* ///////////////////////////////////// */}
+        <Route
+          path="/bridges"
+          element={
+            <>
+              <ProjectCategory />
+            </>
+          }
+        />
+        {/* ///////////////////////////////////// */}
+        {/* Tubes */}
+        {/* ///////////////////////////////////// */}
+        <Route
+          path="/tubes"
+          element={
+            <>
+              <ProjectCategory />
+            </>
+          }
+        />
+        {/* ///////////////////////////////////// */}
+        {/* Canopies */}
+        {/* ///////////////////////////////////// */}
+        <Route
+          path="/canopies"
+          element={
+            <>
+              <ProjectCategory />
+            </>
+          }
+        />
+        {/* ///////////////////////////////////// */}
+        {/* Other */}
+        {/* ///////////////////////////////////// */}
+        <Route
+          path="/other"
+          element={
+            <>
+              <ProjectCategory />
+            </>
+          }
+        />
+      </Route>
+      {/* ///////////////////////////////////// */}
+      {/* Our facility */}
+      {/* ///////////////////////////////////// */}
       <Route
         path="/our-facility"
         element={
@@ -87,6 +123,9 @@ const router = createBrowserRouter(
           </>
         }
       />
+      {/* ///////////////////////////////////// */}
+      {/* Contact */}
+      {/* ///////////////////////////////////// */}
       <Route
         path="/contact"
         element={
