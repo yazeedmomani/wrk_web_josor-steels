@@ -40,7 +40,39 @@ const router = createBrowserRouter(
         }
       />
       <Route
-        path="/projects/:category"
+        path="/projects/hangers"
+        element={
+          <>
+            <ProjectCategory />
+          </>
+        }
+      />
+      <Route
+        path="/projects/bridges"
+        element={
+          <>
+            <ProjectCategory />
+          </>
+        }
+      />
+      <Route
+        path="/projects/tubes"
+        element={
+          <>
+            <ProjectCategory />
+          </>
+        }
+      />
+      <Route
+        path="/projects/canopies"
+        element={
+          <>
+            <ProjectCategory />
+          </>
+        }
+      />
+      <Route
+        path="/projects/other"
         element={
           <>
             <ProjectCategory />
