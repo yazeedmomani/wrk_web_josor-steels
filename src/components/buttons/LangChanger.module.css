@@ -10,6 +10,11 @@
   cursor: pointer;
 }
 
+.english:hover:not(.selected),
+.arabic:hover:not(.selected) {
+  color: var(--color-grey-light-01);
+}
+
 .english {
   font-family: var(--font-family-en-sans-serif);
   padding-right: 1.2rem;
@@ -23,4 +28,5 @@
 
 .selected {
   color: var(--color-grey-light-02);
+  cursor: default;
 }
