@@ -30,6 +30,7 @@ function ProjectCard(props) {
       </div>
       {showModal && (
         <ImageModal
+          images={props.images}
           setShowModal={setShowModal}
         />
       )}

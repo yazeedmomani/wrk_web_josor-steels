@@ -24,6 +24,22 @@
   padding: 0 var(--content-horizontal-margin);
 }
 
+.slider {
+  width: 100vw;
+  position: fixed;
+  z-index: 10000;
+  padding-bottom: 4.8rem;
+  margin: auto 0;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.dots {
+  bottom: 0;
+}
+
 .no-images {
   color: var(--color-white);
   font-size: var(--font-size-h4);
