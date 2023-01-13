@@ -15,10 +15,12 @@ import OurFacility from "./pages/OurFacility";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
+import path from "./contents/link-paths";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route
-      path="/"
+      path={path.home}
       errorElement={<NotFound />}
       element={<Root />}>
       {/* ///////////////////////////////////// */}
@@ -32,7 +34,7 @@ const router = createBrowserRouter(
       {/* About us */}
       {/* ///////////////////////////////////// */}
       <Route
-        path="/about-us"
+        path={path.aboutUs}
         element={
           <>
             <AboutUs />
@@ -43,7 +45,7 @@ const router = createBrowserRouter(
       {/* Projects */}
       {/* ///////////////////////////////////// */}
       <Route
-        path="/projects"
+        path={path.projects.path}
         element={
           <>
             <Outlet />
@@ -61,7 +63,7 @@ const router = createBrowserRouter(
         {/* Hangers */}
         {/* ///////////////////////////////////// */}
         <Route
-          path="/projects/hangers"
+          path={path.projects.children.hangers}
           element={
             <>
               <ProjectCategory category="hangers" />
@@ -72,7 +74,7 @@ const router = createBrowserRouter(
         {/* Bridges */}
         {/* ///////////////////////////////////// */}
         <Route
-          path="/projects/bridges"
+          path={path.projects.children.bridges}
           element={
             <>
               <ProjectCategory category="bridges" />
@@ -83,7 +85,7 @@ const router = createBrowserRouter(
         {/* Tubes */}
         {/* ///////////////////////////////////// */}
         <Route
-          path="/projects/tubes"
+          path={path.projects.children.tubes}
           element={
             <>
               <ProjectCategory category="tubes" />
@@ -94,7 +96,7 @@ const router = createBrowserRouter(
         {/* Canopies */}
         {/* ///////////////////////////////////// */}
         <Route
-          path="/projects/canopies"
+          path={path.projects.children.canopies}
           element={
             <>
               <ProjectCategory category="canopies" />
@@ -105,7 +107,7 @@ const router = createBrowserRouter(
         {/* Other */}
         {/* ///////////////////////////////////// */}
         <Route
-          path="/projects/other"
+          path={path.projects.children.other}
           element={
             <>
               <ProjectCategory category="other" />
@@ -117,7 +119,7 @@ const router = createBrowserRouter(
       {/* Our facility */}
       {/* ///////////////////////////////////// */}
       <Route
-        path="/our-facility"
+        path={path.ourFacility}
         element={
           <>
             <OurFacility />
@@ -128,7 +130,7 @@ const router = createBrowserRouter(
       {/* Contact */}
       {/* ///////////////////////////////////// */}
       <Route
-        path="/contact"
+        path={path.contact}
         element={
           <>
             <Contact />
