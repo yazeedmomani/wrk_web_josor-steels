@@ -22,7 +22,9 @@ function NotFound() {
           <p className={styles.ops}>{notFoundContext.ops}</p>
           <p className={styles.description}>
             {notFoundContext.description}&nbsp;
-            <Link to="/">{notFoundContext.link}</Link>
+            <Link to={notFoundContext.link.to}>
+              {notFoundContext.link.text}
+            </Link>
           </p>
           <div className={styles.container}>
             <ContactIcon
