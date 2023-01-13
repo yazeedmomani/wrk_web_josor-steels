@@ -8,13 +8,14 @@ import ContentContext from "../contexts/content-context";
 function AboutUs() {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
-  const navPathContext =
-    contentContext[langContext.lang].components.PathNav.projects.projectPage.other;
+  const pathNavContext =
+    contentContext[langContext.lang].components.PathNav.projects.projectPage
+      .other;
 
   return (
     <>
       <DynamicHelmet page="aboutUs" />
-      <PathNav items={navPathContext} />
+      <PathNav items={pathNavContext} />
     </>
   );
 }
