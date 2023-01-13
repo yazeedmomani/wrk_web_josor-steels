@@ -132,7 +132,10 @@ const englishContent = {
       title: "Our mission",
       paragraph:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-      link: "Learn more →",
+      link: {
+        text: "Learn more →",
+        to: "/about-us",
+      },
     },
     contact: {
       title: "Let's get in touch!",

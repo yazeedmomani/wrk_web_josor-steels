@@ -27,8 +27,10 @@ function HomeAbout() {
         src={images.home.aboutUs}
         alt="Hanger"
       />
-      <PrimaryLink to="/about-us" styles={styles['primary-link']}>
-        {contentContext[langContext.lang].home.about.link}
+      <PrimaryLink
+        to={contentContext[langContext.lang].home.about.link.to}
+        styles={styles["primary-link"]}>
+        {contentContext[langContext.lang].home.about.link.text}
       </PrimaryLink>
     </section>
   );
