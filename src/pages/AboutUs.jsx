@@ -1,18 +1,23 @@
 import DynamicHelmet from "../helmets/DynamicHelmet";
-import ProjectCard from "../components/general/ProjectCard";
-
-import images from "../contents/images";
+import PathNav from "../components/general/PathNav";
 
 function AboutUs() {
+  const pathNav = [
+    {
+      isLink: true,
+      text: "Home",
+      to: "/",
+    },
+    {
+      isLink: false,
+      text: "About",
+    },
+  ];
+
   return (
     <>
       <DynamicHelmet page="aboutUs" />
-      <ProjectCard
-        src={images.projectCategories.bridges}
-        title="Project 01"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        images={images.projectImages.hangers[0]}
-      />
+      <PathNav items={pathNav} />
     </>
   );
 }

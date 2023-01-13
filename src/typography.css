@@ -1,6 +1,7 @@
 body {
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-p);
+  color: var(--color-black);
 }
 
 html[lang="en"] body {

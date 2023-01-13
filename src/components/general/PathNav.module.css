@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container svg {
+  margin: 0 1.2rem;
+}
+
+.link a:link,
+.link a:visited {
+  text-decoration: underline;
+  border-bottom: none;
+  font-size: var(--font-size-p);
+}
+
+.container span:last-of-type {
+  font-weight: var(--font-weight-bold);
+  cursor: default;
+}
