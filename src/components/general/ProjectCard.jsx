@@ -29,6 +29,7 @@ function ProjectCard(props) {
       </div>
       {showModal && (
         <ImageModal
+          isMulti={true}
           images={props.images}
           setShowModal={setShowModal}
         />
