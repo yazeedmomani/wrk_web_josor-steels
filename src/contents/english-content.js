@@ -137,7 +137,7 @@ const englishContent = {
     },
   },
   projects: {
-    title: 'Projects',
+    title: "Projects",
     categoryCards: [
       {
         title: "Hangers",
@@ -461,6 +461,136 @@ const englishContent = {
     },
     ProjectCard: {
       button: "View images →",
+    },
+    PathNav: {
+      aboutUs: [
+        {
+          isLink: true,
+          text: "Home",
+          to: "/",
+        },
+        {
+          isLink: false,
+          text: "About",
+        },
+      ],
+      projects: {
+        categoryPage: [
+          {
+            isLink: true,
+            text: "Home",
+            to: "/",
+          },
+          {
+            isLink: false,
+            text: "Projects",
+          },
+        ],
+        projectPage: {
+          hangers: [
+            {
+              isLink: true,
+              text: "Home",
+              to: "/",
+            },
+            {
+              isLink: true,
+              text: "Projects",
+              to: "/projects",
+            },
+            {
+              isLink: false,
+              text: "Hangers",
+            },
+          ],
+          bridges: [
+            {
+              isLink: true,
+              text: "Home",
+              to: "/",
+            },
+            {
+              isLink: true,
+              text: "Projects",
+              to: "/projects",
+            },
+            {
+              isLink: false,
+              text: "Bridges",
+            },
+          ],
+          tubes: [
+            {
+              isLink: true,
+              text: "Home",
+              to: "/",
+            },
+            {
+              isLink: true,
+              text: "Projects",
+              to: "/projects",
+            },
+            {
+              isLink: false,
+              text: "Tubes",
+            },
+          ],
+          canopies: [
+            {
+              isLink: true,
+              text: "Home",
+              to: "/",
+            },
+            {
+              isLink: true,
+              text: "Projects",
+              to: "/projects",
+            },
+            {
+              isLink: false,
+              text: "Canopies",
+            },
+          ],
+          other: [
+            {
+              isLink: true,
+              text: "Home",
+              to: "/",
+            },
+            {
+              isLink: true,
+              text: "Projects",
+              to: "/projects",
+            },
+            {
+              isLink: false,
+              text: "Other",
+            },
+          ],
+        },
+      },
+      ourFacility: [
+        {
+          isLink: true,
+          text: "Home",
+          to: "/",
+        },
+        {
+          isLink: false,
+          text: "Our facility",
+        },
+      ],
+      contact: [
+        {
+          isLink: true,
+          text: "Home",
+          to: "/",
+        },
+        {
+          isLink: false,
+          text: "Contact",
+        },
+      ],
     },
   },
 };

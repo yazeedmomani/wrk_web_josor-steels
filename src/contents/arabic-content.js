@@ -137,7 +137,7 @@ const arabicContent = {
     },
   },
   projects: {
-    title: 'مشاريع',
+    title: "مشاريع",
     categoryCards: [
       {
         title: "هناجر",
@@ -462,6 +462,136 @@ const arabicContent = {
     },
     ProjectCard: {
       button: "عرض الصور ←",
+    },
+    PathNav: {
+      aboutUs: [
+        {
+          isLink: true,
+          text: "الرئيسية",
+          to: "/",
+        },
+        {
+          isLink: false,
+          text: "عنا",
+        },
+      ],
+      projects: {
+        categoryPage: [
+          {
+            isLink: true,
+            text: "الرئيسية",
+            to: "/",
+          },
+          {
+            isLink: false,
+            text: "مشاريع",
+          },
+        ],
+        projectPage: {
+          hangers: [
+            {
+              isLink: true,
+              text: "الرئيسية",
+              to: "/",
+            },
+            {
+              isLink: true,
+              text: "مشاريع",
+              to: "/projects",
+            },
+            {
+              isLink: false,
+              text: "Hangers",
+            },
+          ],
+          bridges: [
+            {
+              isLink: true,
+              text: "الرئيسية",
+              to: "/",
+            },
+            {
+              isLink: true,
+              text: "مشاريع",
+              to: "/projects",
+            },
+            {
+              isLink: false,
+              text: "جسور",
+            },
+          ],
+          tubes: [
+            {
+              isLink: true,
+              text: "الرئيسية",
+              to: "/",
+            },
+            {
+              isLink: true,
+              text: "مشاريع",
+              to: "/projects",
+            },
+            {
+              isLink: false,
+              text: "أنابيب",
+            },
+          ],
+          canopies: [
+            {
+              isLink: true,
+              text: "الرئيسية",
+              to: "/",
+            },
+            {
+              isLink: true,
+              text: "مشاريع",
+              to: "/projects",
+            },
+            {
+              isLink: false,
+              text: "مظلات",
+            },
+          ],
+          other: [
+            {
+              isLink: true,
+              text: "الرئيسية",
+              to: "/",
+            },
+            {
+              isLink: true,
+              text: "مشاريع",
+              to: "/projects",
+            },
+            {
+              isLink: false,
+              text: "أخرى",
+            },
+          ],
+        },
+      },
+      ourFacility: [
+        {
+          isLink: true,
+          text: "الرئيسية",
+          to: "/",
+        },
+        {
+          isLink: false,
+          text: "منشأتنا",
+        },
+      ],
+      contact: [
+        {
+          isLink: true,
+          text: "الرئيسية",
+          to: "/",
+        },
+        {
+          isLink: false,
+          text: "تواصل معنا",
+        },
+      ],
     },
   },
 };
