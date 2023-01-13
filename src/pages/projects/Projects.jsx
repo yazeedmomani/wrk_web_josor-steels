@@ -13,15 +13,15 @@ import images from "../../contents/images";
 function Projects() {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
-  const projectsContext = contentContext[langContext.lang].projects.categoryCards;
+  const projectsContext = contentContext[langContext.lang].projects;
   const projectImages = images.projectCategories;
 
   return (
     <>
       <DynamicHelmet page="projects" />
       <div className={styles.center}>
-        <h1 className="h2">Projects</h1>
-        {projectsContext.map((cur, i) => (
+        <h1 className="h2">{projectsContext.title}</h1>
+        {projectsContext.categoryCards.map((cur, i) => (
           <Link
             to={cur.to}
             key={i}>

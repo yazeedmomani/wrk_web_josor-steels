@@ -137,6 +137,7 @@ const englishContent = {
     },
   },
   projects: {
+    title: 'Projects',
     categoryCards: [
       {
         title: "Hangers",

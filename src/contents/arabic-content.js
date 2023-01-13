@@ -137,6 +137,7 @@ const arabicContent = {
     },
   },
   projects: {
+    title: 'مشاريع',
     categoryCards: [
       {
         title: "هناجر",
