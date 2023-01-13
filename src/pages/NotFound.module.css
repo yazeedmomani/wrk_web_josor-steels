@@ -1,0 +1,44 @@
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content h1 {
+  color: var(--color-primary);
+  margin-bottom: 3.6rem;
+}
+
+.ops {
+  text-transform: uppercase;
+  font-size: var(--font-size-h4);
+  letter-spacing: 0.1rem;
+  margin-bottom: 3.6rem;
+}
+
+.description {
+  margin-bottom: 3.6rem;
+}
+
+.description a:link,
+.description a:visited {
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
+  transition: all 100ms;
+}
+
+.description a:hover,
+.description a:active {
+  color: var(--color-primary-dark);
+  border-bottom: 1px solid var(--color-primary-dark);
+}
+
+html[dir="ltr"] .icon:not(:first-child) {
+  margin-left: 1.2rem;
+}
+
+html[dir="rtl"] .icon:not(:first-child) {
+  margin-right: 1.2rem;
+}

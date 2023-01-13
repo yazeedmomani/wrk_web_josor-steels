@@ -13,12 +13,13 @@ import Projects from "./pages/projects/Projects";
 import ProjectCategory from "./pages/projects/ProjectCategory";
 import OurFacility from "./pages/OurFacility";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route
       path="/"
-      errorElement={<h1>Error</h1>}
+      errorElement={<NotFound />}
       element={<Root />}>
       {/* ///////////////////////////////////// */}
       {/* Home */}
