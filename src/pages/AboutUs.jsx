@@ -2,6 +2,9 @@ import { useContext } from "react";
 
 import DynamicHelmet from "../helmets/DynamicHelmet";
 import PathNav from "../components/general/PathNav";
+
+import styles from "./AboutUs.module.css";
+
 import LangContext from "../contexts/lang-context";
 import ContentContext from "../contexts/content-context";
 
@@ -14,7 +17,12 @@ function AboutUs() {
   return (
     <>
       <DynamicHelmet page="aboutUs" />
-      <PathNav items={pathNavContext} />
+      <div className={styles.center}>
+        <PathNav
+          items={pathNavContext}
+          styles={styles.path}
+        />
+      </div>
     </>
   );
 }
