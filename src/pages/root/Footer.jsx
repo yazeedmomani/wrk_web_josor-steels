@@ -20,7 +20,7 @@ function Footer() {
     <footer className={styles.footer}>
       <ScrollToTop dependency={langContext.lang} />
       <div className={styles.center}>
-        <Link to="/">
+        <Link to={contentContext[langContext.lang].footer.logoLink}>
           <Logo isDark={true} />
         </Link>
         <div className={styles["icons-container"]}>

@@ -433,6 +433,7 @@ const arabicContent = {
     followTitle: "تابعنا على",
   },
   footer: {
+    logoLink: "/",
     links: [
       {
         title: "صفحات",

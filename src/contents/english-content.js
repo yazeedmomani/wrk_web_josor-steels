@@ -433,6 +433,7 @@ const englishContent = {
     followTitle: "Follow us at",
   },
   footer: {
+    logoLink: "/",
     links: [
       {
         title: "Pages",
