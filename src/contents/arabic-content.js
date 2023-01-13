@@ -460,6 +460,10 @@ const arabicContent = {
       phone: "+962791621064",
       email: "example@fabricators.com",
     },
+    ContactIcon: {
+      facebook: "https://www.facebook.com",
+      linkedIn: "https://www.linkedIn.com",
+    },
     ProjectCard: {
       button: "عرض الصور ←",
     },

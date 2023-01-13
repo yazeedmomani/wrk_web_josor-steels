@@ -1,14 +1,27 @@
+import { useContext } from "react";
+import ContentContext from "../contexts/content-context";
+import LangContext from "../contexts/lang-context";
+
 import styles from "./ContactIcon.module.css";
 
 function ContactIcon(props) {
+  const langContext = useContext(LangContext);
+  const contentContext = useContext(ContentContext);
+  const componentContext =
+    contentContext[langContext.lang].components.ContactIcon;
+
   const iconStyles = `${styles.icon} ${props.isDark === true && styles.dark} ${
     props.isAnimated === true && styles.animated
   } ${props.styles}`;
 
+  function handleLink(link) {
+    window.open(link, "_self");
+  }
+
   const icons = {
     facebook: (
       <svg
-        onClick={props.onClick}
+        onClick={handleLink.bind(null, componentContext.facebook)}
         className={iconStyles}
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +32,7 @@ function ContactIcon(props) {
     ),
     linkedIn: (
       <svg
-        onClick={props.onClick}
+        onClick={handleLink.bind(null, componentContext.linkedIn)}
         className={iconStyles}
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
