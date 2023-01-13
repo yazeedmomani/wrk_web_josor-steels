@@ -9,8 +9,7 @@ function AboutUs() {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
   const pathNavContext =
-    contentContext[langContext.lang].components.PathNav.projects.projectPage
-      .other;
+    contentContext[langContext.lang].components.PathNav.aboutUs;
 
   return (
     <>
