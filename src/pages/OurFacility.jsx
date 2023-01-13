@@ -32,7 +32,10 @@ function OurFacility() {
           controlsClassName={styles.controls}
           itemClassName={styles.item}>
           {imagesContext.map((cur) => (
-            <Image src={cur} />
+            <Image
+              src={cur}
+              clickable={true}
+            />
           ))}
         </PaginatedItems>
       </div>
