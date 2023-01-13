@@ -62,7 +62,10 @@ const englishContent = {
     header: {
       title: "Josor Steels",
       subTitle: "Let your imagination go wild with our strong stable steels",
-      primaryButton: "Contact us",
+      primaryButton: {
+        text: "Contact us",
+        to: "/contact",
+      },
       secondaryButton: "Learn more",
     },
     services: {
@@ -139,7 +142,10 @@ const englishContent = {
     },
     contact: {
       title: "Let's get in touch!",
-      button: "Contact us",
+      button: {
+        text: "Contact us",
+        to: "/contact",
+      },
     },
   },
   aboutUs: {
@@ -157,7 +163,10 @@ const englishContent = {
       },
     ],
     ourFacility: "Our facility",
-    link: "More images →",
+    link: {
+      text: "More images →",
+      to: "/our-facility",
+    },
   },
   projects: {
     title: "Projects",

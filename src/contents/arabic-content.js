@@ -62,7 +62,10 @@ const arabicContent = {
     header: {
       title: "شركة الجسور",
       subTitle: "أطلق العنان لخيالك مع فولاذنا الثابت القوي",
-      primaryButton: "تواصل معنا",
+      primaryButton: {
+        text: "تواصل معنا",
+        to: "/contact",
+      },
       secondaryButton: "المزيد",
     },
     services: {
@@ -139,7 +142,10 @@ const arabicContent = {
     },
     contact: {
       title: "هل اقتنعت بنا؟ تواصل معنا!",
-      button: "تواصل معنا",
+      button: {
+        text: "تواصل معنا",
+        to: "/contact",
+      },
     },
   },
   aboutUs: {
@@ -157,7 +163,10 @@ const arabicContent = {
       },
     ],
     ourFacility: "منشأتنا",
-    link: "المزيد ←",
+    link: {
+      text: "المزيد ←",
+      to: "/our-facility",
+    },
   },
   projects: {
     title: "مشاريع",

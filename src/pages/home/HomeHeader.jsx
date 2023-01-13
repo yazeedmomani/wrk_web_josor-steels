@@ -17,7 +17,9 @@ function HomeHeader() {
   function handlePrimaryClick(e) {
     e.preventDefault();
 
-    navigate("/contact");
+    navigate(
+      contentContext[langContext.lang].home.header.primaryButton.to
+    );
   }
 
   return (
@@ -29,7 +31,7 @@ function HomeHeader() {
       <Button
         type="primary"
         onClick={handlePrimaryClick}>
-        {contentContext[langContext.lang].home.header.primaryButton}
+        {contentContext[langContext.lang].home.header.primaryButton.text}
       </Button>
       <Button
         type="secondary"

@@ -17,7 +17,7 @@ function HomeContact() {
   function handleClick(e) {
     e.preventDefault();
 
-    navigate("/contact");
+    navigate(contentContext[langContext.lang].home.contact.button.to);
   }
 
   return (
@@ -28,7 +28,7 @@ function HomeContact() {
       <Button
         type="primary"
         onClick={handleClick}>
-        {contentContext[langContext.lang].home.contact.button}
+        {contentContext[langContext.lang].home.contact.button.text}
       </Button>
     </section>
   );

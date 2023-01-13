@@ -68,9 +68,9 @@ function AboutUs() {
         ))}
       </Slider>
       <PrimaryLink
-        to="/our-facility"
+        to={aboutUsContext.link.to}
         styles={styles.link}>
-        {aboutUsContext.link}
+        {aboutUsContext.link.text}
       </PrimaryLink>
       {showModal && (
         <ImageModal
