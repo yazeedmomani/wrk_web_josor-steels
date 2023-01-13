@@ -16,7 +16,7 @@ function NavModal(props) {
 
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
-  const navContext = contentContext[langContext.lang].nav;
+  const navContext = contentContext[langContext.lang].nav.modal;
 
   function closeModal() {
     props.setShowModal(false);

@@ -12,49 +12,52 @@ const arabicContent = {
     ourFacilityTitle: "منشأتنا",
     contactTitle: "تواصل معنا",
   },
-  nav: [
-    {
-      isProjects: false,
-      text: "عنا",
-      to: "/about-us",
-    },
-    {
-      isProjects: true,
-      text: "مشاريع",
-      links: [
-        {
-          text: "هناجر",
-          to: "/projects/hangers",
-        },
-        {
-          text: "جسور",
-          to: "/projects/bridges",
-        },
-        {
-          text: "أنابيب",
-          to: "/projects/tubes",
-        },
-        {
-          text: "مظلات",
-          to: "/projects/canopies",
-        },
-        {
-          text: "أخرى",
-          to: "/projects/other",
-        },
-      ],
-    },
-    {
-      isProjects: false,
-      text: "منشأتنا",
-      to: "/our-facility",
-    },
-    {
-      isProjects: false,
-      text: "تواصل معنا",
-      to: "/contact",
-    },
-  ],
+  nav: {
+    homeLink: "/",
+    modal: [
+      {
+        isProjects: false,
+        text: "عنا",
+        to: "/about-us",
+      },
+      {
+        isProjects: true,
+        text: "مشاريع",
+        links: [
+          {
+            text: "هناجر",
+            to: "/projects/hangers",
+          },
+          {
+            text: "جسور",
+            to: "/projects/bridges",
+          },
+          {
+            text: "أنابيب",
+            to: "/projects/tubes",
+          },
+          {
+            text: "مظلات",
+            to: "/projects/canopies",
+          },
+          {
+            text: "أخرى",
+            to: "/projects/other",
+          },
+        ],
+      },
+      {
+        isProjects: false,
+        text: "منشأتنا",
+        to: "/our-facility",
+      },
+      {
+        isProjects: false,
+        text: "تواصل معنا",
+        to: "/contact",
+      },
+    ],
+  },
   home: {
     header: {
       title: "شركة الجسور",

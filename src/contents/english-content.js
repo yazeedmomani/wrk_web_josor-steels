@@ -12,49 +12,52 @@ const englishContent = {
     ourFacilityTitle: "Our Facility",
     contactTitle: "Contact",
   },
-  nav: [
-    {
-      isProjects: false,
-      text: "About us",
-      to: "/about-us",
-    },
-    {
-      isProjects: true,
-      text: "Projects",
-      links: [
-        {
-          text: "Hangers",
-          to: "/projects/hangers",
-        },
-        {
-          text: "Bridges",
-          to: "/projects/bridges",
-        },
-        {
-          text: "Tubes",
-          to: "/projects/tubes",
-        },
-        {
-          text: "Canopies",
-          to: "/projects/canopies",
-        },
-        {
-          text: "Other",
-          to: "/projects/other",
-        },
-      ],
-    },
-    {
-      isProjects: false,
-      text: "Our facility",
-      to: "/our-facility",
-    },
-    {
-      isProjects: false,
-      text: "Contact",
-      to: "/contact",
-    },
-  ],
+  nav: {
+    homeLink: "/",
+    modal: [
+      {
+        isProjects: false,
+        text: "About us",
+        to: "/about-us",
+      },
+      {
+        isProjects: true,
+        text: "Projects",
+        links: [
+          {
+            text: "Hangers",
+            to: "/projects/hangers",
+          },
+          {
+            text: "Bridges",
+            to: "/projects/bridges",
+          },
+          {
+            text: "Tubes",
+            to: "/projects/tubes",
+          },
+          {
+            text: "Canopies",
+            to: "/projects/canopies",
+          },
+          {
+            text: "Other",
+            to: "/projects/other",
+          },
+        ],
+      },
+      {
+        isProjects: false,
+        text: "Our facility",
+        to: "/our-facility",
+      },
+      {
+        isProjects: false,
+        text: "Contact",
+        to: "/contact",
+      },
+    ],
+  },
   home: {
     header: {
       title: "Josor Steels",
