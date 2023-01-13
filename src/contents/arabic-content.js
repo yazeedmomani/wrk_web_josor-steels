@@ -1,3 +1,5 @@
+import path from "./link-paths";
+
 const arabicContent = {
   helmet: {
     defaultTemplate: "%s | شركة الجسور",
@@ -13,12 +15,12 @@ const arabicContent = {
     contactTitle: "تواصل معنا",
   },
   nav: {
-    homeLink: "/",
+    homeLink: path.home,
     modal: [
       {
         isProjects: false,
         text: "عنا",
-        to: "/about-us",
+        to: path.aboutUs,
       },
       {
         isProjects: true,
@@ -26,35 +28,35 @@ const arabicContent = {
         links: [
           {
             text: "هناجر",
-            to: "/projects/hangers",
+            to: path.projects.children.hangers,
           },
           {
             text: "جسور",
-            to: "/projects/bridges",
+            to: path.projects.children.bridges,
           },
           {
             text: "أنابيب",
-            to: "/projects/tubes",
+            to: path.projects.children.tubes,
           },
           {
             text: "مظلات",
-            to: "/projects/canopies",
+            to: path.projects.children.canopies,
           },
           {
             text: "أخرى",
-            to: "/projects/other",
+            to: path.projects.children.other,
           },
         ],
       },
       {
         isProjects: false,
         text: "منشأتنا",
-        to: "/our-facility",
+        to: path.ourFacility,
       },
       {
         isProjects: false,
         text: "تواصل معنا",
-        to: "/contact",
+        to: path.contact,
       },
     ],
   },
@@ -64,7 +66,7 @@ const arabicContent = {
       subTitle: "أطلق العنان لخيالك مع فولاذنا الثابت القوي",
       primaryButton: {
         text: "تواصل معنا",
-        to: "/contact",
+        to: path.contact,
       },
       secondaryButton: "المزيد",
     },
@@ -75,31 +77,31 @@ const arabicContent = {
         {
           title: "هناجر",
           alt: "هنجر",
-          to: "/projects/hangers",
+          to: path.projects.children.hangers,
           image: "hangers",
         },
         {
           title: "جسور",
           alt: "جسر",
-          to: "/projects/bridges",
+          to: path.projects.children.bridges,
           image: "bridges",
         },
         {
           title: "أنابيب",
           alt: "أنبوب",
-          to: "/projects/tubes",
+          to: path.projects.children.tubes,
           image: "tubes",
         },
         {
           title: "مظلات",
           alt: "مظلة",
-          to: "/projects/canopies",
+          to: path.projects.children.canopies,
           image: "canopies",
         },
         {
           title: "أخرى",
           alt: "أخرى",
-          to: "/projects/other",
+          to: path.projects.children.other,
           image: "other",
         },
       ],
@@ -137,14 +139,14 @@ const arabicContent = {
         "هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً.",
       link: {
         text: "المزيد ←",
-        to: "/about-us",
+        to: path.aboutUs,
       },
     },
     contact: {
       title: "هل اقتنعت بنا؟ تواصل معنا!",
       button: {
         text: "تواصل معنا",
-        to: "/contact",
+        to: path.contact,
       },
     },
   },
@@ -165,7 +167,7 @@ const arabicContent = {
     ourFacility: "منشأتنا",
     link: {
       text: "المزيد ←",
-      to: "/our-facility",
+      to: path.ourFacility,
     },
   },
   projects: {
@@ -174,31 +176,31 @@ const arabicContent = {
       {
         title: "هناجر",
         alt: "هنجر",
-        to: "/projects/hangers",
+        to: path.projects.children.hangers,
         image: "hangers",
       },
       {
         title: "جسور",
         alt: "جسر",
-        to: "/projects/bridges",
+        to: path.projects.children.bridges,
         image: "bridges",
       },
       {
         title: "أنابيب",
         alt: "أنبوب",
-        to: "/projects/tubes",
+        to: path.projects.children.tubes,
         image: "tubes",
       },
       {
         title: "مظلات",
         alt: "مظلة",
-        to: "/projects/canopies",
+        to: path.projects.children.canopies,
         image: "canopies",
       },
       {
         title: "أخرى",
         alt: "أخرى",
-        to: "/projects/other",
+        to: path.projects.children.other,
         image: "other",
       },
     ],
@@ -445,7 +447,7 @@ const arabicContent = {
     followTitle: "تابعنا على",
   },
   footer: {
-    logoLink: "/",
+    logoLink: path.home,
     links: [
       {
         title: "صفحات",
@@ -453,19 +455,19 @@ const arabicContent = {
         links: [
           {
             text: "عنا",
-            to: "/about-us",
+            to: path.aboutUs,
           },
           {
             text: "مشاريع",
-            to: "/projects",
+            to: path.projects.path,
           },
           {
             text: "منشأتنا",
-            to: "/our-facility",
+            to: path.ourFacility,
           },
           {
             text: "تواصل معنا",
-            to: "/contact",
+            to: path.contact,
           },
         ],
       },
@@ -474,23 +476,23 @@ const arabicContent = {
         links: [
           {
             text: "هناجر",
-            to: "/projects/hangers",
+            to: path.projects.children.hangers,
           },
           {
             text: "جسور",
-            to: "/projects/bridges",
+            to: path.projects.children.bridges,
           },
           {
             text: "أنابيب",
-            to: "/projects/tubes",
+            to: path.projects.children.tubes,
           },
           {
             text: "مظلات",
-            to: "/projects/canopies",
+            to: path.projects.children.canopies,
           },
           {
             text: "أخرى",
-            to: "/projects/other",
+            to: path.projects.children.other,
           },
         ],
       },
@@ -504,7 +506,7 @@ const arabicContent = {
       "ربما تمت إزالة الصفحة التي تبحث عنها أو تم تغيير اسمها أو أنها غير متاحة مؤقتًا.",
     link: {
       text: "العوده للصفحة الرئيسية",
-      to: "/",
+      to: path.home,
     },
   },
   components: {
@@ -524,7 +526,7 @@ const arabicContent = {
         {
           isLink: true,
           text: "الرئيسية",
-          to: "/",
+          to: path.home,
         },
         {
           isLink: false,
@@ -536,7 +538,7 @@ const arabicContent = {
           {
             isLink: true,
             text: "الرئيسية",
-            to: "/",
+            to: path.home,
           },
           {
             isLink: false,
@@ -548,12 +550,12 @@ const arabicContent = {
             {
               isLink: true,
               text: "الرئيسية",
-              to: "/",
+              to: path.home,
             },
             {
               isLink: true,
               text: "مشاريع",
-              to: "/projects",
+              to: path.projects.path,
             },
             {
               isLink: false,
@@ -564,12 +566,12 @@ const arabicContent = {
             {
               isLink: true,
               text: "الرئيسية",
-              to: "/",
+              to: path.home,
             },
             {
               isLink: true,
               text: "مشاريع",
-              to: "/projects",
+              to: path.projects.path,
             },
             {
               isLink: false,
@@ -580,12 +582,12 @@ const arabicContent = {
             {
               isLink: true,
               text: "الرئيسية",
-              to: "/",
+              to: path.home,
             },
             {
               isLink: true,
               text: "مشاريع",
-              to: "/projects",
+              to: path.projects.path,
             },
             {
               isLink: false,
@@ -596,12 +598,12 @@ const arabicContent = {
             {
               isLink: true,
               text: "الرئيسية",
-              to: "/",
+              to: path.home,
             },
             {
               isLink: true,
               text: "مشاريع",
-              to: "/projects",
+              to: path.projects.path,
             },
             {
               isLink: false,
@@ -612,12 +614,12 @@ const arabicContent = {
             {
               isLink: true,
               text: "الرئيسية",
-              to: "/",
+              to: path.home,
             },
             {
               isLink: true,
               text: "مشاريع",
-              to: "/projects",
+              to: path.projects.path,
             },
             {
               isLink: false,
@@ -630,7 +632,7 @@ const arabicContent = {
         {
           isLink: true,
           text: "الرئيسية",
-          to: "/",
+          to: path.home,
         },
         {
           isLink: false,
@@ -641,7 +643,7 @@ const arabicContent = {
         {
           isLink: true,
           text: "الرئيسية",
-          to: "/",
+          to: path.home,
         },
         {
           isLink: false,
