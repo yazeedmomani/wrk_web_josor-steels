@@ -403,6 +403,15 @@ const englishContent = {
       },
     },
   },
+  ourFacility: {
+    title: "Our facility",
+  },
+  contact: {
+    title: "Contact",
+    infoTitle: "Info",
+    address: "Somewhere street, Apt. 21, Amman, Jordan, 11953",
+    followTitle: "Follow us at",
+  },
   footer: {
     links: [
       {

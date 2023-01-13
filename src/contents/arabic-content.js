@@ -403,6 +403,15 @@ const arabicContent = {
       },
     },
   },
+  ourFacility: {
+    title: "منشأتنا",
+  },
+  contact: {
+    title: "تواصل معنا",
+    infoTitle: "معلومات",
+    address: "21، شارع مكان، عمان، الأردن 11953",
+    followTitle: "تابعنا على",
+  },
   footer: {
     links: [
       {

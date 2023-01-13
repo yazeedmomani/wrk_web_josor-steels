@@ -18,6 +18,7 @@ function OurFacility() {
 
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
+  const ourFacilityContext = contentContext[langContext.lang].ourFacility;
   const imagesContext = images.ourFacility;
   const pathNavContext =
     contentContext[langContext.lang].components.PathNav.ourFacility;
@@ -36,7 +37,7 @@ function OurFacility() {
           items={pathNavContext}
           styles={styles.path}
         />
-        <h1 className="h2">Our facility</h1>
+        <h1 className="h2">{ourFacilityContext.title}</h1>
         <PaginatedItems
           itemsPerPage={5}
           controlsClassName={styles.controls}
