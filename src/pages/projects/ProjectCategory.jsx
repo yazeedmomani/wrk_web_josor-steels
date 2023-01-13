@@ -23,7 +23,7 @@ function ProjectCategory(props) {
       <div className={styles.center}>
         <h1 className="h2">{categoryContext.title}</h1>
         <PaginatedItems
-          itemsPerPage={5}
+          itemsPerPage={3}
           controlsClassName={styles.controls}
           itemClassName={styles.item}>
           {categoryContext.projectCards.map((cur, i) => (
