@@ -480,6 +480,13 @@ const englishContent = {
     ],
     copyright: "Josor Steels © 2023",
   },
+  notFound: {
+    title: "404",
+    ops: "oops! Nothing was found",
+    description:
+      "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+    link: "Return to homepage",
+  },
   components: {
     ContactInfo: {
       phone: "+962791621064",

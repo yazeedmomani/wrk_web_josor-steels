@@ -1,4 +1,7 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import ContentContext from "../contexts/content-context";
+import LangContext from "../contexts/lang-context";
 
 import RootHelmet from "../helmets/RootHelmet";
 import ContactIcon from "../svg/ContactIcon";
@@ -6,17 +9,20 @@ import ContactIcon from "../svg/ContactIcon";
 import styles from "./NotFound.module.css";
 
 function NotFound() {
+  const langContext = useContext(LangContext);
+  const contentContext = useContext(ContentContext);
+  const notFoundContext = contentContext[langContext.lang].notFound;
+
   return (
     <>
       <RootHelmet />
       <main className={styles.main}>
         <div className={styles.content}>
-          <h1 className="h1">404</h1>
-          <p className={styles.ops}>Oops! Nothing was found</p>
+          <h1 className="h1">{notFoundContext.title}</h1>
+          <p className={styles.ops}>{notFoundContext.ops}</p>
           <p className={styles.description}>
-            The page you are looking for might have been removed, had its name
-            changed, or is temporary unavailable.&nbsp;
-            <Link to="/">Return to hompage</Link>
+            {notFoundContext.description}&nbsp;
+            <Link to="/">{notFoundContext.link}</Link>
           </p>
           <div className={styles.container}>
             <ContactIcon
