@@ -2,6 +2,16 @@ const images = {
   home: {
     aboutUs: require("../images/home/aboutUs.jpeg"),
   },
+  aboutUs: {
+    whoWeAre: require("../images/project-categories/tubes.jpeg"),
+    ourMission: require("../images/project-categories/hangers.jpeg"),
+    ourFacility: [
+      require("../images/project-categories/canopies.jpeg"),
+      require("../images/project-categories/bridges.jpeg"),
+      require("../images/project-categories/tubes.jpeg"),
+      require("../images/project-categories/other.jpeg"),
+    ],
+  },
   projectCategories: {
     hangers: require("../images/project-categories/hangers.jpeg"),
     bridges: require("../images/project-categories/bridges.jpeg"),

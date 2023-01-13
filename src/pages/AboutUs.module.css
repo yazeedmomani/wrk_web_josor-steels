@@ -5,3 +5,32 @@
 .center {
   margin: 0 var(--content-horizontal-margin);
 }
+
+.center h1 {
+  margin: 3.6rem 0 14.4rem;
+}
+
+.small-margin {
+  margin-bottom: 3.6rem;
+}
+
+.medium-margin {
+  margin-bottom: 7.2rem;
+}
+
+.medium-large-margin {
+  margin-bottom: 9.6rem;
+}
+
+.large-margin {
+  margin-bottom: 14.4rem;
+}
+
+.container {
+  padding: 0 var(--content-horizontal-margin) 4.8rem;
+}
+
+.link {
+  display: inline-block;
+  margin: 9.6rem var(--content-horizontal-margin) 14.4rem;
+}
