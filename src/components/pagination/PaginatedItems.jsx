@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import ReactPaginate from "react-paginate";
 
 import PaginationArrow from "./PaginationArrow";
 
 import styles from "./PaginatedItems.module.css";
+
+import LangContext from "../../contexts/lang-context";
 
 function PaginatedItems({
   itemsPerPage,
@@ -11,6 +13,8 @@ function PaginatedItems({
   controlsClassName,
   itemClassName,
 }) {
+  const langContext = useContext(LangContext);
+
   // Here we use item offsets; we could also use page offsets
   // following the API or data you're working with.
   const [itemOffset, setItemOffset] = useState(0);
@@ -45,8 +49,12 @@ function PaginatedItems({
       <ReactPaginate
         className={`${styles.container} ${controlsClassName}`}
         breakLabel="..."
-        nextLabel={<PaginationArrow isLeft={false} />}
-        previousLabel={<PaginationArrow isLeft={true} />}
+        nextLabel={
+          <PaginationArrow isLeft={langContext.dir === "ltr" ? false : true} />
+        }
+        previousLabel={
+          <PaginationArrow isLeft={langContext.dir === "ltr" ? true : false} />
+        }
         onPageChange={handlePageClick}
         pageRangeDisplayed={5}
         pageCount={pageCount}
