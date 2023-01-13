@@ -1,24 +1,20 @@
-import { useState } from "react";
-
-import ImageModal from "../modals/ImageModal";
-
 import styles from "./Image.module.css";
 
 function Image(props) {
-  const [showModal, setShowModal] = useState(false);
-
   return (
     <div
       className={`${styles.container} ${props.clickable && styles.clickable} ${
         props.styles
       }`}
-      onClick={props.clickable && setShowModal.bind(null, true)}>
+      onClick={props.onClick}>
       <img
         src={props.src}
         alt={props.alt}
         className={styles.img}
       />
-      <div className={styles.gradient}></div>
+      <div
+        className={styles.gradient}
+        data-src={props.src}></div>
       {props.title && (
         <span
           className="h3"
@@ -26,12 +22,6 @@ function Image(props) {
           aria-level="3">
           {props.title}
         </span>
-      )}
-      {showModal && (
-        <ImageModal
-          src={props.src}
-          isMulti={false}
-        />
       )}
     </div>
   );

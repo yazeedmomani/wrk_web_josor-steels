@@ -1,9 +1,10 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 import DynamicHelmet from "../helmets/DynamicHelmet";
 import PathNav from "../components/general/PathNav";
 import PaginatedItems from "../components/pagination/PaginatedItems";
 import Image from "../components/general/Image";
+import ImageModal from "../components/modals/ImageModal";
 
 import styles from "./OurFacility.module.css";
 
@@ -12,11 +13,20 @@ import ContentContext from "../contexts/content-context";
 import images from "../contents/images";
 
 function OurFacility() {
+  const [showModal, setShowModal] = useState(false);
+  const [modalImage, setModalImage] = useState();
+
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
   const imagesContext = images.ourFacility;
   const pathNavContext =
     contentContext[langContext.lang].components.PathNav.ourFacility;
+
+  function handleClick(e) {
+    setModalImage(e.target.dataset.src);
+
+    setShowModal(true);
+  }
 
   return (
     <>
@@ -35,9 +45,17 @@ function OurFacility() {
             <Image
               src={cur}
               clickable={true}
+              onClick={handleClick}
             />
           ))}
         </PaginatedItems>
+        {showModal && (
+          <ImageModal
+            src={modalImage}
+            isMulti={false}
+            setShowModal={setShowModal}
+          />
+        )}
       </div>
     </>
   );
