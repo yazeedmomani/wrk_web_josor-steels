@@ -13,9 +13,8 @@ import images from "../../contents/images";
 function ProjectCategory(props) {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
-  //TODO add langcontext bellow
   const categoryContext =
-    contentContext["en"].projects.categoryPages[props.category];
+    contentContext[langContext.lang].projects.categoryPages[props.category];
   const imagesContext = images.projectImages[props.category];
 
   return (

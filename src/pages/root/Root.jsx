@@ -8,8 +8,8 @@ import ScrollToTop from "../../components/fixes/ScrollToTop";
 function Root() {
   return (
     <>
-      <ScrollToTop />
       <RootHelmet />
+      <ScrollToTop />
       <Nav />
       <main>
         <Outlet />

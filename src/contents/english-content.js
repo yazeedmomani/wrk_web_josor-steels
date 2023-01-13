@@ -136,7 +136,6 @@ const englishContent = {
       button: "Contact us",
     },
   },
-  // TODO add to arabic content Start here
   projects: {
     categoryCards: [
       {
@@ -403,7 +402,6 @@ const englishContent = {
       },
     },
   },
-  // End here
   footer: {
     links: [
       {

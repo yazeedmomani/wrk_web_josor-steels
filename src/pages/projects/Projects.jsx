@@ -13,8 +13,7 @@ import images from "../../contents/images";
 function Projects() {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
-  //TODO add langContext below
-  const projectsContext = contentContext["en"].projects.categoryCards;
+  const projectsContext = contentContext[langContext.lang].projects.categoryCards;
   const projectImages = images.projectCategories;
 
   return (
