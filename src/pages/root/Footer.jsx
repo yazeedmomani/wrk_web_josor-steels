@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import Logo from "../../svg/Logo";
@@ -14,6 +14,10 @@ import ContentContext from "../../contexts/content-context";
 function Footer() {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [langContext.lang]);
 
   return (
     <footer className={styles.footer}>
