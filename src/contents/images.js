@@ -3,8 +3,10 @@ const images = {
     aboutUs: require("../images/home/aboutUs.jpeg"),
   },
   aboutUs: {
-    whoWeAre: require("../images/project-categories/tubes.jpeg"),
-    ourMission: require("../images/project-categories/hangers.jpeg"),
+    articles: [
+      require("../images/project-categories/tubes.jpeg"),
+      require("../images/project-categories/hangers.jpeg"),
+    ],
     ourFacility: [
       require("../images/project-categories/canopies.jpeg"),
       require("../images/project-categories/bridges.jpeg"),

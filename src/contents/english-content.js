@@ -136,6 +136,23 @@ const englishContent = {
       button: "Contact us",
     },
   },
+  aboutUs: {
+    title: "About us",
+    articles: [
+      {
+        title: "Who we are",
+        paragraph:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      },
+      {
+        title: "Our mission",
+        paragraph:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      },
+    ],
+    ourFacility: "Our facility",
+    link: "More images →",
+  },
   projects: {
     title: "Projects",
     categoryCards: [

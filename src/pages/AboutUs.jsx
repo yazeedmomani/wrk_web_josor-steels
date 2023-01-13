@@ -19,6 +19,7 @@ function AboutUs() {
 
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
+  const aboutUsContext = contentContext[langContext.lang].aboutUs;
   const imageContext = images.aboutUs;
   const pathNavContext =
     contentContext[langContext.lang].components.PathNav.aboutUs;
@@ -37,32 +38,22 @@ function AboutUs() {
           items={pathNavContext}
           styles={styles.path}
         />
-        <h1 className="h2">About us</h1>
-        <h2 className={`h3 ${styles["small-margin"]}`}>Who we are</h2>
-        <p className={styles["medium-margin"]}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam
-        </p>
-        <Image
-          src={imageContext.whoWeAre}
-          clickable={true}
-          onClick={handleClick}
-          styles={styles["large-margin"]}
-        />
-        <h2 className={`h3 ${styles["small-margin"]}`}>Our mission</h2>
-        <p className={styles["medium-margin"]}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam
-        </p>
-        <Image
-          src={imageContext.ourMission}
-          clickable={true}
-          onClick={handleClick}
-          styles={styles["large-margin"]}
-        />
-        <h2 className={`h3 ${styles["medium-margin"]}`}>Our facility</h2>
+        <h1 className="h2">{aboutUsContext.title}</h1>
+        {aboutUsContext.articles.map((cur, i) => (
+          <>
+            <h2 className={`h3 ${styles["small-margin"]}`}>{cur.title}</h2>
+            <p className={styles["medium-margin"]}>{cur.paragraph}</p>
+            <Image
+              src={imageContext.articles[i]}
+              clickable={true}
+              onClick={handleClick}
+              styles={styles["large-margin"]}
+            />
+          </>
+        ))}
+        <h2 className={`h3 ${styles["medium-margin"]}`}>
+          {aboutUsContext.ourFacility}
+        </h2>
       </div>
       <Slider
         autoPlay={true}
@@ -79,7 +70,7 @@ function AboutUs() {
       <PrimaryLink
         to="/our-facility"
         styles={styles.link}>
-        More images &rarr;
+        {aboutUsContext.link}
       </PrimaryLink>
       {showModal && (
         <ImageModal
