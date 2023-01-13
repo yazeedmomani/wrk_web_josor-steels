@@ -1,9 +1,10 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 import DynamicHelmet from "../helmets/DynamicHelmet";
 import PathNav from "../components/general/PathNav";
 import Image from "../components/general/Image";
 import Slider from "../components/slider/Slider";
+import ImageModal from "../components/modals/ImageModal";
 
 import styles from "./AboutUs.module.css";
 
@@ -13,11 +14,20 @@ import images from "../contents/images";
 import PrimaryLink from "../components/buttons/PrimaryLink";
 
 function AboutUs() {
+  const [showModal, setShowModal] = useState(false);
+  const [modalImage, setModalImage] = useState();
+
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
   const imageContext = images.aboutUs;
   const pathNavContext =
     contentContext[langContext.lang].components.PathNav.aboutUs;
+
+  function handleClick(e) {
+    setModalImage(e.target.dataset.src);
+
+    setShowModal(true);
+  }
 
   return (
     <>
@@ -36,7 +46,8 @@ function AboutUs() {
         </p>
         <Image
           src={imageContext.whoWeAre}
-          clickable={false}
+          clickable={true}
+          onClick={handleClick}
           styles={styles["large-margin"]}
         />
         <h2 className={`h3 ${styles["small-margin"]}`}>Our mission</h2>
@@ -47,7 +58,8 @@ function AboutUs() {
         </p>
         <Image
           src={imageContext.ourMission}
-          clickable={false}
+          clickable={true}
+          onClick={handleClick}
           styles={styles["large-margin"]}
         />
         <h2 className={`h3 ${styles["medium-margin"]}`}>Our facility</h2>
@@ -59,7 +71,8 @@ function AboutUs() {
         {imageContext.ourFacility.map((cur) => (
           <Image
             src={cur}
-            clickable={false}
+            clickable={true}
+            onClick={handleClick}
           />
         ))}
       </Slider>
@@ -68,6 +81,13 @@ function AboutUs() {
         styles={styles.link}>
         More images &rarr;
       </PrimaryLink>
+      {showModal && (
+        <ImageModal
+          src={modalImage}
+          isMulti={false}
+          setShowModal={setShowModal}
+        />
+      )}
     </>
   );
 }
