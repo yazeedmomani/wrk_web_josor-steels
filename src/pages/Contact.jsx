@@ -2,6 +2,9 @@ import { useContext } from "react";
 
 import DynamicHelmet from "../helmets/DynamicHelmet";
 import PathNav from "../components/general/PathNav";
+import ContactInfo from "../components/general/ContactInfo";
+import MyMap from "../components/general/MyMap";
+import ContactIcon from "../svg/ContactIcon";
 
 import styles from "./Contact.module.css";
 
@@ -22,6 +25,32 @@ function Contact() {
           items={pathNavContext}
           styles={styles.path}
         />
+        <h1 className="h2">Contact</h1>
+        <h2 className={`h3 ${styles.info}`}>Info</h2>
+        <ContactInfo />
+        <p className={styles.address}>
+          Somewhere street, Apt. 21, Amman, Jordan, 11953
+        </p>
+        <a href="https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D8%AC%D8%B3%D9%88%D8%B1+%D9%84%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84+%D8%A7%D9%84%D9%85%D8%B9%D8%AF%D9%86%D9%8A%D8%A9%E2%80%AD/@32.1159028,36.1329166,17z/data=!4m12!1m6!3m5!1s0x151b71bd3efcbe3f:0x4e42d0bf491b8a09!2z2LTYsdmD2Kkg2KfZhNis2LPZiNixINmE2YTYo9i52YXYp9mEINin2YTZhdi52K_ZhtmK2Kk!8m2!3d32.1158983!4d36.1351053!3m4!1s0x151b71bd3efcbe3f:0x4e42d0bf491b8a09!8m2!3d32.1158983!4d36.1351053">
+          <MyMap isLocked={true} />
+        </a>
+        <h2 className={`h3 ${styles.follow}`}>Follow us at</h2>
+        <div className={styles["icons-container"]}>
+          <ContactIcon
+            key="linkedIn"
+            styles={styles.icon}
+            type="linkedIn"
+            isDark={false}
+            isAnimated={true}
+          />
+          <ContactIcon
+            key="facebook"
+            styles={styles.icon}
+            type="facebook"
+            isDark={false}
+            isAnimated={true}
+          />
+        </div>
       </div>
     </>
   );
