@@ -1,10 +1,11 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 
 import Logo from "../../svg/Logo";
 import LangChanger from "../../components/buttons/LangChanger";
 import ContactIcon from "../../svg/ContactIcon";
 import ContactInfo from "../../components/general/ContactInfo";
+import ScrollToTop from "../../components/fixes/ScrollToTop";
 
 import styles from "./Footer.module.css";
 
@@ -15,12 +16,9 @@ function Footer() {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [langContext.lang]);
-
   return (
     <footer className={styles.footer}>
+      <ScrollToTop dependency={langContext.lang} />
       <div className={styles.center}>
         <Link to="/">
           <Logo isDark={true} />
