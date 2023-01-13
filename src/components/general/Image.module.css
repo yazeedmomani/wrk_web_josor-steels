@@ -1,9 +1,13 @@
 .container {
   position: relative;
   border-radius: var(--border-radius);
-  width: var(--content-space-width) ;
+  width: var(--content-space-width);
   overflow: hidden;
   box-shadow: var(--box-shadow);
+}
+
+.clickable {
+  cursor: pointer;
 }
 
 .img {
@@ -30,7 +34,7 @@
   padding: 0.6rem 1.2rem;
 }
 
-html[lang=ar] .container span{
+html[lang="ar"] .container span {
   right: auto;
   left: 0;
 }

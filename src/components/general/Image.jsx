@@ -9,7 +9,9 @@ function Image(props) {
 
   return (
     <div
-      className={`${styles.container} ${props.styles}`}
+      className={`${styles.container} ${props.clickable && styles.clickable} ${
+        props.styles
+      }`}
       onClick={props.clickable && setShowModal.bind(null, true)}>
       <img
         src={props.src}
