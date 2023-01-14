@@ -10,7 +10,10 @@
 .content h1 {
   color: var(--color-primary);
   margin-bottom: 2.4rem;
-  font-family: var(--font-family-en-serif) !important;
+}
+
+html[lang=ar] .content h1{
+  font-size: var(--font-size-h0);
 }
 
 .ops {
