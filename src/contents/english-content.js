@@ -1,8 +1,11 @@
 import path from "./link-paths";
+import common from "./common-content";
+
+const titles = common.en.titles;
 
 const englishContent = {
   helmet: {
-    defaultTemplate: "%s | Josor Steels",
+    defaultTemplate: `%s | ${titles.company}`,
     homeTitle: "Home",
     aboutUsTitle: "About us",
     projectsTitle: "Projects",
@@ -100,7 +103,7 @@ const englishContent = {
         },
         {
           title: "Other",
-          alt: "other",
+          alt: "Other",
           to: path.projects.children.other,
           image: "other",
         },
