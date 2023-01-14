@@ -6,59 +6,59 @@ const titles = common.ar.titles;
 const arabicContent = {
   helmet: {
     defaultTemplate: `%s | ${titles.company}`,
-    homeTitle: "الرئيسية",
-    aboutUsTitle: "عنا",
-    projectsTitle: "مشاريع",
-    hangersTitle: "هناجر",
-    bridgesTitle: "جسور",
-    tubesTitle: "أنابيب",
-    canopiesTitle: "مظلات",
-    otherTitle: "أخرى",
-    ourFacilityTitle: "منشأتنا",
-    contactTitle: "تواصل معنا",
+    homeTitle: titles.home,
+    aboutUsTitle: titles.aboutUs,
+    projectsTitle: titles.projects.title,
+    hangersTitle: titles.projects.children.hangers,
+    bridgesTitle: titles.projects.children.bridges,
+    tubesTitle: titles.projects.children.tubes,
+    canopiesTitle: titles.projects.children.canopies,
+    otherTitle: titles.projects.children.other,
+    ourFacilityTitle: titles.ourFacility,
+    contactTitle: titles.contact,
   },
   nav: {
     homeLink: path.home,
     modal: [
       {
         isProjects: false,
-        text: "عنا",
+        text: titles.aboutUs,
         to: path.aboutUs,
       },
       {
         isProjects: true,
-        text: "مشاريع",
+        text: titles.projects.title,
         links: [
           {
-            text: "هناجر",
+            text: titles.projects.children.hangers,
             to: path.projects.children.hangers,
           },
           {
-            text: "جسور",
+            text: titles.projects.children.bridges,
             to: path.projects.children.bridges,
           },
           {
-            text: "أنابيب",
+            text: titles.projects.children.tubes,
             to: path.projects.children.tubes,
           },
           {
-            text: "مظلات",
+            text: titles.projects.children.canopies,
             to: path.projects.children.canopies,
           },
           {
-            text: "أخرى",
+            text: titles.projects.children.other,
             to: path.projects.children.other,
           },
         ],
       },
       {
         isProjects: false,
-        text: "منشأتنا",
+        text: titles.ourFacility,
         to: path.ourFacility,
       },
       {
         isProjects: false,
-        text: "تواصل معنا",
+        text: titles.contact,
         to: path.contact,
       },
     ],
@@ -68,7 +68,7 @@ const arabicContent = {
       title: titles.company,
       subTitle: "أطلق العنان لخيالك مع فولاذنا الثابت القوي",
       primaryButton: {
-        text: "تواصل معنا",
+        text: titles.contact,
         to: path.contact,
       },
       secondaryButton: "المزيد",
@@ -78,31 +78,31 @@ const arabicContent = {
       title: "نتولى مجموعة متنوعة من المشاريع",
       projectCat: [
         {
-          title: "هناجر",
+          title: titles.projects.children.hangers,
           alt: "هنجر",
           to: path.projects.children.hangers,
           image: "hangers",
         },
         {
-          title: "جسور",
+          title: titles.projects.children.bridges,
           alt: "جسر",
           to: path.projects.children.bridges,
           image: "bridges",
         },
         {
-          title: "أنابيب",
+          title: titles.projects.children.tubes,
           alt: "أنبوب",
           to: path.projects.children.tubes,
           image: "tubes",
         },
         {
-          title: "مظلات",
+          title: titles.projects.children.canopies,
           alt: "مظلة",
           to: path.projects.children.canopies,
           image: "canopies",
         },
         {
-          title: "أخرى",
+          title: titles.projects.children.other,
           alt: "أخرى",
           to: path.projects.children.other,
           image: "other",
@@ -148,13 +148,13 @@ const arabicContent = {
     contact: {
       title: "هل اقتنعت بنا؟ تواصل معنا!",
       button: {
-        text: "تواصل معنا",
+        text: titles.contact,
         to: path.contact,
       },
     },
   },
   aboutUs: {
-    title: "عنا",
+    title: titles.aboutUs,
     articles: [
       {
         title: "من نحن",
@@ -167,41 +167,41 @@ const arabicContent = {
           "هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً.",
       },
     ],
-    ourFacility: "منشأتنا",
+    ourFacility: titles.ourFacility,
     link: {
       text: "المزيد ←",
       to: path.ourFacility,
     },
   },
   projects: {
-    title: "مشاريع",
+    title: titles.projects.title,
     categoryCards: [
       {
-        title: "هناجر",
+        title: titles.projects.children.hangers,
         alt: "هنجر",
         to: path.projects.children.hangers,
         image: "hangers",
       },
       {
-        title: "جسور",
+        title: titles.projects.children.bridges,
         alt: "جسر",
         to: path.projects.children.bridges,
         image: "bridges",
       },
       {
-        title: "أنابيب",
+        title: titles.projects.children.tubes,
         alt: "أنبوب",
         to: path.projects.children.tubes,
         image: "tubes",
       },
       {
-        title: "مظلات",
+        title: titles.projects.children.canopies,
         alt: "مظلة",
         to: path.projects.children.canopies,
         image: "canopies",
       },
       {
-        title: "أخرى",
+        title: titles.projects.children.other,
         alt: "أخرى",
         to: path.projects.children.other,
         image: "other",
@@ -209,7 +209,7 @@ const arabicContent = {
     ],
     categoryPages: {
       hangers: {
-        title: "هناجر",
+        title: titles.projects.children.hangers,
         projectCards: [
           {
             title: "مشروع 01",
@@ -264,7 +264,7 @@ const arabicContent = {
         ],
       },
       bridges: {
-        title: "جسور",
+        title: titles.projects.children.bridges,
         projectCards: [
           {
             title: "مشروع 01",
@@ -309,7 +309,7 @@ const arabicContent = {
         ],
       },
       tubes: {
-        title: "أنابيب",
+        title: titles.projects.children.tubes,
         projectCards: [
           {
             title: "مشروع 01",
@@ -339,7 +339,7 @@ const arabicContent = {
         ],
       },
       canopies: {
-        title: "مظلات",
+        title: titles.projects.children.canopies,
         projectCards: [
           {
             title: "مشروع 01",
@@ -354,7 +354,7 @@ const arabicContent = {
         ],
       },
       other: {
-        title: "أخرى",
+        title: titles.projects.children.other,
         projectCards: [
           {
             title: "مشروع 01",
@@ -441,10 +441,10 @@ const arabicContent = {
     },
   },
   ourFacility: {
-    title: "منشأتنا",
+    title: titles.ourFacility,
   },
   contact: {
-    title: "تواصل معنا",
+    title: titles.contact,
     infoTitle: "معلومات",
     address: "21، شارع مكان، عمان، الأردن 11953",
     followTitle: "تابعنا على",
@@ -454,47 +454,52 @@ const arabicContent = {
     links: [
       {
         title: "صفحات",
-        links: ["عنا", "مشاريع", "منشأتنا", "تواصل معنا"],
+        links: [
+          titles.aboutUs,
+          titles.projects.title,
+          titles.ourFacility,
+          titles.contact,
+        ],
         links: [
           {
-            text: "عنا",
+            text: titles.aboutUs,
             to: path.aboutUs,
           },
           {
-            text: "مشاريع",
+            text: titles.projects.title,
             to: path.projects.path,
           },
           {
-            text: "منشأتنا",
+            text: titles.ourFacility,
             to: path.ourFacility,
           },
           {
-            text: "تواصل معنا",
+            text: titles.contact,
             to: path.contact,
           },
         ],
       },
       {
-        title: "مشاريع",
+        title: titles.projects.title,
         links: [
           {
-            text: "هناجر",
+            text: titles.projects.children.hangers,
             to: path.projects.children.hangers,
           },
           {
-            text: "جسور",
+            text: titles.projects.children.bridges,
             to: path.projects.children.bridges,
           },
           {
-            text: "أنابيب",
+            text: titles.projects.children.tubes,
             to: path.projects.children.tubes,
           },
           {
-            text: "مظلات",
+            text: titles.projects.children.canopies,
             to: path.projects.children.canopies,
           },
           {
-            text: "أخرى",
+            text: titles.projects.children.other,
             to: path.projects.children.other,
           },
         ],
@@ -528,36 +533,36 @@ const arabicContent = {
       aboutUs: [
         {
           isLink: true,
-          text: "الرئيسية",
+          text: titles.home,
           to: path.home,
         },
         {
           isLink: false,
-          text: "عنا",
+          text: titles.aboutUs,
         },
       ],
       projects: {
         categoryPage: [
           {
             isLink: true,
-            text: "الرئيسية",
+            text: titles.home,
             to: path.home,
           },
           {
             isLink: false,
-            text: "مشاريع",
+            text: titles.projects.title,
           },
         ],
         projectPage: {
           hangers: [
             {
               isLink: true,
-              text: "الرئيسية",
+              text: titles.home,
               to: path.home,
             },
             {
               isLink: true,
-              text: "مشاريع",
+              text: titles.projects.title,
               to: path.projects.path,
             },
             {
@@ -568,65 +573,65 @@ const arabicContent = {
           bridges: [
             {
               isLink: true,
-              text: "الرئيسية",
+              text: titles.home,
               to: path.home,
             },
             {
               isLink: true,
-              text: "مشاريع",
+              text: titles.projects.title,
               to: path.projects.path,
             },
             {
               isLink: false,
-              text: "جسور",
+              text: titles.projects.children.bridges,
             },
           ],
           tubes: [
             {
               isLink: true,
-              text: "الرئيسية",
+              text: titles.home,
               to: path.home,
             },
             {
               isLink: true,
-              text: "مشاريع",
+              text: titles.projects.title,
               to: path.projects.path,
             },
             {
               isLink: false,
-              text: "أنابيب",
+              text: titles.projects.children.tubes,
             },
           ],
           canopies: [
             {
               isLink: true,
-              text: "الرئيسية",
+              text: titles.home,
               to: path.home,
             },
             {
               isLink: true,
-              text: "مشاريع",
+              text: titles.projects.title,
               to: path.projects.path,
             },
             {
               isLink: false,
-              text: "مظلات",
+              text: titles.projects.children.canopies,
             },
           ],
           other: [
             {
               isLink: true,
-              text: "الرئيسية",
+              text: titles.home,
               to: path.home,
             },
             {
               isLink: true,
-              text: "مشاريع",
+              text: titles.projects.title,
               to: path.projects.path,
             },
             {
               isLink: false,
-              text: "أخرى",
+              text: titles.projects.children.other,
             },
           ],
         },
@@ -634,23 +639,23 @@ const arabicContent = {
       ourFacility: [
         {
           isLink: true,
-          text: "الرئيسية",
+          text: titles.home,
           to: path.home,
         },
         {
           isLink: false,
-          text: "منشأتنا",
+          text: titles.ourFacility,
         },
       ],
       contact: [
         {
           isLink: true,
-          text: "الرئيسية",
+          text: titles.home,
           to: path.home,
         },
         {
           isLink: false,
-          text: "تواصل معنا",
+          text: titles.contact,
         },
       ],
     },
