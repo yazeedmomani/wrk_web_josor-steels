@@ -6,59 +6,59 @@ const titles = common.en.titles;
 const englishContent = {
   helmet: {
     defaultTemplate: `%s | ${titles.company}`,
-    homeTitle: "Home",
-    aboutUsTitle: "About us",
-    projectsTitle: "Projects",
-    hangersTitle: "Hangers",
-    bridgesTitle: "Bridges",
-    tubesTitle: "Tubes",
-    canopiesTitle: "Canopies",
-    otherTitle: "Other",
+    homeTitle: titles.home,
+    aboutUsTitle: titles.aboutUs,
+    projectsTitle: titles.projects.title,
+    hangersTitle: titles.projects.children.hangers,
+    bridgesTitle: titles.projects.children.bridges,
+    tubesTitle: titles.projects.children.tubes,
+    canopiesTitle: titles.projects.children.canopies,
+    otherTitle: titles.projects.children.other,
     ourFacilityTitle: "Our Facility",
-    contactTitle: "Contact",
+    contactTitle: titles.contact,
   },
   nav: {
     homeLink: path.home,
     modal: [
       {
         isProjects: false,
-        text: "About us",
+        text: titles.aboutUs,
         to: path.aboutUs,
       },
       {
         isProjects: true,
-        text: "Projects",
+        text: titles.projects.title,
         links: [
           {
-            text: "Hangers",
+            text: titles.projects.children.hangers,
             to: path.projects.children.hangers,
           },
           {
-            text: "Bridges",
+            text: titles.projects.children.bridges,
             to: path.projects.children.bridges,
           },
           {
-            text: "Tubes",
+            text: titles.projects.children.tubes,
             to: path.projects.children.tubes,
           },
           {
-            text: "Canopies",
+            text: titles.projects.children.canopies,
             to: path.projects.children.canopies,
           },
           {
-            text: "Other",
+            text: titles.projects.children.other,
             to: path.projects.children.other,
           },
         ],
       },
       {
         isProjects: false,
-        text: "Our facility",
+        text: titles.ourFacility,
         to: path.ourFacility,
       },
       {
         isProjects: false,
-        text: "Contact",
+        text: titles.contact,
         to: path.contact,
       },
     ],
@@ -78,31 +78,31 @@ const englishContent = {
       title: "We take on a wide variety of projects",
       projectCat: [
         {
-          title: "Hangers",
+          title: titles.projects.children.hangers,
           alt: "Hanger",
           to: path.projects.children.hangers,
           image: "hangers",
         },
         {
-          title: "Bridges",
+          title: titles.projects.children.bridges,
           alt: "Bridge",
           to: path.projects.children.bridges,
           image: "bridges",
         },
         {
-          title: "Tubes",
+          title: titles.projects.children.tubes,
           alt: "tube",
           to: path.projects.children.tubes,
           image: "tubes",
         },
         {
-          title: "Canopies",
+          title: titles.projects.children.canopies,
           alt: "Canopy",
           to: path.projects.children.canopies,
           image: "canopies",
         },
         {
-          title: "Other",
+          title: titles.projects.children.other,
           alt: "Other",
           to: path.projects.children.other,
           image: "other",
@@ -154,7 +154,7 @@ const englishContent = {
     },
   },
   aboutUs: {
-    title: "About us",
+    title: titles.aboutUs,
     articles: [
       {
         title: "Who we are",
@@ -167,49 +167,49 @@ const englishContent = {
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
       },
     ],
-    ourFacility: "Our facility",
+    ourFacility: titles.ourFacility,
     link: {
       text: "More images →",
       to: path.ourFacility,
     },
   },
   projects: {
-    title: "Projects",
+    title: titles.projects.title,
     categoryCards: [
       {
-        title: "Hangers",
+        title: titles.projects.children.hangers,
         alt: "Hanger",
         to: path.projects.children.hangers,
         image: "hangers",
       },
       {
-        title: "Bridges",
+        title: titles.projects.children.bridges,
         alt: "Bridge",
         to: path.projects.children.bridges,
         image: "bridges",
       },
       {
-        title: "Tubes",
+        title: titles.projects.children.tubes,
         alt: "tube",
         to: path.projects.children.tubes,
         image: "tubes",
       },
       {
-        title: "Canopies",
+        title: titles.projects.children.canopies,
         alt: "Canopy",
         to: path.projects.children.canopies,
         image: "canopies",
       },
       {
-        title: "Other",
-        alt: "other",
+        title: titles.projects.children.other,
+        alt: "Other",
         to: path.projects.children.other,
         image: "other",
       },
     ],
     categoryPages: {
       hangers: {
-        title: "Hangers",
+        title: titles.projects.children.hangers,
         projectCards: [
           {
             title: "Project 01",
@@ -264,7 +264,7 @@ const englishContent = {
         ],
       },
       bridges: {
-        title: "Bridges",
+        title: titles.projects.children.bridges,
         projectCards: [
           {
             title: "Project 01",
@@ -309,7 +309,7 @@ const englishContent = {
         ],
       },
       tubes: {
-        title: "Tubes",
+        title: titles.projects.children.tubes,
         projectCards: [
           {
             title: "Project 01",
@@ -339,7 +339,7 @@ const englishContent = {
         ],
       },
       canopies: {
-        title: "Canopies",
+        title: titles.projects.children.canopies,
         projectCards: [
           {
             title: "Project 01",
@@ -354,7 +354,7 @@ const englishContent = {
         ],
       },
       other: {
-        title: "Other",
+        title: titles.projects.children.other,
         projectCards: [
           {
             title: "Project 01",
@@ -441,10 +441,10 @@ const englishContent = {
     },
   },
   ourFacility: {
-    title: "Our facility",
+    title: titles.ourFacility,
   },
   contact: {
-    title: "Contact",
+    title: titles.contact,
     infoTitle: "Info",
     address: "Somewhere street, Apt. 21, Amman, Jordan, 11953",
     followTitle: "Follow us at",
@@ -456,44 +456,44 @@ const englishContent = {
         title: "Pages",
         links: [
           {
-            text: "About us",
+            text: titles.aboutUs,
             to: path.aboutUs,
           },
           {
-            text: "Projects",
+            text: titles.projects.title,
             to: path.projects.path,
           },
           {
-            text: "Our facility",
+            text: titles.ourFacility,
             to: path.ourFacility,
           },
           {
-            text: "Contact",
+            text: titles.contact,
             to: path.contact,
           },
         ],
       },
       {
-        title: "Projects",
+        title: titles.projects.title,
         links: [
           {
-            text: "Hangers",
+            text: titles.projects.children.hangers,
             to: path.projects.children.hangers,
           },
           {
-            text: "Bridges",
+            text: titles.projects.children.bridges,
             to: path.projects.children.bridges,
           },
           {
-            text: "Tubes",
+            text: titles.projects.children.tubes,
             to: path.projects.children.tubes,
           },
           {
-            text: "Canopies",
+            text: titles.projects.children.canopies,
             to: path.projects.children.canopies,
           },
           {
-            text: "Other",
+            text: titles.projects.children.other,
             to: path.projects.children.other,
           },
         ],
@@ -527,105 +527,105 @@ const englishContent = {
       aboutUs: [
         {
           isLink: true,
-          text: "Home",
+          text: titles.home,
           to: path.home,
         },
         {
           isLink: false,
-          text: "About",
+          text: titles.aboutUs,
         },
       ],
       projects: {
         categoryPage: [
           {
             isLink: true,
-            text: "Home",
+            text: titles.home,
             to: path.home,
           },
           {
             isLink: false,
-            text: "Projects",
+            text: titles.projects.title,
           },
         ],
         projectPage: {
           hangers: [
             {
               isLink: true,
-              text: "Home",
+              text: titles.home,
               to: path.home,
             },
             {
               isLink: true,
-              text: "Projects",
+              text: titles.projects.title,
               to: path.projects.path,
             },
             {
               isLink: false,
-              text: "Hangers",
+              text: titles.projects.children.hangers,
             },
           ],
           bridges: [
             {
               isLink: true,
-              text: "Home",
+              text: titles.home,
               to: path.home,
             },
             {
               isLink: true,
-              text: "Projects",
+              text: titles.projects.title,
               to: path.projects.path,
             },
             {
               isLink: false,
-              text: "Bridges",
+              text: titles.projects.children.bridges,
             },
           ],
           tubes: [
             {
               isLink: true,
-              text: "Home",
+              text: titles.home,
               to: path.home,
             },
             {
               isLink: true,
-              text: "Projects",
+              text: titles.projects.title,
               to: path.projects.path,
             },
             {
               isLink: false,
-              text: "Tubes",
+              text: titles.projects.children.tubes,
             },
           ],
           canopies: [
             {
               isLink: true,
-              text: "Home",
+              text: titles.home,
               to: path.home,
             },
             {
               isLink: true,
-              text: "Projects",
+              text: titles.projects.title,
               to: path.projects.path,
             },
             {
               isLink: false,
-              text: "Canopies",
+              text: titles.projects.children.canopies,
             },
           ],
           other: [
             {
               isLink: true,
-              text: "Home",
+              text: titles.home,
               to: path.home,
             },
             {
               isLink: true,
-              text: "Projects",
+              text: titles.projects.title,
               to: path.projects.path,
             },
             {
               isLink: false,
-              text: "Other",
+              text: titles.projects.children.other,
             },
           ],
         },
@@ -633,23 +633,23 @@ const englishContent = {
       ourFacility: [
         {
           isLink: true,
-          text: "Home",
+          text: titles.home,
           to: path.home,
         },
         {
           isLink: false,
-          text: "Our facility",
+          text: titles.ourFacility,
         },
       ],
       contact: [
         {
           isLink: true,
-          text: "Home",
+          text: titles.home,
           to: path.home,
         },
         {
           isLink: false,
-          text: "Contact",
+          text: titles.contact,
         },
       ],
     },

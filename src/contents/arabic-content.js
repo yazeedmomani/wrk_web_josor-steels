@@ -562,7 +562,7 @@ const arabicContent = {
             },
             {
               isLink: false,
-              text: "Hangers",
+              text: titles.projects.children.hangers,
             },
           ],
           bridges: [
