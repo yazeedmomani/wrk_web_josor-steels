@@ -1,8 +1,11 @@
 import path from "./link-paths";
+import common from "./common-content";
+
+const titles = common.ar.titles;
 
 const arabicContent = {
   helmet: {
-    defaultTemplate: "%s | شركة الجسور",
+    defaultTemplate: `%s | ${titles.company}`,
     homeTitle: "الرئيسية",
     aboutUsTitle: "عنا",
     projectsTitle: "مشاريع",
@@ -62,7 +65,7 @@ const arabicContent = {
   },
   home: {
     header: {
-      title: "شركة الجسور",
+      title: titles.company,
       subTitle: "أطلق العنان لخيالك مع فولاذنا الثابت القوي",
       primaryButton: {
         text: "تواصل معنا",
@@ -497,7 +500,7 @@ const arabicContent = {
         ],
       },
     ],
-    copyright: "شركة الجسور © 2023",
+    copyright: `${titles.company} © 2023`,
   },
   notFound: {
     title: "404",

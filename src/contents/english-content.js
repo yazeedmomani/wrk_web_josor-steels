@@ -65,7 +65,7 @@ const englishContent = {
   },
   home: {
     header: {
-      title: "Josor Steels",
+      title: titles.company,
       subTitle: "Let your imagination go wild with our strong stable steels",
       primaryButton: {
         text: "Contact us",
@@ -499,7 +499,7 @@ const englishContent = {
         ],
       },
     ],
-    copyright: "Josor Steels © 2023",
+    copyright: `${titles.company} © 2023`,
   },
   notFound: {
     title: "404",
