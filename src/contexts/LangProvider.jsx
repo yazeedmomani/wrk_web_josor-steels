@@ -6,16 +6,19 @@ const availableLang = [
   { lang: "ar", dir: "rtl" },
 ];
 
-function validateUserLang() {
-  const userLang = window.navigator.language.slice(0, 2);
-  const langObj = availableLang.find((cur) => cur.lang === userLang);
+function validateUserLanguages() {
+  const userLanguage = window.navigator.languages
+    .map((cur) => cur.slice(0, 2))
+    .find((cur) => availableLang.find((langObj) => langObj.lang === cur));
+
+  const langObj = availableLang.find((cur) => cur.lang === userLanguage);
 
   if (!langObj) return { lang: "en", dir: "ltr" };
 
   return langObj;
 }
 
-const initialLang = validateUserLang();
+const initialLang = validateUserLanguages;
 
 function LangProvider(props) {
   const [langObj, setLangObj] = useState(initialLang);
