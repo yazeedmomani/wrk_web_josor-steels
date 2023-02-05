@@ -1,6 +1,6 @@
 .step {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .icon {
