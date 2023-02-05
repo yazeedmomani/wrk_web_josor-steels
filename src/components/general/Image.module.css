@@ -6,6 +6,12 @@
   box-shadow: var(--box-shadow);
 }
 
+@media (min-width: 464px) {
+  .container {
+    width: calc(var(--content-space-width) / 2);
+  }
+}
+
 .clickable {
   cursor: pointer;
 }
