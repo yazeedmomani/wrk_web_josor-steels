@@ -20,10 +20,10 @@ const englishContent = {
   nav: {
     homeLink: path.home,
     desktopLinks: [
-      titles.aboutUs,
-      titles.projects.title,
-      titles.ourFacility,
-      titles.contact,
+      { text: titles.aboutUs, to: path.aboutUs },
+      { text: titles.projects.title, to: path.projects.path },
+      { text: titles.ourFacility, to: path.ourFacility },
+      { text: titles.contact, to: path.contact },
     ],
     modal: [
       {

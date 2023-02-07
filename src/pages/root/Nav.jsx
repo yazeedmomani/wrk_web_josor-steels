@@ -24,7 +24,7 @@ function Nav() {
       <ul className={styles["desktop-list"]}>
         {navContext.desktopLinks.map((cur) => (
           <li>
-            <Link>{cur}</Link>
+            <Link to={cur.to}>{cur.text}</Link>
           </li>
         ))}
       </ul>
