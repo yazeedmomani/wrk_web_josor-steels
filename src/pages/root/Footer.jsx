@@ -20,44 +20,50 @@ function Footer() {
     <footer className={styles.footer}>
       <ScrollToTop dependency={langContext.lang} />
       <div className={styles.center}>
-        <Link to={contentContext[langContext.lang].footer.logoLink}>
-          <Logo isDark={true} />
-        </Link>
-        <div className={styles["icons-container"]}>
-          <ContactIcon
-            key="linkedIn"
-            styles={styles.icon}
-            type="linkedIn"
-            isDark={true}
-          />
-          <ContactIcon
-            key="facebook"
-            styles={styles.icon}
-            type="facebook"
-            isDark={true}
-          />
-        </div>
-        <ContactInfo styles={styles["contact-info"]} />
-        <div className={styles.links}>
-          {contentContext[langContext.lang].footer.links.map((cur, i) => (
-            <div key={i}>
-              <h2 className={`${langContext.lang === "ar" ? "h4" : "h5"}`}>
-                {cur.title}
-              </h2>
-              <ul>
-                {cur.links.map((cur, i) => (
-                  <li key={i}>
-                    <Link to={cur.to}>{cur.text}</Link>
-                  </li>
-                ))}
-              </ul>
+        <div className={styles["second-flex"]}>
+          <div>
+            <Link to={contentContext[langContext.lang].footer.logoLink}>
+              <Logo isDark={true} />
+            </Link>
+            <div className={styles["icons-container"]}>
+              <ContactIcon
+                key="linkedIn"
+                styles={styles.icon}
+                type="linkedIn"
+                isDark={true}
+              />
+              <ContactIcon
+                key="facebook"
+                styles={styles.icon}
+                type="facebook"
+                isDark={true}
+              />
             </div>
-          ))}
+            <ContactInfo styles={styles["contact-info"]} />
+          </div>
+          <div className={styles.links}>
+            {contentContext[langContext.lang].footer.links.map((cur, i) => (
+              <div key={i}>
+                <h2 className={`${langContext.lang === "ar" ? "h4" : "h5"}`}>
+                  {cur.title}
+                </h2>
+                <ul>
+                  {cur.links.map((cur, i) => (
+                    <li key={i}>
+                      <Link to={cur.to}>{cur.text}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
-        <LangChanger styles={styles["lang-changer"]} />
-        <p className={styles.copyright}>
-          {contentContext[langContext.lang].footer.copyright}
-        </p>
+        <div>
+          <LangChanger styles={styles["lang-changer"]} />
+          <p className={styles.copyright}>
+            {contentContext[langContext.lang].footer.copyright}
+          </p>
+        </div>
       </div>
     </footer>
   );

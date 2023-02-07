@@ -8,6 +8,8 @@
 .center {
   background-color: var(--color-black);
   margin: 0 var(--content-horizontal-margin);
+  display: flex;
+  flex-direction: column;
 }
 
 .icons-container {
@@ -78,4 +80,19 @@ html[dir="rtl"] .links > div > ul {
 
 .copyright {
   margin-top: 3.6rem;
+}
+
+@media (min-width: 700px) {
+  .second-flex {
+    display: flex;
+  }
+
+  .second-flex > div:not(:first-child) {
+    margin-left: 7.2rem;
+    margin-top: 0;
+  }
+
+  .lang-changer {
+    margin-top: 4.8rem;
+  }
 }
