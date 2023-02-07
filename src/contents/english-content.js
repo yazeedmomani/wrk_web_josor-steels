@@ -19,6 +19,12 @@ const englishContent = {
   },
   nav: {
     homeLink: path.home,
+    desktopLinks: [
+      titles.aboutUs,
+      titles.projects.title,
+      titles.ourFacility,
+      titles.contact,
+    ],
     modal: [
       {
         isProjects: false,

@@ -22,18 +22,11 @@ function Nav() {
         <Logo />
       </Link>
       <ul className={styles["desktop-list"]}>
-        <li>
-          <Link>About</Link>
-        </li>
-        <li>
-          <Link>Projects</Link>
-        </li>
-        <li>
-          <Link>Our facility</Link>
-        </li>
-        <li>
-          <Link>Contact</Link>
-        </li>
+        {navContext.desktopLinks.map((cur) => (
+          <li>
+            <Link>{cur}</Link>
+          </li>
+        ))}
       </ul>
       {/* <MenuButton onClick={setShowModal.bind(null, true)} /> */}
       {showModal && <NavModal setShowModal={setShowModal} />}
