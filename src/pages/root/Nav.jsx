@@ -21,7 +21,21 @@ function Nav() {
       <Link to={navContext.homeLink}>
         <Logo />
       </Link>
-      <MenuButton onClick={setShowModal.bind(null, true)} />
+      <ul className={styles["desktop-list"]}>
+        <li>
+          <Link>About</Link>
+        </li>
+        <li>
+          <Link>Projects</Link>
+        </li>
+        <li>
+          <Link>Our facility</Link>
+        </li>
+        <li>
+          <Link>Contact</Link>
+        </li>
+      </ul>
+      {/* <MenuButton onClick={setShowModal.bind(null, true)} /> */}
       {showModal && <NavModal setShowModal={setShowModal} />}
     </nav>
   );
