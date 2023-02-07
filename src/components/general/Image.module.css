@@ -6,9 +6,21 @@
   box-shadow: var(--box-shadow);
 }
 
-@media (min-width: 464px) {
+@media (min-width: 550px) {
+  .container {
+    width: calc(var(--content-space-width) / 1.5);
+  }
+}
+
+@media (min-width: 700px) {
   .container {
     width: calc(var(--content-space-width) / 2);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: calc(var(--content-space-width) / 3);
   }
 }
 

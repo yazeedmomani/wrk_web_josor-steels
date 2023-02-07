@@ -12,19 +12,19 @@ import styles from "./Slider.module.css";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 1,
+    breakpoint: { max: 4000, min: 1200 },
+    items: 3,
   },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 1.8,
+    breakpoint: { max: 1200, min: 1024 },
+    items: 2,
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 1.8,
+    breakpoint: { max: 1024, min: 550 },
+    items: 1.5,
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 550, min: 0 },
     items: 1,
   },
 };
@@ -53,11 +53,10 @@ function Slider(props) {
 
   return (
     <Carousel
-      autoPlay={props.autoPlay}
-      rewind={props.autoPlay}
-      rewindWithAnimation={props.autoPlay}
+      autoPlay={true}
       containerClass={`${styles.container} ${props.containerClass}`}
       showDots={true}
+      infinite={true}
       customDot={<CustomDot />}
       dotListClass={props.dotListClass}
       // NOTE Bug fix: Arrows switch when direction changes for some reason
