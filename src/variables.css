@@ -61,3 +61,15 @@
     --content-horizontal-margin: 7.2rem;
   }
 }
+
+@media (min-width: 1200px) {
+  :root {
+    --content-horizontal-margin: 9.6rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  :root {
+    --content-horizontal-margin: 14.4rem;
+  }
+}
