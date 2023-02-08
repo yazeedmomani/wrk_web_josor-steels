@@ -87,8 +87,13 @@ html[dir="rtl"] .links > div > ul {
     display: flex;
   }
 
-  .second-flex > div:not(:first-child) {
+  html[dir="ltr"] .second-flex > div:not(:first-child) {
     margin-left: 7.2rem;
+    margin-top: 0;
+  }
+
+  html[dir="rtl"] .second-flex > div:not(:first-child) {
+    margin-right: 7.2rem;
     margin-top: 0;
   }
 

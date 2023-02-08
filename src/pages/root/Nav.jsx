@@ -26,8 +26,6 @@ function Nav() {
     else setIsDesktop(false);
   }, [winWidth]);
 
-  // TODO fix footer responsiviness for arabic
-
   return (
     <nav className={styles.nav}>
       <Link to={navContext.homeLink}>
