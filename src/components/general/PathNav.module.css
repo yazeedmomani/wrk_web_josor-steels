@@ -7,6 +7,17 @@
   margin: 0 1.2rem;
 }
 
+.ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.li{
+  display: flex;
+  align-items: center;
+}
+
 .link a:link,
 .link a:visited {
   text-decoration: underline;
