@@ -27,7 +27,8 @@
 }
 
 .container {
-  padding: 0 var(--content-horizontal-margin) 4.8rem;
+  padding: 0 var(--content-horizontal-margin);
+  margin-bottom: 4.8rem;
 }
 
 .link {

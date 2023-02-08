@@ -28,7 +28,7 @@
   width: 100vw;
   position: fixed;
   z-index: 10000;
-  padding-bottom: 4.8rem;
+  margin-bottom: 4.8rem;
   margin: auto 0;
 }
 

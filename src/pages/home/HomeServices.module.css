@@ -12,9 +12,5 @@
 
 .container {
   padding: 0 var(--content-horizontal-margin);
-  padding-bottom: 19.2rem;
-}
-
-.dots {
-  bottom: 14.4rem !important;
+  margin-bottom: 19.2rem;
 }
