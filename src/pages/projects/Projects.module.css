@@ -2,19 +2,29 @@
   margin: 0 var(--content-horizontal-margin);
 }
 
-.path{
-    margin-top: 1.2rem;
+.path {
+  margin-top: 1.2rem;
 }
 
 .center h1 {
   margin: 3.6rem 0 14.4rem;
 }
 
-.center a.category-card{
-    margin-bottom: 9.6rem;
-    display: inline-block;
+.flex {
+  display: flex;
+  flex-direction: column;
 }
 
-.center a.category-card:last-child{
-    margin-bottom: 19.2rem;
+.center a.category-card {
+  margin-bottom: 9.6rem;
+  display: inline-block;
+}
+
+.center a.category-card:last-child {
+  margin-bottom: 19.2rem;
+}
+
+.container {
+  padding: 0 var(--content-horizontal-margin);
+  margin-bottom: 19.2rem;
 }
