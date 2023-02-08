@@ -1,7 +1,9 @@
 import styles from "./Nav.module.css";
 
 import { Link } from "react-router-dom";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
+
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 import Logo from "../../svg/Logo";
 import MenuButton from "../../svg/MenuButton";
@@ -11,12 +13,19 @@ import ContentContext from "../../contexts/content-context";
 
 function Nav() {
   const [showModal, setShowModal] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  const [winWidth] = useWindowDimensions();
 
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
   const navContext = contentContext[langContext.lang].nav;
 
-  // TODO make nav detect screen width and adjust itself
+  useEffect(() => {
+    if (winWidth > 1024) setIsDesktop(true);
+    else setIsDesktop(false);
+  }, [winWidth]);
+
   // TODO fix footer responsiviness for arabic
 
   return (
@@ -24,14 +33,16 @@ function Nav() {
       <Link to={navContext.homeLink}>
         <Logo />
       </Link>
-      <ul className={styles["desktop-list"]}>
-        {navContext.desktopLinks.map((cur, i) => (
-          <li key={i}>
-            <Link to={cur.to}>{cur.text}</Link>
-          </li>
-        ))}
-      </ul>
-      {/* <MenuButton onClick={setShowModal.bind(null, true)} /> */}
+      {isDesktop && (
+        <ul className={styles["desktop-list"]}>
+          {navContext.desktopLinks.map((cur, i) => (
+            <li key={i}>
+              <Link to={cur.to}>{cur.text}</Link>
+            </li>
+          ))}
+        </ul>
+      )}
+      {!isDesktop && <MenuButton onClick={setShowModal.bind(null, true)} />}
       {showModal && <NavModal setShowModal={setShowModal} />}
     </nav>
   );
