@@ -16,14 +16,17 @@ function Nav() {
   const contentContext = useContext(ContentContext);
   const navContext = contentContext[langContext.lang].nav;
 
+  // TODO make nav detect screen width and adjust itself
+  // TODO fix footer responsiviness for arabic
+
   return (
     <nav className={styles.nav}>
       <Link to={navContext.homeLink}>
         <Logo />
       </Link>
       <ul className={styles["desktop-list"]}>
-        {navContext.desktopLinks.map((cur) => (
-          <li>
+        {navContext.desktopLinks.map((cur, i) => (
+          <li key={i}>
             <Link to={cur.to}>{cur.text}</Link>
           </li>
         ))}
