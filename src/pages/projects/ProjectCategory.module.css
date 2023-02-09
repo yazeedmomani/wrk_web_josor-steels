@@ -12,6 +12,8 @@
 
 .item {
   margin-bottom: 9.6rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .controls {

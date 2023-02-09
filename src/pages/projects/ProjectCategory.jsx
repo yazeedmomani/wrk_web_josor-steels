@@ -11,6 +11,8 @@ import LangContext from "../../contexts/lang-context";
 import ContentContext from "../../contexts/content-context";
 import images from "../../contents/images";
 
+import useWindowDimensions from "../../hooks/useWindowDimensions";
+
 function ProjectCategory(props) {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
@@ -22,6 +24,27 @@ function ProjectCategory(props) {
       props.category
     ];
 
+  // Seperating one big project card array to several small arrays to render them next to each other in desktop size
+  const [width] = useWindowDimensions();
+
+  const projectCardContextSize = width >= 1200 ? 2 : 1;
+
+  const projectCardsContext = categoryContext.projectCards
+    .map((cur, i) => {
+      if (i % projectCardContextSize) return;
+      return categoryContext.projectCards.slice(i, i + projectCardContextSize);
+    })
+    .filter((cur) => cur !== undefined);
+
+  const newImageContext = categoryContext.projectCards
+    .map((cur, i) => {
+      if (i % projectCardContextSize) return;
+      return imagesContext.slice(i, i + projectCardContextSize);
+    })
+    .filter((cur) => cur !== undefined);
+
+  console.log(newImageContext);
+
   return (
     <>
       <DynamicHelmet page={props.category} />
@@ -32,17 +55,21 @@ function ProjectCategory(props) {
         />
         <h1 className="h2">{categoryContext.title}</h1>
         <PaginatedItems
-          itemsPerPage={3}
+          itemsPerPage={5}
           controlsClassName={styles.controls}
           itemClassName={styles.item}>
-          {categoryContext.projectCards.map((cur, i) => (
-            <ProjectCard
-              key={i}
-              title={cur.title}
-              description={cur.description}
-              src={imagesContext[i][0]}
-              images={imagesContext[i]}
-            />
+          {projectCardsContext.map((cur, i) => (
+            <>
+              {cur.map((curProject, projectIndex) => (
+                <ProjectCard
+                  key={`${i}${projectIndex}`}
+                  title={curProject.title}
+                  description={curProject.description}
+                  src={newImageContext[i][projectIndex][0]}
+                  images={newImageContext[i][projectIndex]}
+                />
+              ))}
+            </>
           ))}
         </PaginatedItems>
       </div>
