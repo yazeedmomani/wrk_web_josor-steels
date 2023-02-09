@@ -12,6 +12,8 @@ import LangContext from "../contexts/lang-context";
 import ContentContext from "../contexts/content-context";
 import images from "../contents/images";
 
+import useWindowDimensions from "../hooks/useWindowDimensions";
+
 function OurFacility() {
   const [showModal, setShowModal] = useState(false);
   const [modalImage, setModalImage] = useState();
@@ -29,6 +31,18 @@ function OurFacility() {
     setShowModal(true);
   }
 
+  // Seperating one big image array to several small arrays to render them next to each other in desktop size
+  const [width] = useWindowDimensions();
+
+  const newImageContextSize = width >= 1200 ? 2 : 1;
+
+  const newImageContext = imagesContext
+    .map((cur, i) => {
+      if (i % newImageContextSize) return;
+      return imagesContext.slice(i, i + newImageContextSize);
+    })
+    .filter((cur) => cur !== undefined);
+
   return (
     <>
       <DynamicHelmet page="ourFacility" />
@@ -42,13 +56,19 @@ function OurFacility() {
           itemsPerPage={5}
           controlsClassName={styles.controls}
           itemClassName={styles.item}>
-          {imagesContext.map((cur) => (
-            <Image
-              src={cur}
-              clickable={true}
-              onClick={handleClick}
-            />
-          ))}
+          {newImageContext.map((cur, i) => {
+            return (
+              <>
+                {cur.map((image) => (
+                  <Image
+                    src={image}
+                    clickable={true}
+                    onClick={handleClick}
+                  />
+                ))}
+              </>
+            );
+          })}
         </PaginatedItems>
         {showModal && (
           <ImageModal
