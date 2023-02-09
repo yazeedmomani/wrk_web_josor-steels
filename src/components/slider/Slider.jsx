@@ -51,9 +51,12 @@ function CustomLeftArrow({ onClick }) {
 function Slider(props) {
   const langContext = useContext(LangContext);
 
+  const autoPlay =
+    props.autoPlay === false || props.autoPlay === true ? props.autoPlay : true;
+
   return (
     <Carousel
-      autoPlay={true}
+      autoPlay={autoPlay}
       containerClass={`${styles.container} ${props.containerClass}`}
       showDots={true}
       infinite={true}
@@ -67,7 +70,7 @@ function Slider(props) {
         langContext.dir === "rtl" ? <CustomRightArrow /> : <CustomLeftArrow />
       }
       removeArrowOnDeviceType={["tablet", "mobile"]}
-      responsive={responsive}
+      responsive={props.responsive || responsive}
       rtl={langContext.dir === "rtl" && true}
       keyBoardControl="true">
       {props.children}

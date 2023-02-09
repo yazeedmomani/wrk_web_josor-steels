@@ -6,9 +6,31 @@ import CloseBtn from "../../svg/CloseBtn";
 
 import styles from "./ImageModal.module.css";
 
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 1200 },
+    items: 1,
+  },
+  desktop: {
+    breakpoint: { max: 1200, min: 1024 },
+    items: 1,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 550 },
+    items: 1,
+  },
+  mobile: {
+    breakpoint: { max: 550, min: 0 },
+    items: 1,
+  },
+};
+
 function ImageModal(props) {
   const multiImage = props.images ? (
     <Slider
+      autoPlay={false}
+      responsive={responsive}
       containerClass={styles.slider}
       dotListClass={styles.dots}>
       {props.images.map((cur, i) => (
