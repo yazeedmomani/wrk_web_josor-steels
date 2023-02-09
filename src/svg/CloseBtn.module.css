@@ -1,3 +1,11 @@
 .icon:hover {
   cursor: pointer;
 }
+
+.icon path{
+  transition: all 100ms ease-out;
+}
+
+.icon:hover path {
+  fill: var(--color-black);
+}

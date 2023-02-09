@@ -25,6 +25,12 @@
   z-index: 20000;
 }
 
+@media (min-width: 800px) {
+  .btn-container {
+    padding: 0 3.6rem;
+  }
+}
+
 .slider {
   width: 100vw;
   position: fixed;

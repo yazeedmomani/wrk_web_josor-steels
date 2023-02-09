@@ -16,5 +16,5 @@
 
 .icon path {
   fill: var(--color-grey-light-02);
-  transition: all 0.5s;
+  transition: all 100ms;
 }
