@@ -43,8 +43,6 @@ function ProjectCategory(props) {
     })
     .filter((cur) => cur !== undefined);
 
-  console.log(newImageContext);
-
   return (
     <>
       <DynamicHelmet page={props.category} />

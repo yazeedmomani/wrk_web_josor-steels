@@ -59,8 +59,9 @@ function OurFacility() {
           {newImageContext.map((cur, i) => {
             return (
               <>
-                {cur.map((image) => (
+                {cur.map((image, imageIndex) => (
                   <Image
+                    key={`${i}${imageIndex}`}
                     src={image}
                     clickable={true}
                     onClick={handleClick}
