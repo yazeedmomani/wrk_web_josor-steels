@@ -17,9 +17,7 @@ function HomeHeader() {
   function handlePrimaryClick(e) {
     e.preventDefault();
 
-    navigate(
-      contentContext[langContext.lang].home.header.primaryButton.to
-    );
+    navigate(contentContext[langContext.lang].home.header.primaryButton.to);
   }
 
   return (

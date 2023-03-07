@@ -1,17 +1,25 @@
-import styles from "./Button.module.css";
+import classes from "./Button.module.scss";
+import cn from "classnames";
 
-function Button(props) {
-  const buttonStyles = `${styles.button} ${styles[props.type]}`;
+Button.defaultProps = {
+  type: "primary",
+  href: "",
+};
+
+export default function Button({ type, href, children, className, ...props }) {
+  const buttonClasses = cn(
+    classes.button,
+    classes[`button___${type}`],
+    className
+  );
 
   return (
     <a
-      href={props.href ? props.href : ""}
-      className={buttonStyles}
-      onClick={props.onClick && props.onClick}
-      role="button">
-      {props.children}
+      href={href}
+      className={buttonClasses}
+      role="button"
+      {...props}>
+      {children}
     </a>
   );
 }
-
-export default Button;
