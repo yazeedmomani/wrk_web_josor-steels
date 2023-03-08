@@ -1,15 +1,15 @@
 import styles from "./nav.module.css";
 
 import { Link } from "react-router-dom";
-import { useState, useContext, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import useWindowDimensions from "../../hooks/use-window-dimensions";
 
 import Logo from "../../svg/Logo";
 import MenuButton from "../../svg/MenuButton";
 import NavModal from "../../components/modals/NavModal";
-import LangContext from "../../contexts/lang-context";
-import ContentContext from "../../contexts/content-context";
+
+import useContent from "../../hooks/use-content";
 
 export default function Nav() {
   const [showModal, setShowModal] = useState(false);
@@ -17,9 +17,9 @@ export default function Nav() {
 
   const [winWidth] = useWindowDimensions();
 
-  const langContext = useContext(LangContext);
-  const contentContext = useContext(ContentContext);
-  const navContext = contentContext[langContext.lang].nav;
+  const [content] = useContent();
+
+  const navContext = content.nav;
 
   useEffect(() => {
     if (winWidth > 1024) setIsDesktop(true);

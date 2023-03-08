@@ -1,40 +1,35 @@
-import { useContext } from "react";
 import { useNavigate } from "react-router";
 
 import styles from "./header.module.css";
 
 import Button from "../../../../components/buttons/Button";
-
-import LangContext from "../../../../contexts/lang-context";
-import ContentContext from "../../../../contexts/content-context";
+import useContent from "../../../../hooks/use-content";
 
 export default function Header() {
-  const langContext = useContext(LangContext);
-  const contentContext = useContext(ContentContext);
+  const [content] = useContent();
+  const usedContent = content.home.header;
 
   const navigate = useNavigate();
 
   function handlePrimaryClick(e) {
     e.preventDefault();
 
-    navigate(contentContext[langContext.lang].home.header.primaryButton.to);
+    navigate(usedContent.primaryButton.to);
   }
 
   return (
     <header className={styles.header}>
-      <h1 className="h2">
-        {contentContext[langContext.lang].home.header.title}
-      </h1>
-      <p>{contentContext[langContext.lang].home.header.subTitle}</p>
+      <h1 className="h2">{usedContent.title}</h1>
+      <p>{usedContent.subTitle}</p>
       <Button
         type="primary"
         onClick={handlePrimaryClick}>
-        {contentContext[langContext.lang].home.header.primaryButton.text}
+        {usedContent.primaryButton.text}
       </Button>
       <Button
         type="secondary"
         href="#HomeServices">
-        {contentContext[langContext.lang].home.header.secondaryButton}
+        {usedContent.secondaryButton}
       </Button>
     </header>
   );

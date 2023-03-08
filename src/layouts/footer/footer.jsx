@@ -10,11 +10,13 @@ import ScrollToTop from "../../components/fixes/ScrollToTop";
 import styles from "./footer.module.css";
 
 import LangContext from "../../contexts/lang-context";
-import ContentContext from "../../contexts/content-context";
+
+import useContent from "../../hooks/use-content";
 
 export default function Footer() {
   const langContext = useContext(LangContext);
-  const contentContext = useContext(ContentContext);
+  const [content] = useContent();
+  const footerContent = content.footer;
 
   return (
     <footer className={styles.footer}>
@@ -22,7 +24,7 @@ export default function Footer() {
       <div className={styles.center}>
         <div className={styles["second-flex"]}>
           <div>
-            <Link to={contentContext[langContext.lang].footer.logoLink}>
+            <Link to={footerContent.logoLink}>
               <Logo isDark={true} />
             </Link>
             <div className={styles["icons-container"]}>
@@ -42,7 +44,7 @@ export default function Footer() {
             <ContactInfo styles={styles["contact-info"]} />
           </div>
           <div className={styles.links}>
-            {contentContext[langContext.lang].footer.links.map((cur, i) => (
+            {footerContent.links.map((cur, i) => (
               <div key={i}>
                 <h2 className={`${langContext.lang === "ar" ? "h4" : "h5"}`}>
                   {cur.title}
@@ -60,9 +62,7 @@ export default function Footer() {
         </div>
         <div>
           <LangChanger styles={styles["lang-changer"]} />
-          <p className={styles.copyright}>
-            {contentContext[langContext.lang].footer.copyright}
-          </p>
+          <p className={styles.copyright}>{footerContent.copyright}</p>
         </div>
       </div>
     </footer>

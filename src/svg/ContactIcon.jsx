@@ -1,14 +1,9 @@
-import { useContext } from "react";
-import ContentContext from "../contexts/content-context";
-import LangContext from "../contexts/lang-context";
-
+import useContent from "../hooks/use-content";
 import styles from "./ContactIcon.module.css";
 
 function ContactIcon(props) {
-  const langContext = useContext(LangContext);
-  const contentContext = useContext(ContentContext);
-  const componentContext =
-    contentContext[langContext.lang].components.ContactIcon;
+  const [content] = useContent();
+  const componentContext = content.components.ContactIcon;
 
   const iconStyles = `${styles.icon} ${props.isDark === true && styles.dark} ${
     props.isAnimated === true && styles.animated

@@ -1,17 +1,14 @@
-import { useContext } from "react";
 import { Link } from "react-router-dom";
-import ContentContext from "../../contexts/content-context";
-import LangContext from "../../contexts/lang-context";
 
 import RootHelmet from "../../helmets/RootHelmet";
+import useContent from "../../hooks/use-content";
 import ContactIcon from "../../svg/ContactIcon";
 
 import styles from "./not-found.module.css";
 
 export default function NotFound() {
-  const langContext = useContext(LangContext);
-  const contentContext = useContext(ContentContext);
-  const notFoundContext = contentContext[langContext.lang].notFound;
+  const [content] = useContent();
+  const notFoundContext = content.notFound;
 
   return (
     <>

@@ -1,17 +1,15 @@
-import { useContext, useState } from "react";
-import ContentContext from "../../contexts/content-context";
-import LangContext from "../../contexts/lang-context";
+import { useState } from "react";
 import ImageModal from "../modals/ImageModal";
 
 import styles from "./ProjectCard.module.css";
+import useContent from "../../hooks/use-content";
 
 function ProjectCard(props) {
   const [showModal, setShowModal] = useState(false);
 
-  const langContext = useContext(LangContext);
-  const contentContext = useContext(ContentContext);
-  const componentContext =
-    contentContext[langContext.lang].components.ProjectCard;
+  const [content] = useContent();
+
+  const componentContext = content.components.ProjectCard;
 
   return (
     <div className={`${styles.container} ${props.styles}`}>

@@ -1,17 +1,17 @@
 import { useContext } from "react";
 import { Helmet } from "react-helmet-async";
 
-import ContentContext from "../contexts/content-context";
+import useContent from "../hooks/use-content";
 import LangContext from "../contexts/lang-context";
 
 function RootHelmet() {
   const langContext = useContext(LangContext);
-  const contentContext = useContext(ContentContext);
+  const [content] = useContent();
 
   return (
     <Helmet
       htmlAttributes={{ lang: langContext.lang, dir: langContext.dir }}
-      titleTemplate={contentContext[langContext.lang].helmet.defaultTemplate}
+      titleTemplate={content.helmet.defaultTemplate}
     />
   );
 }

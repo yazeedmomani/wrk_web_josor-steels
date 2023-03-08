@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState } from "react";
 import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
 
@@ -8,15 +8,13 @@ import LangChanger from "../buttons/LangChanger";
 import Expand from "react-expand-animated";
 
 import styles from "./NavModal.module.css";
-import LangContext from "../../contexts/lang-context";
-import ContentContext from "../../contexts/content-context";
+import useContent from "../../hooks/use-content";
 
 function NavModal(props) {
   const [showProjects, setShowProjects] = useState(false);
+  const [content] = useContent();
 
-  const langContext = useContext(LangContext);
-  const contentContext = useContext(ContentContext);
-  const navContext = contentContext[langContext.lang].nav.modal;
+  const navContext = content.nav.modal;
 
   function closeModal() {
     props.setShowModal(false);

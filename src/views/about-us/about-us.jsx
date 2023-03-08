@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 
 import DynamicHelmet from "../../helmets/DynamicHelmet";
 import PathNav from "../../components/general/PathNav";
@@ -8,21 +8,18 @@ import ImageModal from "../../components/modals/ImageModal";
 
 import styles from "./about-us.module.css";
 
-import LangContext from "../../contexts/lang-context";
-import ContentContext from "../../contexts/content-context";
-import images from "../../contents/images";
 import PrimaryLink from "../../components/buttons/PrimaryLink";
+import useContent from "../../hooks/use-content";
 
 export default function AboutUs() {
   const [showModal, setShowModal] = useState(false);
   const [modalImage, setModalImage] = useState();
 
-  const langContext = useContext(LangContext);
-  const contentContext = useContext(ContentContext);
-  const aboutUsContext = contentContext[langContext.lang].aboutUs;
+  const [content, images, pathNav] = useContent();
+
+  const aboutUsContext = content.aboutUs;
   const imageContext = images.aboutUs;
-  const pathNavContext =
-    contentContext[langContext.lang].components.PathNav.aboutUs;
+  const pathNavContext = pathNav.aboutUs;
 
   function handleClick(e) {
     setModalImage(e.target.dataset.src);

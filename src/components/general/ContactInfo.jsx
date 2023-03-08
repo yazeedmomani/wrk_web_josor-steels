@@ -1,17 +1,12 @@
-import { useContext } from "react";
-
 import ContactIcon from "../../svg/ContactIcon";
 
 import styles from "./ContactInfo.module.css";
 
-import LangContext from "../../contexts/lang-context";
-import ContentContext from "../../contexts/content-context";
+import useContent from "../../hooks/use-content";
 
 function ContactInfo(props) {
-  const langContext = useContext(LangContext);
-  const contentContext = useContext(ContentContext);
-  const componentContext =
-    contentContext[langContext.lang].components.ContactInfo;
+  const [content] = useContent();
+  const componentContext = content.components.ContactInfo;
 
   return (
     <div className={`${styles.container} ${props.styles}`}>

@@ -1,18 +1,14 @@
-import { useContext } from "react";
 import { Helmet } from "react-helmet-async";
 
-import ContentContext from "../contexts/content-context";
-import LangContext from "../contexts/lang-context";
+import useContent from "../hooks/use-content";
 
 function DynamicHelmet(props) {
-  const langContext = useContext(LangContext);
-  const contentContext = useContext(ContentContext);
+  const [content] = useContent();
+  const title = content.helmet[`${props.page}Title`];
 
   return (
     <Helmet>
-      <title>
-        {contentContext[langContext.lang].helmet[`${props.page}Title`]}
-      </title>
+      <title>{title}</title>
     </Helmet>
   );
 }
