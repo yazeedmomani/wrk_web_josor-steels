@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { HelmetProvider } from "react-helmet-async";
 
-import "./reset.css";
-import "./variables.css";
-import "./typography.css";
-import "./index.css";
+import "./styles/reset.css";
+import "./styles/variables.css";
+import "./styles/typography.css";
+import "./styles/index.css";
 
 import MainProvider from "./contexts/provider";
 import App from "./app";
