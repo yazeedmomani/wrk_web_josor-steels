@@ -3,7 +3,7 @@ import styles from "./nav.module.css";
 import { Link } from "react-router-dom";
 import { useState, useContext, useEffect } from "react";
 
-import useWindowDimensions from "../../hooks/useWindowDimensions";
+import useWindowDimensions from "../../hooks/use-window-dimensions";
 
 import Logo from "../../svg/Logo";
 import MenuButton from "../../svg/MenuButton";

@@ -11,7 +11,7 @@ import LangContext from "../../contexts/lang-context";
 import ContentContext from "../../contexts/content-context";
 import images from "../../contents/images";
 
-import useWindowDimensions from "../../hooks/useWindowDimensions";
+import useWindowDimensions from "../../hooks/use-window-dimensions";
 
 export default function Projects(props) {
   const langContext = useContext(LangContext);

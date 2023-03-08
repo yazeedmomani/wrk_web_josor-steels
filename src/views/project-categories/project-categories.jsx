@@ -1,7 +1,7 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import useWindowDimensions from "../../hooks/useWindowDimensions";
+import useWindowDimensions from "../../hooks/use-window-dimensions";
 
 import DynamicHelmet from "../../helmets/DynamicHelmet";
 import Image from "../../components/general/Image";
@@ -9,20 +9,17 @@ import PathNav from "../../components/general/PathNav";
 
 import styles from "./project-categories.module.css";
 
-import LangContext from "../../contexts/lang-context";
-import ContentContext from "../../contexts/content-context";
-import images from "../../contents/images";
 import Slider from "../../components/slider/Slider";
+
+import useContent from "../../hooks/use-content";
 
 export default function ProjectCategories() {
   const [isDesktop, setIsDesktop] = useState(false);
+  const [content, images, pathNav] = useContent();
 
-  const langContext = useContext(LangContext);
-  const contentContext = useContext(ContentContext);
-  const projectsContext = contentContext[langContext.lang].projects;
   const projectImages = images.projectCategories;
-  const pathNavContext =
-    contentContext[langContext.lang].components.PathNav.projects.categoryPage;
+  const projectsContext = content.projects;
+  const pathNavContext = pathNav.projects.categoryPage;
 
   const [winWidth] = useWindowDimensions();
 
