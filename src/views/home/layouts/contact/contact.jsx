@@ -1,14 +1,14 @@
 import { useNavigate } from "react-router";
 import { useContext } from "react";
 
-import Button from "../../components/buttons/Button";
+import Button from "../../../../components/buttons/Button";
 
-import styles from "./HomeContact.module.css";
+import styles from "./contact.module.css";
 
-import LangContext from "../../contexts/lang-context";
-import ContentContext from "../../contexts/content-context";
+import LangContext from "../../../../contexts/lang-context";
+import ContentContext from "../../../../contexts/content-context";
 
-function HomeContact() {
+export default function Contact() {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
 
@@ -33,5 +33,3 @@ function HomeContact() {
     </section>
   );
 }
-
-export default HomeContact;

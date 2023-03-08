@@ -1,17 +1,17 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 
-import SectionSpan from "../../components/general/SectionSpan";
-import Slider from "../../components/slider/Slider";
-import Image from "../../components/general/Image";
+import SectionSpan from "../../../../components/general/SectionSpan";
+import Slider from "../../../../components/slider/Slider";
+import Image from "../../../../components/general/Image";
 
-import styles from "./HomeServices.module.css";
+import styles from "./services.module.css";
 
-import LangContext from "../../contexts/lang-context";
-import ContentContext from "../../contexts/content-context";
-import images from "../../contents/images";
+import LangContext from "../../../../contexts/lang-context";
+import ContentContext from "../../../../contexts/content-context";
+import images from "../../../../contents/images";
 
-function HomeServices() {
+export default function Services() {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
   const servicesContext = contentContext[langContext.lang].home.services;
@@ -46,5 +46,3 @@ function HomeServices() {
     </section>
   );
 }
-
-export default HomeServices;

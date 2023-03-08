@@ -1,16 +1,16 @@
 import { useContext } from "react";
 
-import SectionSpan from "../../components/general/SectionSpan";
-import Image from "../../components/general/Image";
-import PrimaryLink from "../../components/buttons/PrimaryLink";
+import SectionSpan from "../../../../components/general/SectionSpan";
+import Image from "../../../../components/general/Image";
+import PrimaryLink from "../../../../components/buttons/PrimaryLink";
 
-import styles from "./HomeAbout.module.css";
+import styles from "./about.module.css";
 
-import LangContext from "../../contexts/lang-context";
-import ContentContext from "../../contexts/content-context";
-import images from "../../contents/images";
+import LangContext from "../../../../contexts/lang-context";
+import ContentContext from "../../../../contexts/content-context";
+import images from "../../../../contents/images";
 
-function HomeAbout() {
+export default function About() {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
 
@@ -35,5 +35,3 @@ function HomeAbout() {
     </section>
   );
 }
-
-export default HomeAbout;

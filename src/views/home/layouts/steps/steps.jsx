@@ -1,26 +1,30 @@
 import { useContext } from "react";
 
-import SectionSpan from "../../components/general/SectionSpan";
-import Step from "../../components/general/Step";
+import SectionSpan from "../../../../components/general/SectionSpan";
+import Step from "../../../../components/general/Step";
 
-import ContentContext from "../../contexts/content-context";
-import LangContext from "../../contexts/lang-context";
+import ContentContext from "../../../../contexts/content-context";
+import LangContext from "../../../../contexts/lang-context";
 
-import DUMMY01 from "../../svg/DUMMY-01";
-import DUMMY02 from "../../svg/DUMMY-02";
-import DUMMY03 from "../../svg/DUMMY-03";
-import DUMMY04 from "../../svg/DUMMY-04";
+import DUMMY01 from "../../../../svg/DUMMY-01";
+import DUMMY02 from "../../../../svg/DUMMY-02";
+import DUMMY03 from "../../../../svg/DUMMY-03";
+import DUMMY04 from "../../../../svg/DUMMY-04";
 
-import styles from "./HomeSteps.module.css";
+import styles from "./steps.module.css";
 
-function HomeSteps() {
+export default function Steps() {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
 
   return (
     <section className={styles.section}>
-      <SectionSpan>{contentContext[langContext.lang].home.steps.span}</SectionSpan>
-      <h2 className="h3">{contentContext[langContext.lang].home.steps.title}</h2>
+      <SectionSpan>
+        {contentContext[langContext.lang].home.steps.span}
+      </SectionSpan>
+      <h2 className="h3">
+        {contentContext[langContext.lang].home.steps.title}
+      </h2>
       <Step
         icon={<DUMMY01 />}
         description={
@@ -53,5 +57,3 @@ function HomeSteps() {
     </section>
   );
 }
-
-export default HomeSteps;

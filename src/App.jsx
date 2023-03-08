@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import Root from "./pages/root/Root";
-import Home from "./pages/home/Home";
+import Home from "./views/home/";
 import AboutUs from "./pages/AboutUs";
 import Projects from "./pages/projects/Projects";
 import ProjectCategory from "./pages/projects/ProjectCategory";

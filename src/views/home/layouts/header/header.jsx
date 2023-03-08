@@ -1,14 +1,14 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router";
 
-import styles from "./HomeHeader.module.css";
+import styles from "./header.module.css";
 
-import Button from "../../components/buttons/Button";
+import Button from "../../../../components/buttons/Button";
 
-import LangContext from "../../contexts/lang-context";
-import ContentContext from "../../contexts/content-context";
+import LangContext from "../../../../contexts/lang-context";
+import ContentContext from "../../../../contexts/content-context";
 
-function HomeHeader() {
+export default function Header() {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
 
@@ -39,5 +39,3 @@ function HomeHeader() {
     </header>
   );
 }
-
-export default HomeHeader;
