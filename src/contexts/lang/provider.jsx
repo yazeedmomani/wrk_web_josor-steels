@@ -1,4 +1,4 @@
-import LangContext from "./lang-context";
+import Lang from "./";
 import { useState } from "react";
 
 const availableLang = [
@@ -20,7 +20,7 @@ function validateUserLanguages() {
 
 const initialLang = validateUserLanguages;
 
-function LangProvider(props) {
+export default function Provider(props) {
   const [langObj, setLangObj] = useState(initialLang);
 
   const store = {
@@ -40,9 +40,5 @@ function LangProvider(props) {
     },
   };
 
-  return (
-    <LangContext.Provider value={store}>{props.children}</LangContext.Provider>
-  );
+  return <Lang.Provider value={store}>{props.children}</Lang.Provider>;
 }
-
-export default LangProvider;
