@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import LangContext from "../contexts/lang/lang";
+import LangContext from "../contexts/lang";
 import ContentContext from "../contexts/content/content";
 import images from "../contents/images";
 

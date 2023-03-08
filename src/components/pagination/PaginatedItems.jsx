@@ -5,7 +5,7 @@ import PaginationArrow from "./PaginationArrow";
 
 import styles from "./PaginatedItems.module.css";
 
-import LangContext from "../../contexts/lang/lang";
+import LangContext from "../../contexts/lang";
 
 function PaginatedItems({
   itemsPerPage,

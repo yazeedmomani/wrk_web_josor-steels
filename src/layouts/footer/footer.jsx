@@ -9,7 +9,7 @@ import ScrollToTop from "../../components/fixes/ScrollToTop";
 
 import styles from "./footer.module.css";
 
-import LangContext from "../../contexts/lang/lang";
+import LangContext from "../../contexts/lang";
 
 import useContent from "../../hooks/use-content";
 

@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Helmet } from "react-helmet-async";
 
 import useContent from "../hooks/use-content";
-import LangContext from "../contexts/lang/lang";
+import LangContext from "../contexts/lang";
 
 function RootHelmet() {
   const langContext = useContext(LangContext);

@@ -4,7 +4,7 @@ import PrimaryLink from "../buttons/PrimaryLink";
 import Arrow from "../../svg/Arrow";
 
 import styles from "./PathNav.module.css";
-import LangContext from "../../contexts/lang/lang";
+import LangContext from "../../contexts/lang";
 
 function PathNav(props) {
   const langContext = useContext(LangContext);
