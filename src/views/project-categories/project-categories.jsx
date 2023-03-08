@@ -7,14 +7,14 @@ import DynamicHelmet from "../../helmets/DynamicHelmet";
 import Image from "../../components/general/Image";
 import PathNav from "../../components/general/PathNav";
 
-import styles from "./Projects.module.css";
+import styles from "./project-categories.module.css";
 
 import LangContext from "../../contexts/lang-context";
 import ContentContext from "../../contexts/content-context";
 import images from "../../contents/images";
 import Slider from "../../components/slider/Slider";
 
-function Projects() {
+export default function ProjectCategories() {
   const [isDesktop, setIsDesktop] = useState(false);
 
   const langContext = useContext(LangContext);
@@ -78,5 +78,3 @@ function Projects() {
     </>
   );
 }
-
-export default Projects;

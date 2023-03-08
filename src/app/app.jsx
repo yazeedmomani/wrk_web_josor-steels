@@ -9,8 +9,8 @@ import {
 import Root from "./components/root";
 import Home from "../views/home";
 import AboutUs from "../views/about-us";
-import Projects from "../pages/projects/Projects";
-import ProjectCategory from "../pages/projects/ProjectCategory";
+import ProjectCategories from "../views/project-categories";
+import Projects from "../views/projects";
 import OurFacility from "../views/our-facility";
 import Contact from "../views/contact";
 import NotFound from "../views/not-found";
@@ -55,7 +55,7 @@ const router = createBrowserRouter(
           index
           element={
             <>
-              <Projects />
+              <ProjectCategories />
             </>
           }
         />
@@ -66,7 +66,7 @@ const router = createBrowserRouter(
           path={path.projects.children.hangers}
           element={
             <>
-              <ProjectCategory category="hangers" />
+              <Projects category="hangers" />
             </>
           }
         />
@@ -77,7 +77,7 @@ const router = createBrowserRouter(
           path={path.projects.children.bridges}
           element={
             <>
-              <ProjectCategory category="bridges" />
+              <Projects category="bridges" />
             </>
           }
         />
@@ -88,7 +88,7 @@ const router = createBrowserRouter(
           path={path.projects.children.tubes}
           element={
             <>
-              <ProjectCategory category="tubes" />
+              <Projects category="tubes" />
             </>
           }
         />
@@ -99,7 +99,7 @@ const router = createBrowserRouter(
           path={path.projects.children.canopies}
           element={
             <>
-              <ProjectCategory category="canopies" />
+              <Projects category="canopies" />
             </>
           }
         />
@@ -110,7 +110,7 @@ const router = createBrowserRouter(
           path={path.projects.children.other}
           element={
             <>
-              <ProjectCategory category="other" />
+              <Projects category="other" />
             </>
           }
         />

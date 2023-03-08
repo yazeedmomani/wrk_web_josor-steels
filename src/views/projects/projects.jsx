@@ -5,7 +5,7 @@ import PaginatedItems from "../../components/pagination/PaginatedItems";
 import ProjectCard from "../../components/general/ProjectCard";
 import PathNav from "../../components/general/PathNav";
 
-import styles from "./ProjectCategory.module.css";
+import styles from "./projects.module.css";
 
 import LangContext from "../../contexts/lang-context";
 import ContentContext from "../../contexts/content-context";
@@ -13,7 +13,7 @@ import images from "../../contents/images";
 
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
-function ProjectCategory(props) {
+export default function Projects(props) {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
   const categoryContext =
@@ -74,5 +74,3 @@ function ProjectCategory(props) {
     </>
   );
 }
-
-export default ProjectCategory;
