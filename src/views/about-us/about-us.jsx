@@ -1,19 +1,19 @@
 import { useContext, useState } from "react";
 
-import DynamicHelmet from "../helmets/DynamicHelmet";
-import PathNav from "../components/general/PathNav";
-import Image from "../components/general/Image";
-import Slider from "../components/slider/Slider";
-import ImageModal from "../components/modals/ImageModal";
+import DynamicHelmet from "../../helmets/DynamicHelmet";
+import PathNav from "../../components/general/PathNav";
+import Image from "../../components/general/Image";
+import Slider from "../../components/slider/Slider";
+import ImageModal from "../../components/modals/ImageModal";
 
-import styles from "./AboutUs.module.css";
+import styles from "./about-us.module.css";
 
-import LangContext from "../contexts/lang-context";
-import ContentContext from "../contexts/content-context";
-import images from "../contents/images";
-import PrimaryLink from "../components/buttons/PrimaryLink";
+import LangContext from "../../contexts/lang-context";
+import ContentContext from "../../contexts/content-context";
+import images from "../../contents/images";
+import PrimaryLink from "../../components/buttons/PrimaryLink";
 
-function AboutUs() {
+export default function AboutUs() {
   const [showModal, setShowModal] = useState(false);
   const [modalImage, setModalImage] = useState();
 
@@ -82,5 +82,3 @@ function AboutUs() {
     </>
   );
 }
-
-export default AboutUs;

@@ -1,17 +1,17 @@
 import { useContext } from "react";
 
-import DynamicHelmet from "../helmets/DynamicHelmet";
-import PathNav from "../components/general/PathNav";
-import ContactInfo from "../components/general/ContactInfo";
-import MyMap from "../components/general/MyMap";
-import ContactIcon from "../svg/ContactIcon";
+import DynamicHelmet from "../../helmets/DynamicHelmet";
+import PathNav from "../../components/general/PathNav";
+import ContactInfo from "../../components/general/ContactInfo";
+import MyMap from "../../components/general/MyMap";
+import ContactIcon from "../../svg/ContactIcon";
 
-import styles from "./Contact.module.css";
+import styles from "./contact.module.css";
 
-import LangContext from "../contexts/lang-context";
-import ContentContext from "../contexts/content-context";
+import LangContext from "../../contexts/lang-context";
+import ContentContext from "../../contexts/content-context";
 
-function Contact() {
+export default function Contact() {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
   const contactContext = contentContext[langContext.lang].contact;
@@ -54,5 +54,3 @@ function Contact() {
     </>
   );
 }
-
-export default Contact;

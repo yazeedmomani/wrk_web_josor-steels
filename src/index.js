@@ -8,7 +8,7 @@ import "./typography.css";
 import "./index.css";
 
 import MainProvider from "./contexts/MainProvider";
-import App from "./App";
+import App from "./app";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

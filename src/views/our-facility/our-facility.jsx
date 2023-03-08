@@ -1,20 +1,20 @@
 import { useContext, useState } from "react";
 
-import DynamicHelmet from "../helmets/DynamicHelmet";
-import PathNav from "../components/general/PathNav";
-import PaginatedItems from "../components/pagination/PaginatedItems";
-import Image from "../components/general/Image";
-import ImageModal from "../components/modals/ImageModal";
+import DynamicHelmet from "../../helmets/DynamicHelmet";
+import PathNav from "../../components/general/PathNav";
+import PaginatedItems from "../../components/pagination/PaginatedItems";
+import Image from "../../components/general/Image";
+import ImageModal from "../../components/modals/ImageModal";
 
-import styles from "./OurFacility.module.css";
+import styles from "./our-facility.module.css";
 
-import LangContext from "../contexts/lang-context";
-import ContentContext from "../contexts/content-context";
-import images from "../contents/images";
+import LangContext from "../../contexts/lang-context";
+import ContentContext from "../../contexts/content-context";
+import images from "../../contents/images";
 
-import useWindowDimensions from "../hooks/useWindowDimensions";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
-function OurFacility() {
+export default function OurFacility() {
   const [showModal, setShowModal] = useState(false);
   const [modalImage, setModalImage] = useState();
 
@@ -82,5 +82,3 @@ function OurFacility() {
     </>
   );
 }
-
-export default OurFacility;

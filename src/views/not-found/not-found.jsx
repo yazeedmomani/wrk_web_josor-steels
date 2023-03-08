@@ -1,14 +1,14 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import ContentContext from "../contexts/content-context";
-import LangContext from "../contexts/lang-context";
+import ContentContext from "../../contexts/content-context";
+import LangContext from "../../contexts/lang-context";
 
-import RootHelmet from "../helmets/RootHelmet";
-import ContactIcon from "../svg/ContactIcon";
+import RootHelmet from "../../helmets/RootHelmet";
+import ContactIcon from "../../svg/ContactIcon";
 
-import styles from "./NotFound.module.css";
+import styles from "./not-found.module.css";
 
-function NotFound() {
+export default function NotFound() {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
   const notFoundContext = contentContext[langContext.lang].notFound;
@@ -47,5 +47,3 @@ function NotFound() {
     </>
   );
 }
-
-export default NotFound;

@@ -7,12 +7,12 @@ import ContactIcon from "../../svg/ContactIcon";
 import ContactInfo from "../../components/general/ContactInfo";
 import ScrollToTop from "../../components/fixes/ScrollToTop";
 
-import styles from "./Footer.module.css";
+import styles from "./footer.module.css";
 
 import LangContext from "../../contexts/lang-context";
 import ContentContext from "../../contexts/content-context";
 
-function Footer() {
+export default function Footer() {
   const langContext = useContext(LangContext);
   const contentContext = useContext(ContentContext);
 
@@ -68,5 +68,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;

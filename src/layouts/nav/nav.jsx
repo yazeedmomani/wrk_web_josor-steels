@@ -1,4 +1,4 @@
-import styles from "./Nav.module.css";
+import styles from "./nav.module.css";
 
 import { Link } from "react-router-dom";
 import { useState, useContext, useEffect } from "react";
@@ -11,7 +11,7 @@ import NavModal from "../../components/modals/NavModal";
 import LangContext from "../../contexts/lang-context";
 import ContentContext from "../../contexts/content-context";
 
-function Nav() {
+export default function Nav() {
   const [showModal, setShowModal] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
 
@@ -45,5 +45,3 @@ function Nav() {
     </nav>
   );
 }
-
-export default Nav;

@@ -1,8 +1,8 @@
 import { Outlet, useLocation } from "react-router-dom";
 
 import RootHelmet from "../../helmets/RootHelmet";
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Nav from "../../layouts/nav";
+import Footer from "../../layouts/footer";
 import ScrollToTop from "../../components/fixes/ScrollToTop";
 
 function Root() {
