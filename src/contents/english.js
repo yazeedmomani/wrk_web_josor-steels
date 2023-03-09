@@ -1,6 +1,6 @@
-import { PATHS, TITLES } from "../constants/";
+import { PATHS, TITLES } from "../constants";
 
-const englishContent = {
+const english = {
   helmet: {
     defaultTemplate: `%s | ${TITLES.EN.COMPANY}`,
     homeTitle: TITLES.EN.HOME,
@@ -659,4 +659,4 @@ const englishContent = {
   },
 };
 
-export default englishContent;
+export default english;

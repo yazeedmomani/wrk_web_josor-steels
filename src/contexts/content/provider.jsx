@@ -1,12 +1,12 @@
 import Content from "./";
 
-import englishContent from "../../contents/english-content";
-import arabicContent from "../../contents/arabic-content";
+import enContent from "../../contents/english";
+import arContent from "../../contents/arabic";
 
 export default function Provider(props) {
   const content = {
-    en: englishContent,
-    ar: arabicContent,
+    en: enContent,
+    ar: arContent,
   };
 
   return <Content.Provider value={content}>{props.children}</Content.Provider>;

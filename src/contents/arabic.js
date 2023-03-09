@@ -1,6 +1,6 @@
-import { PATHS, TITLES } from "../constants/";
+import { PATHS, TITLES } from "../constants";
 
-const arabicContent = {
+const arabic = {
   helmet: {
     defaultTemplate: `%s | ${TITLES.AR.COMPANY}`,
     homeTitle: TITLES.AR.HOME,
@@ -665,4 +665,4 @@ const arabicContent = {
   },
 };
 
-export default arabicContent;
+export default arabic;
