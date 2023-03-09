@@ -526,7 +526,7 @@ const english = {
     ProjectCard: {
       button: "View images →",
     },
-    PathNav: {
+    Breadcrumb: {
       aboutUs: [
         {
           isLink: true,

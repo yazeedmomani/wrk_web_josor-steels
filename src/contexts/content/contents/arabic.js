@@ -532,7 +532,7 @@ const arabic = {
     ProjectCard: {
       button: "عرض الصور ←",
     },
-    PathNav: {
+    Breadcrumb: {
       aboutUs: [
         {
           isLink: true,

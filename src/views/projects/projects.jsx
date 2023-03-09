@@ -1,7 +1,7 @@
 import DynamicHelmet from "../../components/helmet/dynamic";
 import PaginatedItems from "../../components/pagination/PaginatedItems";
 import ProjectCard from "../../components/general/ProjectCard";
-import PathNav from "../../components/general/PathNav";
+import Breadcrumb from "../../components/general/breadcrumb/breadcrumb";
 
 import styles from "./projects.module.css";
 
@@ -9,11 +9,11 @@ import useWindowDimensions from "../../hooks/use-window-dimensions";
 import useContent from "../../hooks/use-content/";
 
 export default function Projects(props) {
-  const [content, images, pathNav] = useContent();
+  const [content, images, breadcrumb] = useContent();
 
   const categoryContext = content.projects.categoryPages[props.category];
   const imagesContext = images.projectImages[props.category];
-  const pathNavContext = pathNav.projects.projectPage[props.category];
+  const pathNavContext = breadcrumb.projects.projectPage[props.category];
 
   // Seperating one big project card array to several small arrays to render them next to each other in desktop size
   const [width] = useWindowDimensions();
@@ -38,7 +38,7 @@ export default function Projects(props) {
     <>
       <DynamicHelmet page={props.category} />
       <div className={styles.center}>
-        <PathNav
+        <Breadcrumb
           items={pathNavContext}
           styles={styles.path}
         />

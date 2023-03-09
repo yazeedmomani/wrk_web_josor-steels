@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import DynamicHelmet from "../../components/helmet/dynamic";
-import PathNav from "../../components/general/PathNav";
+import Breadcrumb from "../../components/general/breadcrumb/breadcrumb";
 import Image from "../../components/general/Image";
 import Slider from "../../components/slider/Slider";
 import ImageModal from "../../components/modals/ImageModal";
@@ -15,11 +15,11 @@ export default function AboutUs() {
   const [showModal, setShowModal] = useState(false);
   const [modalImage, setModalImage] = useState();
 
-  const [content, images, pathNav] = useContent();
+  const [content, images, breadcrumb] = useContent();
 
   const aboutUsContext = content.aboutUs;
   const imageContext = images.aboutUs;
-  const pathNavContext = pathNav.aboutUs;
+  const pathNavContext = breadcrumb.aboutUs;
 
   function handleClick(e) {
     setModalImage(e.target.dataset.src);
@@ -31,7 +31,7 @@ export default function AboutUs() {
     <>
       <DynamicHelmet page="aboutUs" />
       <div className={styles.center}>
-        <PathNav
+        <Breadcrumb
           items={pathNavContext}
           styles={styles.path}
         />

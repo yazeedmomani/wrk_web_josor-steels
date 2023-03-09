@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import DynamicHelmet from "../../components/helmet/dynamic";
-import PathNav from "../../components/general/PathNav";
+import Breadcrumb from "../../components/general/breadcrumb/breadcrumb";
 import PaginatedItems from "../../components/pagination/PaginatedItems";
 import Image from "../../components/general/Image";
 import ImageModal from "../../components/modals/ImageModal";
@@ -15,11 +15,11 @@ export default function OurFacility() {
   const [showModal, setShowModal] = useState(false);
   const [modalImage, setModalImage] = useState();
 
-  const [content, images, pathNav] = useContent();
+  const [content, images, breadcrumb] = useContent();
 
   const ourFacilityContext = content.ourFacility;
   const imagesContext = images.ourFacility;
-  const pathNavContext = pathNav.ourFacility;
+  const pathNavContext = breadcrumb.ourFacility;
 
   function handleClick(e) {
     setModalImage(e.target.dataset.src);
@@ -43,7 +43,7 @@ export default function OurFacility() {
     <>
       <DynamicHelmet page="ourFacility" />
       <div className={styles.center}>
-        <PathNav
+        <Breadcrumb
           items={pathNavContext}
           styles={styles.path}
         />

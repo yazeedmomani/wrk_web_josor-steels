@@ -1,5 +1,5 @@
 import DynamicHelmet from "../../components/helmet/dynamic";
-import PathNav from "../../components/general/PathNav";
+import Breadcrumb from "../../components/general/breadcrumb/breadcrumb";
 import ContactInfo from "../../components/general/ContactInfo";
 import MyMap from "../../components/general/MyMap";
 import ContactIcon from "../../svg/ContactIcon";
@@ -8,16 +8,16 @@ import styles from "./contact.module.css";
 import useContent from "../../hooks/use-content/";
 
 export default function Contact() {
-  const [content, _, pathNav] = useContent();
+  const [content, _, breadcrumb] = useContent();
 
   const contactContext = content.contact;
-  const pathNavContext = pathNav.contact;
+  const pathNavContext = breadcrumb.contact;
 
   return (
     <>
       <DynamicHelmet page="contact" />
       <div className={styles.center}>
-        <PathNav
+        <Breadcrumb
           items={pathNavContext}
           styles={styles.path}
         />

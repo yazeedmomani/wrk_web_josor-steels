@@ -5,7 +5,7 @@ import useWindowDimensions from "../../hooks/use-window-dimensions";
 
 import DynamicHelmet from "../../components/helmet/dynamic";
 import Image from "../../components/general/Image";
-import PathNav from "../../components/general/PathNav";
+import Breadcrumb from "../../components/general/breadcrumb/breadcrumb";
 
 import styles from "./project-categories.module.css";
 
@@ -15,11 +15,11 @@ import useContent from "../../hooks/use-content/";
 
 export default function ProjectCategories() {
   const [isDesktop, setIsDesktop] = useState(false);
-  const [content, images, pathNav] = useContent();
+  const [content, images, breadcrumb] = useContent();
 
   const projectImages = images.projectCategories;
   const projectsContext = content.projects;
-  const pathNavContext = pathNav.projects.categoryPage;
+  const pathNavContext = breadcrumb.projects.categoryPage;
 
   const [winWidth] = useWindowDimensions();
 
@@ -32,7 +32,7 @@ export default function ProjectCategories() {
     <>
       <DynamicHelmet page="projects" />
       <div className={styles.center}>
-        <PathNav
+        <Breadcrumb
           items={pathNavContext}
           styles={styles.path}
         />

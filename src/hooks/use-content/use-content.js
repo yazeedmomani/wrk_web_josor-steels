@@ -8,7 +8,7 @@ export default function useContent() {
   const contentContext = useContext(ContentContext);
 
   const content = contentContext[`${langContext.lang}`];
-  const pathNav = content.components.PathNav;
+  const breadcrumb = content.components.Breadcrumb;
 
-  return [content, images, pathNav];
+  return [content, images, breadcrumb];
 }

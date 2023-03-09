@@ -1,12 +1,12 @@
 import { useContext } from "react";
 
-import PrimaryLink from "../buttons/PrimaryLink";
-import Arrow from "../../svg/Arrow";
+import PrimaryLink from "../../buttons/PrimaryLink";
+import Arrow from "../../../svg/Arrow";
 
-import styles from "./PathNav.module.css";
-import LangContext from "../../contexts/lang";
+import styles from "./breadcrumb.module.css";
+import LangContext from "../../../contexts/lang";
 
-function PathNav(props) {
+function Breadcrumb(props) {
   const langContext = useContext(LangContext);
 
   return (
@@ -36,4 +36,4 @@ function PathNav(props) {
   );
 }
 
-export default PathNav;
+export default Breadcrumb;
