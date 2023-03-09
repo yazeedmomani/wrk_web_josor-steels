@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 
-import Logo from "../../svg/Logo";
+import Logo from "../../svg/logo/logo";
 import LangChanger from "../../components/buttons/lang-changer/lang-changer";
-import ContactIcon from "../../svg/ContactIcon";
+import ContactIcon from "../../svg/contact-icon/contact-icon";
 import ContactInfo from "../../components/general/contact-info/contact-info";
 import ScrollToTop from "../../helpers/scroll-to-top";
 

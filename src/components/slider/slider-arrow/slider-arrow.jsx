@@ -1,4 +1,4 @@
-import Arrow from "../../../svg/Arrow";
+import Arrow from "../../../svg/arrow";
 
 import styles from "./slider-arrow.module.css";
 

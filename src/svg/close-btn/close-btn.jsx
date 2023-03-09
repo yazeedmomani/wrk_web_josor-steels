@@ -1,4 +1,4 @@
-import styles from "./CloseBtn.module.css";
+import styles from "./close-btn.module.css";
 
 function CloseBtn(props) {
   return (

@@ -2,7 +2,7 @@ import { createPortal } from "react-dom";
 
 import Backdrop from "../backdrop/backdrop";
 import Slider from "../../slider/slider/slider";
-import CloseBtn from "../../../svg/CloseBtn";
+import CloseBtn from "../../../svg/close-btn/close-btn";
 
 import styles from "./image-modal.module.css";
 

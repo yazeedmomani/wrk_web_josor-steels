@@ -1,5 +1,5 @@
-import useContent from "../hooks/use-content/";
-import styles from "./ContactIcon.module.css";
+import useContent from "../../hooks/use-content";
+import styles from "./contact-icon.module.css";
 
 function ContactIcon(props) {
   const [content] = useContent();

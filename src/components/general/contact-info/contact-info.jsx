@@ -1,4 +1,4 @@
-import ContactIcon from "../../../svg/ContactIcon";
+import ContactIcon from "../../../svg/contact-icon/contact-icon";
 
 import styles from "./contact-info.module.css";
 

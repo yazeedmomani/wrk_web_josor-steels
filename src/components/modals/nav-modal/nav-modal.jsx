@@ -2,7 +2,7 @@ import { useState } from "react";
 import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
 
-import CloseBtn from "../../../svg/CloseBtn";
+import CloseBtn from "../../../svg/close-btn/close-btn";
 import Backdrop from "../backdrop/backdrop";
 import LangChanger from "../../buttons/lang-changer/lang-changer";
 import Expand from "react-expand-animated";

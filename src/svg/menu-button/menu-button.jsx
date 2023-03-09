@@ -1,4 +1,4 @@
-import styles from "./MenuButton.module.css";
+import styles from "./menu-button.module.css";
 
 function MenuButton(props) {
   return (
