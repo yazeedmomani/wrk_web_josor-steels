@@ -4,33 +4,33 @@ const arabicContent = {
   helmet: {
     defaultTemplate: `%s | ${TITLES.AR.COMPANY}`,
     homeTitle: TITLES.AR.HOME,
-    aboutUsTitle: TITLES.AR.ABOUTUS,
-    projectsTitle: TITLES.AR.PROJECTCATEGORIES,
+    aboutUsTitle: TITLES.AR.ABOUT_US,
+    projectsTitle: TITLES.AR.PROJECT_CATEGORIES,
     hangersTitle: TITLES.AR.PROJECTS.HANGERS,
     bridgesTitle: TITLES.AR.PROJECTS.BRIDGES,
     tubesTitle: TITLES.AR.PROJECTS.TUBES,
     canopiesTitle: TITLES.AR.PROJECTS.CANOPIES,
     otherTitle: TITLES.AR.PROJECTS.OTHER,
-    ourFacilityTitle: TITLES.AR.OURFACILITY,
+    ourFacilityTitle: TITLES.AR.OUR_FACILITY,
     contactTitle: TITLES.AR.CONTACT,
   },
   nav: {
     homeLink: PATHS.HOME,
     desktopLinks: [
-      { text: TITLES.AR.ABOUTUS, to: PATHS.ABOUTUS },
-      { text: TITLES.AR.PROJECTCATEGORIES, to: PATHS.PROJECTCATEGORIES },
-      { text: TITLES.AR.OURFACILITY, to: PATHS.OURFACILITY },
+      { text: TITLES.AR.ABOUT_US, to: PATHS.ABOUT_US },
+      { text: TITLES.AR.PROJECT_CATEGORIES, to: PATHS.PROJECT_CATEGORIES },
+      { text: TITLES.AR.OUR_FACILITY, to: PATHS.OUR_FACILITY },
       { text: TITLES.AR.CONTACT, to: PATHS.CONTACT },
     ],
     modal: [
       {
         isProjects: false,
-        text: TITLES.AR.ABOUTUS,
-        to: PATHS.ABOUTUS,
+        text: TITLES.AR.ABOUT_US,
+        to: PATHS.ABOUT_US,
       },
       {
         isProjects: true,
-        text: TITLES.AR.PROJECTCATEGORIES,
+        text: TITLES.AR.PROJECT_CATEGORIES,
         links: [
           {
             text: TITLES.AR.PROJECTS.HANGERS,
@@ -56,8 +56,8 @@ const arabicContent = {
       },
       {
         isProjects: false,
-        text: TITLES.AR.OURFACILITY,
-        to: PATHS.OURFACILITY,
+        text: TITLES.AR.OUR_FACILITY,
+        to: PATHS.OUR_FACILITY,
       },
       {
         isProjects: false,
@@ -145,7 +145,7 @@ const arabicContent = {
         "هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً.",
       link: {
         text: "المزيد ←",
-        to: PATHS.ABOUTUS,
+        to: PATHS.ABOUT_US,
       },
     },
     contact: {
@@ -157,7 +157,7 @@ const arabicContent = {
     },
   },
   aboutUs: {
-    title: TITLES.AR.ABOUTUS,
+    title: TITLES.AR.ABOUT_US,
     articles: [
       {
         title: "من نحن",
@@ -170,14 +170,14 @@ const arabicContent = {
           "هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً.",
       },
     ],
-    ourFacility: TITLES.AR.OURFACILITY,
+    ourFacility: TITLES.AR.OUR_FACILITY,
     link: {
       text: "المزيد ←",
-      to: PATHS.OURFACILITY,
+      to: PATHS.OUR_FACILITY,
     },
   },
   projects: {
-    title: TITLES.AR.PROJECTCATEGORIES,
+    title: TITLES.AR.PROJECT_CATEGORIES,
     categoryCards: [
       {
         title: TITLES.AR.PROJECTS.HANGERS,
@@ -444,7 +444,7 @@ const arabicContent = {
     },
   },
   ourFacility: {
-    title: TITLES.AR.OURFACILITY,
+    title: TITLES.AR.OUR_FACILITY,
   },
   contact: {
     title: TITLES.AR.CONTACT,
@@ -458,23 +458,23 @@ const arabicContent = {
       {
         title: "صفحات",
         links: [
-          TITLES.AR.ABOUTUS,
-          TITLES.AR.PROJECTCATEGORIES,
-          TITLES.AR.OURFACILITY,
+          TITLES.AR.ABOUT_US,
+          TITLES.AR.PROJECT_CATEGORIES,
+          TITLES.AR.OUR_FACILITY,
           TITLES.AR.CONTACT,
         ],
         links: [
           {
-            text: TITLES.AR.ABOUTUS,
-            to: PATHS.ABOUTUS,
+            text: TITLES.AR.ABOUT_US,
+            to: PATHS.ABOUT_US,
           },
           {
-            text: TITLES.AR.PROJECTCATEGORIES,
-            to: PATHS.PROJECTCATEGORIES,
+            text: TITLES.AR.PROJECT_CATEGORIES,
+            to: PATHS.PROJECT_CATEGORIES,
           },
           {
-            text: TITLES.AR.OURFACILITY,
-            to: PATHS.OURFACILITY,
+            text: TITLES.AR.OUR_FACILITY,
+            to: PATHS.OUR_FACILITY,
           },
           {
             text: TITLES.AR.CONTACT,
@@ -483,7 +483,7 @@ const arabicContent = {
         ],
       },
       {
-        title: TITLES.AR.PROJECTCATEGORIES,
+        title: TITLES.AR.PROJECT_CATEGORIES,
         links: [
           {
             text: TITLES.AR.PROJECTS.HANGERS,
@@ -541,7 +541,7 @@ const arabicContent = {
         },
         {
           isLink: false,
-          text: TITLES.AR.ABOUTUS,
+          text: TITLES.AR.ABOUT_US,
         },
       ],
       projects: {
@@ -553,7 +553,7 @@ const arabicContent = {
           },
           {
             isLink: false,
-            text: TITLES.AR.PROJECTCATEGORIES,
+            text: TITLES.AR.PROJECT_CATEGORIES,
           },
         ],
         projectPage: {
@@ -565,8 +565,8 @@ const arabicContent = {
             },
             {
               isLink: true,
-              text: TITLES.AR.PROJECTCATEGORIES,
-              to: PATHS.PROJECTCATEGORIES,
+              text: TITLES.AR.PROJECT_CATEGORIES,
+              to: PATHS.PROJECT_CATEGORIES,
             },
             {
               isLink: false,
@@ -581,8 +581,8 @@ const arabicContent = {
             },
             {
               isLink: true,
-              text: TITLES.AR.PROJECTCATEGORIES,
-              to: PATHS.PROJECTCATEGORIES,
+              text: TITLES.AR.PROJECT_CATEGORIES,
+              to: PATHS.PROJECT_CATEGORIES,
             },
             {
               isLink: false,
@@ -597,8 +597,8 @@ const arabicContent = {
             },
             {
               isLink: true,
-              text: TITLES.AR.PROJECTCATEGORIES,
-              to: PATHS.PROJECTCATEGORIES,
+              text: TITLES.AR.PROJECT_CATEGORIES,
+              to: PATHS.PROJECT_CATEGORIES,
             },
             {
               isLink: false,
@@ -613,8 +613,8 @@ const arabicContent = {
             },
             {
               isLink: true,
-              text: TITLES.AR.PROJECTCATEGORIES,
-              to: PATHS.PROJECTCATEGORIES,
+              text: TITLES.AR.PROJECT_CATEGORIES,
+              to: PATHS.PROJECT_CATEGORIES,
             },
             {
               isLink: false,
@@ -629,8 +629,8 @@ const arabicContent = {
             },
             {
               isLink: true,
-              text: TITLES.AR.PROJECTCATEGORIES,
-              to: PATHS.PROJECTCATEGORIES,
+              text: TITLES.AR.PROJECT_CATEGORIES,
+              to: PATHS.PROJECT_CATEGORIES,
             },
             {
               isLink: false,
@@ -647,7 +647,7 @@ const arabicContent = {
         },
         {
           isLink: false,
-          text: TITLES.AR.OURFACILITY,
+          text: TITLES.AR.OUR_FACILITY,
         },
       ],
       contact: [

@@ -34,7 +34,7 @@ const router = createBrowserRouter(
       {/* About us */}
       {/* ///////////////////////////////////// */}
       <Route
-        path={PATHS.ABOUTUS}
+        path={PATHS.ABOUT_US}
         element={
           <>
             <AboutUs />
@@ -45,7 +45,7 @@ const router = createBrowserRouter(
       {/* Projects */}
       {/* ///////////////////////////////////// */}
       <Route
-        path={PATHS.PROJECTCATEGORIES}
+        path={PATHS.PROJECT_CATEGORIES}
         element={
           <>
             <Outlet />
@@ -119,7 +119,7 @@ const router = createBrowserRouter(
       {/* Our facility */}
       {/* ///////////////////////////////////// */}
       <Route
-        path={PATHS.OURFACILITY}
+        path={PATHS.OUR_FACILITY}
         element={
           <>
             <OurFacility />

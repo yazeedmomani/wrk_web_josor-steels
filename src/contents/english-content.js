@@ -4,8 +4,8 @@ const englishContent = {
   helmet: {
     defaultTemplate: `%s | ${TITLES.EN.COMPANY}`,
     homeTitle: TITLES.EN.HOME,
-    aboutUsTitle: TITLES.EN.ABOUTUS,
-    projectsTitle: TITLES.EN.PROJECTCATEGORIES,
+    aboutUsTitle: TITLES.EN.ABOUT_US,
+    projectsTitle: TITLES.EN.PROJECT_CATEGORIES,
     hangersTitle: TITLES.EN.PROJECTS.HANGERS,
     bridgesTitle: TITLES.EN.PROJECTS.BRIDGES,
     tubesTitle: TITLES.EN.PROJECTS.TUBES,
@@ -17,20 +17,20 @@ const englishContent = {
   nav: {
     homeLink: PATHS.HOME,
     desktopLinks: [
-      { text: TITLES.EN.ABOUTUS, to: PATHS.ABOUTUS },
-      { text: TITLES.EN.PROJECTCATEGORIES, to: PATHS.PROJECTCATEGORIES },
-      { text: TITLES.EN.OURFACILITY, to: PATHS.OURFACILITY },
+      { text: TITLES.EN.ABOUT_US, to: PATHS.ABOUT_US },
+      { text: TITLES.EN.PROJECT_CATEGORIES, to: PATHS.PROJECT_CATEGORIES },
+      { text: TITLES.EN.OUR_FACILITY, to: PATHS.OUR_FACILITY },
       { text: TITLES.EN.CONTACT, to: PATHS.CONTACT },
     ],
     modal: [
       {
         isProjects: false,
-        text: TITLES.EN.ABOUTUS,
-        to: PATHS.ABOUTUS,
+        text: TITLES.EN.ABOUT_US,
+        to: PATHS.ABOUT_US,
       },
       {
         isProjects: true,
-        text: TITLES.EN.PROJECTCATEGORIES,
+        text: TITLES.EN.PROJECT_CATEGORIES,
         links: [
           {
             text: TITLES.EN.PROJECTS.HANGERS,
@@ -56,8 +56,8 @@ const englishContent = {
       },
       {
         isProjects: false,
-        text: TITLES.EN.OURFACILITY,
-        to: PATHS.OURFACILITY,
+        text: TITLES.EN.OUR_FACILITY,
+        to: PATHS.OUR_FACILITY,
       },
       {
         isProjects: false,
@@ -145,7 +145,7 @@ const englishContent = {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
       link: {
         text: "Learn more →",
-        to: PATHS.ABOUTUS,
+        to: PATHS.ABOUT_US,
       },
     },
     contact: {
@@ -157,7 +157,7 @@ const englishContent = {
     },
   },
   aboutUs: {
-    title: TITLES.EN.ABOUTUS,
+    title: TITLES.EN.ABOUT_US,
     articles: [
       {
         title: "Who we are",
@@ -170,14 +170,14 @@ const englishContent = {
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
       },
     ],
-    ourFacility: TITLES.EN.OURFACILITY,
+    ourFacility: TITLES.EN.OUR_FACILITY,
     link: {
       text: "More images →",
-      to: PATHS.OURFACILITY,
+      to: PATHS.OUR_FACILITY,
     },
   },
   projects: {
-    title: TITLES.EN.PROJECTCATEGORIES,
+    title: TITLES.EN.PROJECT_CATEGORIES,
     categoryCards: [
       {
         title: TITLES.EN.PROJECTS.HANGERS,
@@ -444,7 +444,7 @@ const englishContent = {
     },
   },
   ourFacility: {
-    title: TITLES.EN.OURFACILITY,
+    title: TITLES.EN.OUR_FACILITY,
   },
   contact: {
     title: TITLES.EN.CONTACT,
@@ -459,16 +459,16 @@ const englishContent = {
         title: "Pages",
         links: [
           {
-            text: TITLES.EN.ABOUTUS,
-            to: PATHS.ABOUTUS,
+            text: TITLES.EN.ABOUT_US,
+            to: PATHS.ABOUT_US,
           },
           {
-            text: TITLES.EN.PROJECTCATEGORIES,
-            to: PATHS.PROJECTCATEGORIES,
+            text: TITLES.EN.PROJECT_CATEGORIES,
+            to: PATHS.PROJECT_CATEGORIES,
           },
           {
-            text: TITLES.EN.OURFACILITY,
-            to: PATHS.OURFACILITY,
+            text: TITLES.EN.OUR_FACILITY,
+            to: PATHS.OUR_FACILITY,
           },
           {
             text: TITLES.EN.CONTACT,
@@ -477,7 +477,7 @@ const englishContent = {
         ],
       },
       {
-        title: TITLES.EN.PROJECTCATEGORIES,
+        title: TITLES.EN.PROJECT_CATEGORIES,
         links: [
           {
             text: TITLES.EN.PROJECTS.HANGERS,
@@ -535,7 +535,7 @@ const englishContent = {
         },
         {
           isLink: false,
-          text: TITLES.EN.ABOUTUS,
+          text: TITLES.EN.ABOUT_US,
         },
       ],
       projects: {
@@ -547,7 +547,7 @@ const englishContent = {
           },
           {
             isLink: false,
-            text: TITLES.EN.PROJECTCATEGORIES,
+            text: TITLES.EN.PROJECT_CATEGORIES,
           },
         ],
         projectPage: {
@@ -559,8 +559,8 @@ const englishContent = {
             },
             {
               isLink: true,
-              text: TITLES.EN.PROJECTCATEGORIES,
-              to: PATHS.PROJECTCATEGORIES,
+              text: TITLES.EN.PROJECT_CATEGORIES,
+              to: PATHS.PROJECT_CATEGORIES,
             },
             {
               isLink: false,
@@ -575,8 +575,8 @@ const englishContent = {
             },
             {
               isLink: true,
-              text: TITLES.EN.PROJECTCATEGORIES,
-              to: PATHS.PROJECTCATEGORIES,
+              text: TITLES.EN.PROJECT_CATEGORIES,
+              to: PATHS.PROJECT_CATEGORIES,
             },
             {
               isLink: false,
@@ -591,8 +591,8 @@ const englishContent = {
             },
             {
               isLink: true,
-              text: TITLES.EN.PROJECTCATEGORIES,
-              to: PATHS.PROJECTCATEGORIES,
+              text: TITLES.EN.PROJECT_CATEGORIES,
+              to: PATHS.PROJECT_CATEGORIES,
             },
             {
               isLink: false,
@@ -607,8 +607,8 @@ const englishContent = {
             },
             {
               isLink: true,
-              text: TITLES.EN.PROJECTCATEGORIES,
-              to: PATHS.PROJECTCATEGORIES,
+              text: TITLES.EN.PROJECT_CATEGORIES,
+              to: PATHS.PROJECT_CATEGORIES,
             },
             {
               isLink: false,
@@ -623,8 +623,8 @@ const englishContent = {
             },
             {
               isLink: true,
-              text: TITLES.EN.PROJECTCATEGORIES,
-              to: PATHS.PROJECTCATEGORIES,
+              text: TITLES.EN.PROJECT_CATEGORIES,
+              to: PATHS.PROJECT_CATEGORIES,
             },
             {
               isLink: false,
@@ -641,7 +641,7 @@ const englishContent = {
         },
         {
           isLink: false,
-          text: TITLES.EN.OURFACILITY,
+          text: TITLES.EN.OUR_FACILITY,
         },
       ],
       contact: [

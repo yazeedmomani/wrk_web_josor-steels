@@ -1,7 +1,7 @@
 export const PATHS = {
   HOME: "/josor-steels/",
-  ABOUTUS: "/josor-steels/about-us",
-  PROJECTCATEGORIES: "/josor-steels/projects",
+  ABOUT_US: "/josor-steels/about-us",
+  PROJECT_CATEGORIES: "/josor-steels/projects",
   PROJECTS: {
     HANGERS: "/josor-steels/projects/hangers",
     BRIDGES: "/josor-steels/projects/bridges",
@@ -9,7 +9,7 @@ export const PATHS = {
     CANOPIES: "/josor-steels/projects/canopies",
     OTHER: "/josor-steels/projects/other",
   },
-  OURFACILITY: "/josor-steels/our-facility",
+  OUR_FACILITY: "/josor-steels/our-facility",
   CONTACT: "/josor-steels/contact",
 };
 
@@ -17,8 +17,8 @@ export const TITLES = {
   EN: {
     COMPANY: "Josor Steels",
     HOME: "Home",
-    ABOUTUS: "About us",
-    PROJECTCATEGORIES: "Projects",
+    ABOUT_US: "About us",
+    PROJECT_CATEGORIES: "Projects",
     PROJECTS: {
       HANGERS: "Hangers",
       BRIDGES: "Bridges",
@@ -26,14 +26,14 @@ export const TITLES = {
       CANOPIES: "Canopies",
       OTHER: "Other",
     },
-    OURFACILITY: "Our facility",
+    OUR_FACILITY: "Our facility",
     CONTACT: "Contact",
   },
   AR: {
     COMPANY: "شركة الجسور",
     HOME: "الرئيسية",
-    ABOUTUS: "عنا",
-    PROJECTCATEGORIES: "مشاريع",
+    ABOUT_US: "عنا",
+    PROJECT_CATEGORIES: "مشاريع",
     PROJECTS: {
       HANGERS: "هناجر",
       BRIDGES: "جسور",
@@ -41,7 +41,7 @@ export const TITLES = {
       CANOPIES: "مظلات",
       OTHER: "أخرى",
     },
-    OURFACILITY: "منشأتنا",
+    OUR_FACILITY: "منشأتنا",
     CONTACT: "تواصل معنا",
   },
 };
