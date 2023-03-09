@@ -1,25 +1,31 @@
 .container {
   display: flex;
-  align-items: center; }
+  align-items: center;
+}
 
 .container svg {
-  margin: 0 1.2rem; }
+  margin: 0 1.2rem;
+}
 
 .ul {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
-.li {
+.li{
   display: flex;
-  align-items: center; }
+  align-items: center;
+}
 
 .link a:link,
 .link a:visited {
   text-decoration: underline;
   border-bottom: none;
-  font-size: var(--font-size-p); }
+  font-size: var(--font-size-p);
+}
 
 .container span:last-of-type {
   font-weight: var(--font-weight-bold);
-  cursor: default; }
+  cursor: default;
+}
