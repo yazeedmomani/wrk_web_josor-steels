@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import useWindowDimensions from "../../hooks/use-window-dimensions";
 
-import DynamicHelmet from "../../helmets/DynamicHelmet";
+import DynamicHelmet from "../../components/helmet/dynamic";
 import Image from "../../components/general/Image";
 import PathNav from "../../components/general/PathNav";
 

@@ -1,4 +1,4 @@
-import DynamicHelmet from "../../helmets/DynamicHelmet";
+import DynamicHelmet from "../../components/helmet/dynamic";
 import PathNav from "../../components/general/PathNav";
 import ContactInfo from "../../components/general/ContactInfo";
 import MyMap from "../../components/general/MyMap";

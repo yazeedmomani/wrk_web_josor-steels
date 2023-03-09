@@ -1,4 +1,4 @@
-import DynamicHelmet from "../../helmets/DynamicHelmet";
+import DynamicHelmet from "../../components/helmet/dynamic";
 import Header from "./layouts/header";
 import Services from "./layouts/services";
 import Steps from "./layouts/steps";

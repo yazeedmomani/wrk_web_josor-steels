@@ -1,4 +1,4 @@
-import DynamicHelmet from "../../helmets/DynamicHelmet";
+import DynamicHelmet from "../../components/helmet/dynamic";
 import PaginatedItems from "../../components/pagination/PaginatedItems";
 import ProjectCard from "../../components/general/ProjectCard";
 import PathNav from "../../components/general/PathNav";

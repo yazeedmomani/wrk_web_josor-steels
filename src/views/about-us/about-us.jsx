@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import DynamicHelmet from "../../helmets/DynamicHelmet";
+import DynamicHelmet from "../../components/helmet/dynamic";
 import PathNav from "../../components/general/PathNav";
 import Image from "../../components/general/Image";
 import Slider from "../../components/slider/Slider";
