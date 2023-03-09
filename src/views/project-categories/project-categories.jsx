@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import useWindowDimensions from "../../hooks/use-window-dimensions";
 
 import DynamicHelmet from "../../components/helmet/dynamic";
-import Image from "../../components/general/image/image";
-import Breadcrumb from "../../components/general/breadcrumb/breadcrumb";
+import Image from "../../components/image/image";
+import Breadcrumb from "../../components/breadcrumb/breadcrumb";
 
 import styles from "./project-categories.module.css";
 

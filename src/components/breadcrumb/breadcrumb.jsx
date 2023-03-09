@@ -1,10 +1,10 @@
 import { useContext } from "react";
 
-import PrimaryLink from "../../buttons/primary-link/primary-link";
-import Arrow from "../../../svg/arrow";
+import PrimaryLink from "../primary-link/primary-link";
+import Arrow from "../../svg/arrow";
 
 import styles from "./breadcrumb.module.css";
-import LangContext from "../../../contexts/lang";
+import LangContext from "../../contexts/lang";
 
 function Breadcrumb(props) {
   const langContext = useContext(LangContext);

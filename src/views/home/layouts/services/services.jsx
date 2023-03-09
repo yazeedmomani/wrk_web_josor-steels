@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import SectionSpan from "../../section-span/section-span";
 import Slider from "../../../../components/slider/slider/slider";
-import Image from "../../../../components/general/image/image";
+import Image from "../../../../components/image/image";
 
 import styles from "./services.module.css";
 

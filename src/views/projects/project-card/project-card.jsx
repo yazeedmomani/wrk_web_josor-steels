@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ImageModal from "../../../components/modals/image-modal/image-modal";
+import ImageModal from "../../../components/image-modal/image-modal";
 
 import styles from "./project-card.module.css";
 import useContent from "../../../hooks/use-content";

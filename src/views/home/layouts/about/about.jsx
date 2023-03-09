@@ -1,6 +1,6 @@
 import SectionSpan from "../../section-span/section-span";
-import Image from "../../../../components/general/image/image";
-import PrimaryLink from "../../../../components/buttons/primary-link/primary-link";
+import Image from "../../../../components/image/image";
+import PrimaryLink from "../../../../components/primary-link/primary-link";
 
 import styles from "./about.module.css";
 import useContent from "../../../../hooks/use-content/";

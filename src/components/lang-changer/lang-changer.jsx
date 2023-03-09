@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import LangContext from "../../../contexts/lang";
+import LangContext from "../../contexts/lang";
 
 import styles from "./lang-changer.module.css";
 

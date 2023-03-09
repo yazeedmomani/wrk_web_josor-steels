@@ -1,5 +1,5 @@
 import DynamicHelmet from "../../components/helmet/dynamic";
-import Breadcrumb from "../../components/general/breadcrumb/breadcrumb";
+import Breadcrumb from "../../components/breadcrumb/breadcrumb";
 import ContactInfo from "../../components/contact-info/contact-info";
 import MyMap from "./my-map/my-map";
 import ContactIcon from "../../svg/contact-icon/contact-icon";

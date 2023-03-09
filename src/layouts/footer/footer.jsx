@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 
 import Logo from "../../svg/logo/logo";
-import LangChanger from "../../components/buttons/lang-changer/lang-changer";
+import LangChanger from "../../components/lang-changer/lang-changer";
 import ContactIcon from "../../svg/contact-icon/contact-icon";
 import ContactInfo from "../../components/contact-info/contact-info";
 import ScrollToTop from "../../helpers/scroll-to-top";

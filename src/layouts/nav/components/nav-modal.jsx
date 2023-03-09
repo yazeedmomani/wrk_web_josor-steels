@@ -3,8 +3,8 @@ import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
 
 import CloseBtn from "../../../svg/close-btn/close-btn";
-import Backdrop from "../backdrop/backdrop";
-import LangChanger from "../../buttons/lang-changer/lang-changer";
+import Backdrop from "../../../components/backdrop/backdrop";
+import LangChanger from "../../../components/lang-changer/lang-changer";
 import Expand from "react-expand-animated";
 
 import styles from "./nav-modal.module.css";

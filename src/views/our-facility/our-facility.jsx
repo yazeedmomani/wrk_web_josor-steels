@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 import DynamicHelmet from "../../components/helmet/dynamic";
-import Breadcrumb from "../../components/general/breadcrumb/breadcrumb";
+import Breadcrumb from "../../components/breadcrumb/breadcrumb";
 import PaginatedItems from "../../components/pagination/paginated-items/paginated-items";
-import Image from "../../components/general/image/image";
-import ImageModal from "../../components/modals/image-modal/image-modal";
+import Image from "../../components/image/image";
+import ImageModal from "../../components/image-modal/image-modal";
 
 import styles from "./our-facility.module.css";
 
