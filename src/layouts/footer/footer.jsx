@@ -5,7 +5,7 @@ import Logo from "../../svg/Logo";
 import LangChanger from "../../components/buttons/LangChanger";
 import ContactIcon from "../../svg/ContactIcon";
 import ContactInfo from "../../components/general/ContactInfo";
-import ScrollToTop from "../../components/fixes/ScrollToTop";
+import ScrollToTop from "../../helpers/scroll-to-top";
 
 import styles from "./footer.module.css";
 
