@@ -1,11 +1,13 @@
-import styles from "./backdrop.module.css";
+import classes from "./backdrop.module.scss";
 
-function Backdrop(props) {
+export default function Backdrop({ onClick, children, className }) {
+  const divClasses = `${classes.backdrop} ${className}`;
+
   return (
     <div
-      className={styles.backdrop}
-      onClick={props.onClick}></div>
+      className={divClasses}
+      onClick={onClick}>
+      {children}
+    </div>
   );
 }
-
-export default Backdrop;
