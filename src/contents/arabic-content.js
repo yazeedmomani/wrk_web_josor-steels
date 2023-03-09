@@ -1,95 +1,77 @@
-import { PATHS } from "../constants/";
-
-const titles = {
-  company: "شركة الجسور",
-  home: "الرئيسية",
-  aboutUs: "عنا",
-  projects: {
-    title: "مشاريع",
-    children: {
-      hangers: "هناجر",
-      bridges: "جسور",
-      tubes: "أنابيب",
-      canopies: "مظلات",
-      other: "أخرى",
-    },
-  },
-  ourFacility: "منشأتنا",
-  contact: "تواصل معنا",
-};
+import { PATHS, TITLES } from "../constants/";
 
 const arabicContent = {
   helmet: {
-    defaultTemplate: `%s | ${titles.company}`,
-    homeTitle: titles.home,
-    aboutUsTitle: titles.aboutUs,
-    projectsTitle: titles.projects.title,
-    hangersTitle: titles.projects.children.hangers,
-    bridgesTitle: titles.projects.children.bridges,
-    tubesTitle: titles.projects.children.tubes,
-    canopiesTitle: titles.projects.children.canopies,
-    otherTitle: titles.projects.children.other,
-    ourFacilityTitle: titles.ourFacility,
-    contactTitle: titles.contact,
+    defaultTemplate: `%s | ${TITLES.AR.COMPANY}`,
+    homeTitle: TITLES.AR.HOME,
+    aboutUsTitle: TITLES.AR.ABOUTUS,
+    projectsTitle: TITLES.AR.PROJECTCATEGORIES,
+    hangersTitle: TITLES.AR.PROJECTS.HANGERS,
+    bridgesTitle: TITLES.AR.PROJECTS.BRIDGES,
+    tubesTitle: TITLES.AR.PROJECTS.TUBES,
+    canopiesTitle: TITLES.AR.PROJECTS.CANOPIES,
+    otherTitle: TITLES.AR.PROJECTS.OTHER,
+    ourFacilityTitle: TITLES.AR.OURFACILITY,
+    contactTitle: TITLES.AR.CONTACT,
   },
   nav: {
     homeLink: PATHS.HOME,
     desktopLinks: [
-      { text: titles.aboutUs, to: PATHS.ABOUTUS },
-      { text: titles.projects.title, to: PATHS.PROJECTCATEGORIES },
-      { text: titles.ourFacility, to: PATHS.OURFACILITY },
-      { text: titles.contact, to: PATHS.CONTACT },
+      { text: TITLES.AR.ABOUTUS, to: PATHS.ABOUTUS },
+      { text: TITLES.AR.PROJECTCATEGORIES, to: PATHS.PROJECTCATEGORIES },
+      { text: TITLES.AR.OURFACILITY, to: PATHS.OURFACILITY },
+      { text: TITLES.AR.CONTACT, to: PATHS.CONTACT },
     ],
     modal: [
       {
         isProjects: false,
-        text: titles.aboutUs,
+        text: TITLES.AR.ABOUTUS,
         to: PATHS.ABOUTUS,
       },
       {
         isProjects: true,
-        text: titles.projects.title,
+        text: TITLES.AR.PROJECTCATEGORIES,
         links: [
           {
-            text: titles.projects.children.hangers,
+            text: TITLES.AR.PROJECTS.HANGERS,
             to: PATHS.PROJECTS.HANGERS,
           },
           {
-            text: titles.projects.children.bridges,
+            text: TITLES.AR.PROJECTS.BRIDGES,
             to: PATHS.PROJECTS.BRIDGES,
           },
           {
-            text: titles.projects.children.tubes,
+            text: TITLES.AR.PROJECTS.TUBES,
             to: PATHS.PROJECTS.TUBES,
           },
           {
-            text: titles.projects.children.canopies,
+            text: TITLES.AR.PROJECTS.CANOPIES,
             to: PATHS.PROJECTS.CANOPIES,
           },
           {
-            text: titles.projects.children.other,
+            text: TITLES.AR.PROJECTS.OTHER,
             to: PATHS.PROJECTS.OTHER,
           },
         ],
       },
       {
         isProjects: false,
-        text: titles.ourFacility,
+        text: TITLES.AR.OURFACILITY,
         to: PATHS.OURFACILITY,
       },
       {
         isProjects: false,
-        text: titles.contact,
+        text: TITLES.AR.CONTACT,
         to: PATHS.CONTACT,
       },
     ],
   },
   home: {
     header: {
-      title: titles.company,
+      title: TITLES.AR.COMPANY,
       subTitle: "أطلق العنان لخيالك مع فولاذنا الثابت القوي",
       primaryButton: {
-        text: titles.contact,
+        text: TITLES.AR.CONTACT,
         to: PATHS.CONTACT,
       },
       secondaryButton: "المزيد",
@@ -99,31 +81,31 @@ const arabicContent = {
       title: "نتولى مجموعة متنوعة من المشاريع",
       projectCat: [
         {
-          title: titles.projects.children.hangers,
+          title: TITLES.AR.PROJECTS.HANGERS,
           alt: "هنجر",
           to: PATHS.PROJECTS.HANGERS,
           image: "hangers",
         },
         {
-          title: titles.projects.children.bridges,
+          title: TITLES.AR.PROJECTS.BRIDGES,
           alt: "جسر",
           to: PATHS.PROJECTS.BRIDGES,
           image: "bridges",
         },
         {
-          title: titles.projects.children.tubes,
+          title: TITLES.AR.PROJECTS.TUBES,
           alt: "أنبوب",
           to: PATHS.PROJECTS.TUBES,
           image: "tubes",
         },
         {
-          title: titles.projects.children.canopies,
+          title: TITLES.AR.PROJECTS.CANOPIES,
           alt: "مظلة",
           to: PATHS.PROJECTS.CANOPIES,
           image: "canopies",
         },
         {
-          title: titles.projects.children.other,
+          title: TITLES.AR.PROJECTS.OTHER,
           alt: "أخرى",
           to: PATHS.PROJECTS.OTHER,
           image: "other",
@@ -169,13 +151,13 @@ const arabicContent = {
     contact: {
       title: "هل اقتنعت بنا؟ تواصل معنا!",
       button: {
-        text: titles.contact,
+        text: TITLES.AR.CONTACT,
         to: PATHS.CONTACT,
       },
     },
   },
   aboutUs: {
-    title: titles.aboutUs,
+    title: TITLES.AR.ABOUTUS,
     articles: [
       {
         title: "من نحن",
@@ -188,41 +170,41 @@ const arabicContent = {
           "هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً.",
       },
     ],
-    ourFacility: titles.ourFacility,
+    ourFacility: TITLES.AR.OURFACILITY,
     link: {
       text: "المزيد ←",
       to: PATHS.OURFACILITY,
     },
   },
   projects: {
-    title: titles.projects.title,
+    title: TITLES.AR.PROJECTCATEGORIES,
     categoryCards: [
       {
-        title: titles.projects.children.hangers,
+        title: TITLES.AR.PROJECTS.HANGERS,
         alt: "هنجر",
         to: PATHS.PROJECTS.HANGERS,
         image: "hangers",
       },
       {
-        title: titles.projects.children.bridges,
+        title: TITLES.AR.PROJECTS.BRIDGES,
         alt: "جسر",
         to: PATHS.PROJECTS.BRIDGES,
         image: "bridges",
       },
       {
-        title: titles.projects.children.tubes,
+        title: TITLES.AR.PROJECTS.TUBES,
         alt: "أنبوب",
         to: PATHS.PROJECTS.TUBES,
         image: "tubes",
       },
       {
-        title: titles.projects.children.canopies,
+        title: TITLES.AR.PROJECTS.CANOPIES,
         alt: "مظلة",
         to: PATHS.PROJECTS.CANOPIES,
         image: "canopies",
       },
       {
-        title: titles.projects.children.other,
+        title: TITLES.AR.PROJECTS.OTHER,
         alt: "أخرى",
         to: PATHS.PROJECTS.OTHER,
         image: "other",
@@ -230,7 +212,7 @@ const arabicContent = {
     ],
     categoryPages: {
       hangers: {
-        title: titles.projects.children.hangers,
+        title: TITLES.AR.PROJECTS.HANGERS,
         projectCards: [
           {
             title: "مشروع 01",
@@ -285,7 +267,7 @@ const arabicContent = {
         ],
       },
       bridges: {
-        title: titles.projects.children.bridges,
+        title: TITLES.AR.PROJECTS.BRIDGES,
         projectCards: [
           {
             title: "مشروع 01",
@@ -330,7 +312,7 @@ const arabicContent = {
         ],
       },
       tubes: {
-        title: titles.projects.children.tubes,
+        title: TITLES.AR.PROJECTS.TUBES,
         projectCards: [
           {
             title: "مشروع 01",
@@ -360,7 +342,7 @@ const arabicContent = {
         ],
       },
       canopies: {
-        title: titles.projects.children.canopies,
+        title: TITLES.AR.PROJECTS.CANOPIES,
         projectCards: [
           {
             title: "مشروع 01",
@@ -375,7 +357,7 @@ const arabicContent = {
         ],
       },
       other: {
-        title: titles.projects.children.other,
+        title: TITLES.AR.PROJECTS.OTHER,
         projectCards: [
           {
             title: "مشروع 01",
@@ -462,10 +444,10 @@ const arabicContent = {
     },
   },
   ourFacility: {
-    title: titles.ourFacility,
+    title: TITLES.AR.OURFACILITY,
   },
   contact: {
-    title: titles.contact,
+    title: TITLES.AR.CONTACT,
     infoTitle: "معلومات",
     address: "21، شارع مكان، عمان، الأردن 11953",
     followTitle: "تابعنا على",
@@ -476,57 +458,57 @@ const arabicContent = {
       {
         title: "صفحات",
         links: [
-          titles.aboutUs,
-          titles.projects.title,
-          titles.ourFacility,
-          titles.contact,
+          TITLES.AR.ABOUTUS,
+          TITLES.AR.PROJECTCATEGORIES,
+          TITLES.AR.OURFACILITY,
+          TITLES.AR.CONTACT,
         ],
         links: [
           {
-            text: titles.aboutUs,
+            text: TITLES.AR.ABOUTUS,
             to: PATHS.ABOUTUS,
           },
           {
-            text: titles.projects.title,
+            text: TITLES.AR.PROJECTCATEGORIES,
             to: PATHS.PROJECTCATEGORIES,
           },
           {
-            text: titles.ourFacility,
+            text: TITLES.AR.OURFACILITY,
             to: PATHS.OURFACILITY,
           },
           {
-            text: titles.contact,
+            text: TITLES.AR.CONTACT,
             to: PATHS.CONTACT,
           },
         ],
       },
       {
-        title: titles.projects.title,
+        title: TITLES.AR.PROJECTCATEGORIES,
         links: [
           {
-            text: titles.projects.children.hangers,
+            text: TITLES.AR.PROJECTS.HANGERS,
             to: PATHS.PROJECTS.HANGERS,
           },
           {
-            text: titles.projects.children.bridges,
+            text: TITLES.AR.PROJECTS.BRIDGES,
             to: PATHS.PROJECTS.BRIDGES,
           },
           {
-            text: titles.projects.children.tubes,
+            text: TITLES.AR.PROJECTS.TUBES,
             to: PATHS.PROJECTS.TUBES,
           },
           {
-            text: titles.projects.children.canopies,
+            text: TITLES.AR.PROJECTS.CANOPIES,
             to: PATHS.PROJECTS.CANOPIES,
           },
           {
-            text: titles.projects.children.other,
+            text: TITLES.AR.PROJECTS.OTHER,
             to: PATHS.PROJECTS.OTHER,
           },
         ],
       },
     ],
-    copyright: `${titles.company} © 2023`,
+    copyright: `${TITLES.AR.COMPANY} © 2023`,
   },
   notFound: {
     title: "404",
@@ -554,105 +536,105 @@ const arabicContent = {
       aboutUs: [
         {
           isLink: true,
-          text: titles.home,
+          text: TITLES.AR.HOME,
           to: PATHS.HOME,
         },
         {
           isLink: false,
-          text: titles.aboutUs,
+          text: TITLES.AR.ABOUTUS,
         },
       ],
       projects: {
         categoryPage: [
           {
             isLink: true,
-            text: titles.home,
+            text: TITLES.AR.HOME,
             to: PATHS.HOME,
           },
           {
             isLink: false,
-            text: titles.projects.title,
+            text: TITLES.AR.PROJECTCATEGORIES,
           },
         ],
         projectPage: {
           hangers: [
             {
               isLink: true,
-              text: titles.home,
+              text: TITLES.AR.HOME,
               to: PATHS.HOME,
             },
             {
               isLink: true,
-              text: titles.projects.title,
+              text: TITLES.AR.PROJECTCATEGORIES,
               to: PATHS.PROJECTCATEGORIES,
             },
             {
               isLink: false,
-              text: titles.projects.children.hangers,
+              text: TITLES.AR.PROJECTS.HANGERS,
             },
           ],
           bridges: [
             {
               isLink: true,
-              text: titles.home,
+              text: TITLES.AR.HOME,
               to: PATHS.HOME,
             },
             {
               isLink: true,
-              text: titles.projects.title,
+              text: TITLES.AR.PROJECTCATEGORIES,
               to: PATHS.PROJECTCATEGORIES,
             },
             {
               isLink: false,
-              text: titles.projects.children.bridges,
+              text: TITLES.AR.PROJECTS.BRIDGES,
             },
           ],
           tubes: [
             {
               isLink: true,
-              text: titles.home,
+              text: TITLES.AR.HOME,
               to: PATHS.HOME,
             },
             {
               isLink: true,
-              text: titles.projects.title,
+              text: TITLES.AR.PROJECTCATEGORIES,
               to: PATHS.PROJECTCATEGORIES,
             },
             {
               isLink: false,
-              text: titles.projects.children.tubes,
+              text: TITLES.AR.PROJECTS.TUBES,
             },
           ],
           canopies: [
             {
               isLink: true,
-              text: titles.home,
+              text: TITLES.AR.HOME,
               to: PATHS.HOME,
             },
             {
               isLink: true,
-              text: titles.projects.title,
+              text: TITLES.AR.PROJECTCATEGORIES,
               to: PATHS.PROJECTCATEGORIES,
             },
             {
               isLink: false,
-              text: titles.projects.children.canopies,
+              text: TITLES.AR.PROJECTS.CANOPIES,
             },
           ],
           other: [
             {
               isLink: true,
-              text: titles.home,
+              text: TITLES.AR.HOME,
               to: PATHS.HOME,
             },
             {
               isLink: true,
-              text: titles.projects.title,
+              text: TITLES.AR.PROJECTCATEGORIES,
               to: PATHS.PROJECTCATEGORIES,
             },
             {
               isLink: false,
-              text: titles.projects.children.other,
+              text: TITLES.AR.PROJECTS.OTHER,
             },
           ],
         },
@@ -660,23 +642,23 @@ const arabicContent = {
       ourFacility: [
         {
           isLink: true,
-          text: titles.home,
+          text: TITLES.AR.HOME,
           to: PATHS.HOME,
         },
         {
           isLink: false,
-          text: titles.ourFacility,
+          text: TITLES.AR.OURFACILITY,
         },
       ],
       contact: [
         {
           isLink: true,
-          text: titles.home,
+          text: TITLES.AR.HOME,
           to: PATHS.HOME,
         },
         {
           isLink: false,
-          text: titles.contact,
+          text: TITLES.AR.CONTACT,
         },
       ],
     },

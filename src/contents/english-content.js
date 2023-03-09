@@ -1,92 +1,74 @@
-import { PATHS } from "../constants/";
-
-const titles = {
-  company: "Josor Steels",
-  home: "Home",
-  aboutUs: "About us",
-  projects: {
-    title: "Projects",
-    children: {
-      hangers: "Hangers",
-      bridges: "Bridges",
-      tubes: "Tubes",
-      canopies: "Canopies",
-      other: "Other",
-    },
-  },
-  ourFacility: "Our facility",
-  contact: "Contact",
-};
+import { PATHS, TITLES } from "../constants/";
 
 const englishContent = {
   helmet: {
-    defaultTemplate: `%s | ${titles.company}`,
-    homeTitle: titles.home,
-    aboutUsTitle: titles.aboutUs,
-    projectsTitle: titles.projects.title,
-    hangersTitle: titles.projects.children.hangers,
-    bridgesTitle: titles.projects.children.bridges,
-    tubesTitle: titles.projects.children.tubes,
-    canopiesTitle: titles.projects.children.canopies,
-    otherTitle: titles.projects.children.other,
+    defaultTemplate: `%s | ${TITLES.EN.COMPANY}`,
+    homeTitle: TITLES.EN.HOME,
+    aboutUsTitle: TITLES.EN.ABOUTUS,
+    projectsTitle: TITLES.EN.PROJECTCATEGORIES,
+    hangersTitle: TITLES.EN.PROJECTS.HANGERS,
+    bridgesTitle: TITLES.EN.PROJECTS.BRIDGES,
+    tubesTitle: TITLES.EN.PROJECTS.TUBES,
+    canopiesTitle: TITLES.EN.PROJECTS.CANOPIES,
+    otherTitle: TITLES.EN.PROJECTS.OTHER,
     ourFacilityTitle: "Our Facility",
-    contactTitle: titles.contact,
+    contactTitle: TITLES.EN.CONTACT,
   },
   nav: {
     homeLink: PATHS.HOME,
     desktopLinks: [
-      { text: titles.aboutUs, to: PATHS.ABOUTUS },
-      { text: titles.projects.title, to: PATHS.PROJECTCATEGORIES },
-      { text: titles.ourFacility, to: PATHS.OURFACILITY },
-      { text: titles.contact, to: PATHS.CONTACT },
+      { text: TITLES.EN.ABOUTUS, to: PATHS.ABOUTUS },
+      { text: TITLES.EN.PROJECTCATEGORIES, to: PATHS.PROJECTCATEGORIES },
+      { text: TITLES.EN.OURFACILITY, to: PATHS.OURFACILITY },
+      { text: TITLES.EN.CONTACT, to: PATHS.CONTACT },
     ],
     modal: [
       {
         isProjects: false,
-        text: titles.aboutUs,
+        text: TITLES.EN.ABOUTUS,
         to: PATHS.ABOUTUS,
       },
       {
         isProjects: true,
-        text: titles.projects.title,
+        text: TITLES.EN.PROJECTCATEGORIES,
         links: [
           {
-            text: titles.projects.children.hangers,
+            text: TITLES.EN.PROJECTS.HANGERS,
             to: PATHS.PROJECTS.HANGERS,
           },
           {
-            text: titles.projects.children.bridges,
+            text: TITLES.EN.PROJECTS.BRIDGES,
             to: PATHS.PROJECTS.BRIDGES,
           },
           {
-            text: titles.projects.children.tubes,
+            text: TITLES.EN.PROJECTS.TUBES,
             to: PATHS.PROJECTS.TUBES,
           },
           {
-            text: titles.projects.children.canopies,
+            text: TITLES.EN.PROJECTS.CANOPIES,
             to: PATHS.PROJECTS.CANOPIES,
           },
           {
-            text: titles.projects.children.other,
+            text: TITLES.EN.PROJECTS.OTHER,
             to: PATHS.PROJECTS.OTHER,
           },
         ],
       },
       {
         isProjects: false,
-        text: titles.ourFacility,
+        text: TITLES.EN.OURFACILITY,
         to: PATHS.OURFACILITY,
       },
       {
         isProjects: false,
-        text: titles.contact,
+        text: TITLES.EN.CONTACT,
         to: PATHS.CONTACT,
       },
     ],
   },
   home: {
     header: {
-      title: titles.company,
+      title: TITLES.EN.COMPANY,
       subTitle: "Let your imagination go wild with our strong stable steels",
       primaryButton: {
         text: "Contact us",
@@ -99,31 +81,31 @@ const englishContent = {
       title: "We take on a wide variety of projects",
       projectCat: [
         {
-          title: titles.projects.children.hangers,
+          title: TITLES.EN.PROJECTS.HANGERS,
           alt: "Hanger",
           to: PATHS.PROJECTS.HANGERS,
           image: "hangers",
         },
         {
-          title: titles.projects.children.bridges,
+          title: TITLES.EN.PROJECTS.BRIDGES,
           alt: "Bridge",
           to: PATHS.PROJECTS.BRIDGES,
           image: "bridges",
         },
         {
-          title: titles.projects.children.tubes,
+          title: TITLES.EN.PROJECTS.TUBES,
           alt: "tube",
           to: PATHS.PROJECTS.TUBES,
           image: "tubes",
         },
         {
-          title: titles.projects.children.canopies,
+          title: TITLES.EN.PROJECTS.CANOPIES,
           alt: "Canopy",
           to: PATHS.PROJECTS.CANOPIES,
           image: "canopies",
         },
         {
-          title: titles.projects.children.other,
+          title: TITLES.EN.PROJECTS.OTHER,
           alt: "Other",
           to: PATHS.PROJECTS.OTHER,
           image: "other",
@@ -175,7 +157,7 @@ const englishContent = {
     },
   },
   aboutUs: {
-    title: titles.aboutUs,
+    title: TITLES.EN.ABOUTUS,
     articles: [
       {
         title: "Who we are",
@@ -188,41 +170,41 @@ const englishContent = {
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
       },
     ],
-    ourFacility: titles.ourFacility,
+    ourFacility: TITLES.EN.OURFACILITY,
     link: {
       text: "More images →",
       to: PATHS.OURFACILITY,
     },
   },
   projects: {
-    title: titles.projects.title,
+    title: TITLES.EN.PROJECTCATEGORIES,
     categoryCards: [
       {
-        title: titles.projects.children.hangers,
+        title: TITLES.EN.PROJECTS.HANGERS,
         alt: "Hanger",
         to: PATHS.PROJECTS.HANGERS,
         image: "hangers",
       },
       {
-        title: titles.projects.children.bridges,
+        title: TITLES.EN.PROJECTS.BRIDGES,
         alt: "Bridge",
         to: PATHS.PROJECTS.BRIDGES,
         image: "bridges",
       },
       {
-        title: titles.projects.children.tubes,
+        title: TITLES.EN.PROJECTS.TUBES,
         alt: "tube",
         to: PATHS.PROJECTS.TUBES,
         image: "tubes",
       },
       {
-        title: titles.projects.children.canopies,
+        title: TITLES.EN.PROJECTS.CANOPIES,
         alt: "Canopy",
         to: PATHS.PROJECTS.CANOPIES,
         image: "canopies",
       },
       {
-        title: titles.projects.children.other,
+        title: TITLES.EN.PROJECTS.OTHER,
         alt: "Other",
         to: PATHS.PROJECTS.OTHER,
         image: "other",
@@ -230,7 +212,7 @@ const englishContent = {
     ],
     categoryPages: {
       hangers: {
-        title: titles.projects.children.hangers,
+        title: TITLES.EN.PROJECTS.HANGERS,
         projectCards: [
           {
             title: "Project 01",
@@ -285,7 +267,7 @@ const englishContent = {
         ],
       },
       bridges: {
-        title: titles.projects.children.bridges,
+        title: TITLES.EN.PROJECTS.BRIDGES,
         projectCards: [
           {
             title: "Project 01",
@@ -330,7 +312,7 @@ const englishContent = {
         ],
       },
       tubes: {
-        title: titles.projects.children.tubes,
+        title: TITLES.EN.PROJECTS.TUBES,
         projectCards: [
           {
             title: "Project 01",
@@ -360,7 +342,7 @@ const englishContent = {
         ],
       },
       canopies: {
-        title: titles.projects.children.canopies,
+        title: TITLES.EN.PROJECTS.CANOPIES,
         projectCards: [
           {
             title: "Project 01",
@@ -375,7 +357,7 @@ const englishContent = {
         ],
       },
       other: {
-        title: titles.projects.children.other,
+        title: TITLES.EN.PROJECTS.OTHER,
         projectCards: [
           {
             title: "Project 01",
@@ -462,10 +444,10 @@ const englishContent = {
     },
   },
   ourFacility: {
-    title: titles.ourFacility,
+    title: TITLES.EN.OURFACILITY,
   },
   contact: {
-    title: titles.contact,
+    title: TITLES.EN.CONTACT,
     infoTitle: "Info",
     address: "Somewhere street, Apt. 21, Amman, Jordan, 11953",
     followTitle: "Follow us at",
@@ -477,50 +459,50 @@ const englishContent = {
         title: "Pages",
         links: [
           {
-            text: titles.aboutUs,
+            text: TITLES.EN.ABOUTUS,
             to: PATHS.ABOUTUS,
           },
           {
-            text: titles.projects.title,
+            text: TITLES.EN.PROJECTCATEGORIES,
             to: PATHS.PROJECTCATEGORIES,
           },
           {
-            text: titles.ourFacility,
+            text: TITLES.EN.OURFACILITY,
             to: PATHS.OURFACILITY,
           },
           {
-            text: titles.contact,
+            text: TITLES.EN.CONTACT,
             to: PATHS.CONTACT,
           },
         ],
       },
       {
-        title: titles.projects.title,
+        title: TITLES.EN.PROJECTCATEGORIES,
         links: [
           {
-            text: titles.projects.children.hangers,
+            text: TITLES.EN.PROJECTS.HANGERS,
             to: PATHS.PROJECTS.HANGERS,
           },
           {
-            text: titles.projects.children.bridges,
+            text: TITLES.EN.PROJECTS.BRIDGES,
             to: PATHS.PROJECTS.BRIDGES,
           },
           {
-            text: titles.projects.children.tubes,
+            text: TITLES.EN.PROJECTS.TUBES,
             to: PATHS.PROJECTS.TUBES,
           },
           {
-            text: titles.projects.children.canopies,
+            text: TITLES.EN.PROJECTS.CANOPIES,
             to: PATHS.PROJECTS.CANOPIES,
           },
           {
-            text: titles.projects.children.other,
+            text: TITLES.EN.PROJECTS.OTHER,
             to: PATHS.PROJECTS.OTHER,
           },
         ],
       },
     ],
-    copyright: `${titles.company} © 2023`,
+    copyright: `${TITLES.EN.COMPANY} © 2023`,
   },
   notFound: {
     title: "404",
@@ -548,105 +530,105 @@ const englishContent = {
       aboutUs: [
         {
           isLink: true,
-          text: titles.home,
+          text: TITLES.EN.HOME,
           to: PATHS.HOME,
         },
         {
           isLink: false,
-          text: titles.aboutUs,
+          text: TITLES.EN.ABOUTUS,
         },
       ],
       projects: {
         categoryPage: [
           {
             isLink: true,
-            text: titles.home,
+            text: TITLES.EN.HOME,
             to: PATHS.HOME,
           },
           {
             isLink: false,
-            text: titles.projects.title,
+            text: TITLES.EN.PROJECTCATEGORIES,
           },
         ],
         projectPage: {
           hangers: [
             {
               isLink: true,
-              text: titles.home,
+              text: TITLES.EN.HOME,
               to: PATHS.HOME,
             },
             {
               isLink: true,
-              text: titles.projects.title,
+              text: TITLES.EN.PROJECTCATEGORIES,
               to: PATHS.PROJECTCATEGORIES,
             },
             {
               isLink: false,
-              text: titles.projects.children.hangers,
+              text: TITLES.EN.PROJECTS.HANGERS,
             },
           ],
           bridges: [
             {
               isLink: true,
-              text: titles.home,
+              text: TITLES.EN.HOME,
               to: PATHS.HOME,
             },
             {
               isLink: true,
-              text: titles.projects.title,
+              text: TITLES.EN.PROJECTCATEGORIES,
               to: PATHS.PROJECTCATEGORIES,
             },
             {
               isLink: false,
-              text: titles.projects.children.bridges,
+              text: TITLES.EN.PROJECTS.BRIDGES,
             },
           ],
           tubes: [
             {
               isLink: true,
-              text: titles.home,
+              text: TITLES.EN.HOME,
               to: PATHS.HOME,
             },
             {
               isLink: true,
-              text: titles.projects.title,
+              text: TITLES.EN.PROJECTCATEGORIES,
               to: PATHS.PROJECTCATEGORIES,
             },
             {
               isLink: false,
-              text: titles.projects.children.tubes,
+              text: TITLES.EN.PROJECTS.TUBES,
             },
           ],
           canopies: [
             {
               isLink: true,
-              text: titles.home,
+              text: TITLES.EN.HOME,
               to: PATHS.HOME,
             },
             {
               isLink: true,
-              text: titles.projects.title,
+              text: TITLES.EN.PROJECTCATEGORIES,
               to: PATHS.PROJECTCATEGORIES,
             },
             {
               isLink: false,
-              text: titles.projects.children.canopies,
+              text: TITLES.EN.PROJECTS.CANOPIES,
             },
           ],
           other: [
             {
               isLink: true,
-              text: titles.home,
+              text: TITLES.EN.HOME,
               to: PATHS.HOME,
             },
             {
               isLink: true,
-              text: titles.projects.title,
+              text: TITLES.EN.PROJECTCATEGORIES,
               to: PATHS.PROJECTCATEGORIES,
             },
             {
               isLink: false,
-              text: titles.projects.children.other,
+              text: TITLES.EN.PROJECTS.OTHER,
             },
           ],
         },
@@ -654,23 +636,23 @@ const englishContent = {
       ourFacility: [
         {
           isLink: true,
-          text: titles.home,
+          text: TITLES.EN.HOME,
           to: PATHS.HOME,
         },
         {
           isLink: false,
-          text: titles.ourFacility,
+          text: TITLES.EN.OURFACILITY,
         },
       ],
       contact: [
         {
           isLink: true,
-          text: titles.home,
+          text: TITLES.EN.HOME,
           to: PATHS.HOME,
         },
         {
           isLink: false,
-          text: titles.contact,
+          text: TITLES.EN.CONTACT,
         },
       ],
     },
