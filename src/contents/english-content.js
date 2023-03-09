@@ -1,7 +1,22 @@
-import path from "./link-paths";
-import common from "./common-content";
+import { PATHS } from "../constants/";
 
-const titles = common.en.titles;
+const titles = {
+  company: "Josor Steels",
+  home: "Home",
+  aboutUs: "About us",
+  projects: {
+    title: "Projects",
+    children: {
+      hangers: "Hangers",
+      bridges: "Bridges",
+      tubes: "Tubes",
+      canopies: "Canopies",
+      other: "Other",
+    },
+  },
+  ourFacility: "Our facility",
+  contact: "Contact",
+};
 
 const englishContent = {
   helmet: {
@@ -18,18 +33,18 @@ const englishContent = {
     contactTitle: titles.contact,
   },
   nav: {
-    homeLink: path.home,
+    homeLink: PATHS.HOME,
     desktopLinks: [
-      { text: titles.aboutUs, to: path.aboutUs },
-      { text: titles.projects.title, to: path.projects.path },
-      { text: titles.ourFacility, to: path.ourFacility },
-      { text: titles.contact, to: path.contact },
+      { text: titles.aboutUs, to: PATHS.ABOUTUS },
+      { text: titles.projects.title, to: PATHS.PROJECTS.PATH },
+      { text: titles.ourFacility, to: PATHS.OURFACILITY },
+      { text: titles.contact, to: PATHS.CONTACT },
     ],
     modal: [
       {
         isProjects: false,
         text: titles.aboutUs,
-        to: path.aboutUs,
+        to: PATHS.ABOUTUS,
       },
       {
         isProjects: true,
@@ -37,35 +52,35 @@ const englishContent = {
         links: [
           {
             text: titles.projects.children.hangers,
-            to: path.projects.children.hangers,
+            to: PATHS.PROJECTS.CHILDREN.HANGERS,
           },
           {
             text: titles.projects.children.bridges,
-            to: path.projects.children.bridges,
+            to: PATHS.PROJECTS.CHILDREN.BRIDGES,
           },
           {
             text: titles.projects.children.tubes,
-            to: path.projects.children.tubes,
+            to: PATHS.PROJECTS.CHILDREN.TUBES,
           },
           {
             text: titles.projects.children.canopies,
-            to: path.projects.children.canopies,
+            to: PATHS.PROJECTS.CHILDREN.CANOPIES,
           },
           {
             text: titles.projects.children.other,
-            to: path.projects.children.other,
+            to: PATHS.PROJECTS.CHILDREN.OTHER,
           },
         ],
       },
       {
         isProjects: false,
         text: titles.ourFacility,
-        to: path.ourFacility,
+        to: PATHS.OURFACILITY,
       },
       {
         isProjects: false,
         text: titles.contact,
-        to: path.contact,
+        to: PATHS.CONTACT,
       },
     ],
   },
@@ -75,7 +90,7 @@ const englishContent = {
       subTitle: "Let your imagination go wild with our strong stable steels",
       primaryButton: {
         text: "Contact us",
-        to: path.contact,
+        to: PATHS.CONTACT,
       },
       secondaryButton: "Learn more",
     },
@@ -86,31 +101,31 @@ const englishContent = {
         {
           title: titles.projects.children.hangers,
           alt: "Hanger",
-          to: path.projects.children.hangers,
+          to: PATHS.PROJECTS.CHILDREN.HANGERS,
           image: "hangers",
         },
         {
           title: titles.projects.children.bridges,
           alt: "Bridge",
-          to: path.projects.children.bridges,
+          to: PATHS.PROJECTS.CHILDREN.BRIDGES,
           image: "bridges",
         },
         {
           title: titles.projects.children.tubes,
           alt: "tube",
-          to: path.projects.children.tubes,
+          to: PATHS.PROJECTS.CHILDREN.TUBES,
           image: "tubes",
         },
         {
           title: titles.projects.children.canopies,
           alt: "Canopy",
-          to: path.projects.children.canopies,
+          to: PATHS.PROJECTS.CHILDREN.CANOPIES,
           image: "canopies",
         },
         {
           title: titles.projects.children.other,
           alt: "Other",
-          to: path.projects.children.other,
+          to: PATHS.PROJECTS.CHILDREN.OTHER,
           image: "other",
         },
       ],
@@ -148,14 +163,14 @@ const englishContent = {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
       link: {
         text: "Learn more →",
-        to: path.aboutUs,
+        to: PATHS.ABOUTUS,
       },
     },
     contact: {
       title: "Let's get in touch!",
       button: {
         text: "Contact us",
-        to: path.contact,
+        to: PATHS.CONTACT,
       },
     },
   },
@@ -176,7 +191,7 @@ const englishContent = {
     ourFacility: titles.ourFacility,
     link: {
       text: "More images →",
-      to: path.ourFacility,
+      to: PATHS.OURFACILITY,
     },
   },
   projects: {
@@ -185,31 +200,31 @@ const englishContent = {
       {
         title: titles.projects.children.hangers,
         alt: "Hanger",
-        to: path.projects.children.hangers,
+        to: PATHS.PROJECTS.CHILDREN.HANGERS,
         image: "hangers",
       },
       {
         title: titles.projects.children.bridges,
         alt: "Bridge",
-        to: path.projects.children.bridges,
+        to: PATHS.PROJECTS.CHILDREN.BRIDGES,
         image: "bridges",
       },
       {
         title: titles.projects.children.tubes,
         alt: "tube",
-        to: path.projects.children.tubes,
+        to: PATHS.PROJECTS.CHILDREN.TUBES,
         image: "tubes",
       },
       {
         title: titles.projects.children.canopies,
         alt: "Canopy",
-        to: path.projects.children.canopies,
+        to: PATHS.PROJECTS.CHILDREN.CANOPIES,
         image: "canopies",
       },
       {
         title: titles.projects.children.other,
         alt: "Other",
-        to: path.projects.children.other,
+        to: PATHS.PROJECTS.CHILDREN.OTHER,
         image: "other",
       },
     ],
@@ -456,26 +471,26 @@ const englishContent = {
     followTitle: "Follow us at",
   },
   footer: {
-    logoLink: path.home,
+    logoLink: PATHS.HOME,
     links: [
       {
         title: "Pages",
         links: [
           {
             text: titles.aboutUs,
-            to: path.aboutUs,
+            to: PATHS.ABOUTUS,
           },
           {
             text: titles.projects.title,
-            to: path.projects.path,
+            to: PATHS.PROJECTS.PATH,
           },
           {
             text: titles.ourFacility,
-            to: path.ourFacility,
+            to: PATHS.OURFACILITY,
           },
           {
             text: titles.contact,
-            to: path.contact,
+            to: PATHS.CONTACT,
           },
         ],
       },
@@ -484,23 +499,23 @@ const englishContent = {
         links: [
           {
             text: titles.projects.children.hangers,
-            to: path.projects.children.hangers,
+            to: PATHS.PROJECTS.CHILDREN.HANGERS,
           },
           {
             text: titles.projects.children.bridges,
-            to: path.projects.children.bridges,
+            to: PATHS.PROJECTS.CHILDREN.BRIDGES,
           },
           {
             text: titles.projects.children.tubes,
-            to: path.projects.children.tubes,
+            to: PATHS.PROJECTS.CHILDREN.TUBES,
           },
           {
             text: titles.projects.children.canopies,
-            to: path.projects.children.canopies,
+            to: PATHS.PROJECTS.CHILDREN.CANOPIES,
           },
           {
             text: titles.projects.children.other,
-            to: path.projects.children.other,
+            to: PATHS.PROJECTS.CHILDREN.OTHER,
           },
         ],
       },
@@ -514,7 +529,7 @@ const englishContent = {
       "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
     link: {
       text: "Return to homepage",
-      to: path.home,
+      to: PATHS.HOME,
     },
   },
   components: {
@@ -534,7 +549,7 @@ const englishContent = {
         {
           isLink: true,
           text: titles.home,
-          to: path.home,
+          to: PATHS.HOME,
         },
         {
           isLink: false,
@@ -546,7 +561,7 @@ const englishContent = {
           {
             isLink: true,
             text: titles.home,
-            to: path.home,
+            to: PATHS.HOME,
           },
           {
             isLink: false,
@@ -558,12 +573,12 @@ const englishContent = {
             {
               isLink: true,
               text: titles.home,
-              to: path.home,
+              to: PATHS.HOME,
             },
             {
               isLink: true,
               text: titles.projects.title,
-              to: path.projects.path,
+              to: PATHS.PROJECTS.PATH,
             },
             {
               isLink: false,
@@ -574,12 +589,12 @@ const englishContent = {
             {
               isLink: true,
               text: titles.home,
-              to: path.home,
+              to: PATHS.HOME,
             },
             {
               isLink: true,
               text: titles.projects.title,
-              to: path.projects.path,
+              to: PATHS.PROJECTS.PATH,
             },
             {
               isLink: false,
@@ -590,12 +605,12 @@ const englishContent = {
             {
               isLink: true,
               text: titles.home,
-              to: path.home,
+              to: PATHS.HOME,
             },
             {
               isLink: true,
               text: titles.projects.title,
-              to: path.projects.path,
+              to: PATHS.PROJECTS.PATH,
             },
             {
               isLink: false,
@@ -606,12 +621,12 @@ const englishContent = {
             {
               isLink: true,
               text: titles.home,
-              to: path.home,
+              to: PATHS.HOME,
             },
             {
               isLink: true,
               text: titles.projects.title,
-              to: path.projects.path,
+              to: PATHS.PROJECTS.PATH,
             },
             {
               isLink: false,
@@ -622,12 +637,12 @@ const englishContent = {
             {
               isLink: true,
               text: titles.home,
-              to: path.home,
+              to: PATHS.HOME,
             },
             {
               isLink: true,
               text: titles.projects.title,
-              to: path.projects.path,
+              to: PATHS.PROJECTS.PATH,
             },
             {
               isLink: false,
@@ -640,7 +655,7 @@ const englishContent = {
         {
           isLink: true,
           text: titles.home,
-          to: path.home,
+          to: PATHS.HOME,
         },
         {
           isLink: false,
@@ -651,7 +666,7 @@ const englishContent = {
         {
           isLink: true,
           text: titles.home,
-          to: path.home,
+          to: PATHS.HOME,
         },
         {
           isLink: false,

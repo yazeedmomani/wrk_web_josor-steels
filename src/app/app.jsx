@@ -15,12 +15,12 @@ import OurFacility from "../views/our-facility";
 import Contact from "../views/contact";
 import NotFound from "../views/not-found";
 
-import path from "../contents/link-paths";
+import { PATHS } from "../constants";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route
-      path={path.home}
+      path={PATHS.HOME}
       errorElement={<NotFound />}
       element={<Root />}>
       {/* ///////////////////////////////////// */}
@@ -34,7 +34,7 @@ const router = createBrowserRouter(
       {/* About us */}
       {/* ///////////////////////////////////// */}
       <Route
-        path={path.aboutUs}
+        path={PATHS.ABOUTUS}
         element={
           <>
             <AboutUs />
@@ -45,7 +45,7 @@ const router = createBrowserRouter(
       {/* Projects */}
       {/* ///////////////////////////////////// */}
       <Route
-        path={path.projects.path}
+        path={PATHS.PROJECTS.PATH}
         element={
           <>
             <Outlet />
@@ -63,7 +63,7 @@ const router = createBrowserRouter(
         {/* Hangers */}
         {/* ///////////////////////////////////// */}
         <Route
-          path={path.projects.children.hangers}
+          path={PATHS.PROJECTS.CHILDREN.HANGERS}
           element={
             <>
               <Projects category="hangers" />
@@ -74,7 +74,7 @@ const router = createBrowserRouter(
         {/* Bridges */}
         {/* ///////////////////////////////////// */}
         <Route
-          path={path.projects.children.bridges}
+          path={PATHS.PROJECTS.CHILDREN.BRIDGES}
           element={
             <>
               <Projects category="bridges" />
@@ -85,7 +85,7 @@ const router = createBrowserRouter(
         {/* Tubes */}
         {/* ///////////////////////////////////// */}
         <Route
-          path={path.projects.children.tubes}
+          path={PATHS.PROJECTS.CHILDREN.TUBES}
           element={
             <>
               <Projects category="tubes" />
@@ -96,7 +96,7 @@ const router = createBrowserRouter(
         {/* Canopies */}
         {/* ///////////////////////////////////// */}
         <Route
-          path={path.projects.children.canopies}
+          path={PATHS.PROJECTS.CHILDREN.CANOPIES}
           element={
             <>
               <Projects category="canopies" />
@@ -107,7 +107,7 @@ const router = createBrowserRouter(
         {/* Other */}
         {/* ///////////////////////////////////// */}
         <Route
-          path={path.projects.children.other}
+          path={PATHS.PROJECTS.CHILDREN.OTHER}
           element={
             <>
               <Projects category="other" />
@@ -119,7 +119,7 @@ const router = createBrowserRouter(
       {/* Our facility */}
       {/* ///////////////////////////////////// */}
       <Route
-        path={path.ourFacility}
+        path={PATHS.OURFACILITY}
         element={
           <>
             <OurFacility />
@@ -130,7 +130,7 @@ const router = createBrowserRouter(
       {/* Contact */}
       {/* ///////////////////////////////////// */}
       <Route
-        path={path.contact}
+        path={PATHS.CONTACT}
         element={
           <>
             <Contact />
