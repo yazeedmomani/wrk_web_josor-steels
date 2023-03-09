@@ -1,4 +1,4 @@
-import SectionSpan from "../../../../components/general/section-span/section-span";
+import SectionSpan from "../../section-span/section-span";
 import Image from "../../../../components/general/image/image";
 import PrimaryLink from "../../../../components/buttons/primary-link/primary-link";
 

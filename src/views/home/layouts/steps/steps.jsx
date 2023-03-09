@@ -1,5 +1,5 @@
-import SectionSpan from "../../../../components/general/section-span/section-span";
-import Step from "../../../../components/general/step/step";
+import SectionSpan from "../../section-span/section-span";
+import Step from "./components/step";
 
 import DUMMY01 from "../../../../svg/DUMMY-01";
 import DUMMY02 from "../../../../svg/DUMMY-02";
