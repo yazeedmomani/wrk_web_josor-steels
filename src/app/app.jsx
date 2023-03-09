@@ -45,7 +45,7 @@ const router = createBrowserRouter(
       {/* Projects */}
       {/* ///////////////////////////////////// */}
       <Route
-        path={PATHS.PROJECTS.PATH}
+        path={PATHS.PROJECTCATEGORIES}
         element={
           <>
             <Outlet />
@@ -63,7 +63,7 @@ const router = createBrowserRouter(
         {/* Hangers */}
         {/* ///////////////////////////////////// */}
         <Route
-          path={PATHS.PROJECTS.CHILDREN.HANGERS}
+          path={PATHS.PROJECTS.HANGERS}
           element={
             <>
               <Projects category="hangers" />
@@ -74,7 +74,7 @@ const router = createBrowserRouter(
         {/* Bridges */}
         {/* ///////////////////////////////////// */}
         <Route
-          path={PATHS.PROJECTS.CHILDREN.BRIDGES}
+          path={PATHS.PROJECTS.BRIDGES}
           element={
             <>
               <Projects category="bridges" />
@@ -85,7 +85,7 @@ const router = createBrowserRouter(
         {/* Tubes */}
         {/* ///////////////////////////////////// */}
         <Route
-          path={PATHS.PROJECTS.CHILDREN.TUBES}
+          path={PATHS.PROJECTS.TUBES}
           element={
             <>
               <Projects category="tubes" />
@@ -96,7 +96,7 @@ const router = createBrowserRouter(
         {/* Canopies */}
         {/* ///////////////////////////////////// */}
         <Route
-          path={PATHS.PROJECTS.CHILDREN.CANOPIES}
+          path={PATHS.PROJECTS.CANOPIES}
           element={
             <>
               <Projects category="canopies" />
@@ -107,7 +107,7 @@ const router = createBrowserRouter(
         {/* Other */}
         {/* ///////////////////////////////////// */}
         <Route
-          path={PATHS.PROJECTS.CHILDREN.OTHER}
+          path={PATHS.PROJECTS.OTHER}
           element={
             <>
               <Projects category="other" />

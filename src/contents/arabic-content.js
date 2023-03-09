@@ -36,7 +36,7 @@ const arabicContent = {
     homeLink: PATHS.HOME,
     desktopLinks: [
       { text: titles.aboutUs, to: PATHS.ABOUTUS },
-      { text: titles.projects.title, to: PATHS.PROJECTS.PATH },
+      { text: titles.projects.title, to: PATHS.PROJECTCATEGORIES },
       { text: titles.ourFacility, to: PATHS.OURFACILITY },
       { text: titles.contact, to: PATHS.CONTACT },
     ],
@@ -52,23 +52,23 @@ const arabicContent = {
         links: [
           {
             text: titles.projects.children.hangers,
-            to: PATHS.PROJECTS.CHILDREN.HANGERS,
+            to: PATHS.PROJECTS.HANGERS,
           },
           {
             text: titles.projects.children.bridges,
-            to: PATHS.PROJECTS.CHILDREN.BRIDGES,
+            to: PATHS.PROJECTS.BRIDGES,
           },
           {
             text: titles.projects.children.tubes,
-            to: PATHS.PROJECTS.CHILDREN.TUBES,
+            to: PATHS.PROJECTS.TUBES,
           },
           {
             text: titles.projects.children.canopies,
-            to: PATHS.PROJECTS.CHILDREN.CANOPIES,
+            to: PATHS.PROJECTS.CANOPIES,
           },
           {
             text: titles.projects.children.other,
-            to: PATHS.PROJECTS.CHILDREN.OTHER,
+            to: PATHS.PROJECTS.OTHER,
           },
         ],
       },
@@ -101,31 +101,31 @@ const arabicContent = {
         {
           title: titles.projects.children.hangers,
           alt: "هنجر",
-          to: PATHS.PROJECTS.CHILDREN.HANGERS,
+          to: PATHS.PROJECTS.HANGERS,
           image: "hangers",
         },
         {
           title: titles.projects.children.bridges,
           alt: "جسر",
-          to: PATHS.PROJECTS.CHILDREN.BRIDGES,
+          to: PATHS.PROJECTS.BRIDGES,
           image: "bridges",
         },
         {
           title: titles.projects.children.tubes,
           alt: "أنبوب",
-          to: PATHS.PROJECTS.CHILDREN.TUBES,
+          to: PATHS.PROJECTS.TUBES,
           image: "tubes",
         },
         {
           title: titles.projects.children.canopies,
           alt: "مظلة",
-          to: PATHS.PROJECTS.CHILDREN.CANOPIES,
+          to: PATHS.PROJECTS.CANOPIES,
           image: "canopies",
         },
         {
           title: titles.projects.children.other,
           alt: "أخرى",
-          to: PATHS.PROJECTS.CHILDREN.OTHER,
+          to: PATHS.PROJECTS.OTHER,
           image: "other",
         },
       ],
@@ -200,31 +200,31 @@ const arabicContent = {
       {
         title: titles.projects.children.hangers,
         alt: "هنجر",
-        to: PATHS.PROJECTS.CHILDREN.HANGERS,
+        to: PATHS.PROJECTS.HANGERS,
         image: "hangers",
       },
       {
         title: titles.projects.children.bridges,
         alt: "جسر",
-        to: PATHS.PROJECTS.CHILDREN.BRIDGES,
+        to: PATHS.PROJECTS.BRIDGES,
         image: "bridges",
       },
       {
         title: titles.projects.children.tubes,
         alt: "أنبوب",
-        to: PATHS.PROJECTS.CHILDREN.TUBES,
+        to: PATHS.PROJECTS.TUBES,
         image: "tubes",
       },
       {
         title: titles.projects.children.canopies,
         alt: "مظلة",
-        to: PATHS.PROJECTS.CHILDREN.CANOPIES,
+        to: PATHS.PROJECTS.CANOPIES,
         image: "canopies",
       },
       {
         title: titles.projects.children.other,
         alt: "أخرى",
-        to: PATHS.PROJECTS.CHILDREN.OTHER,
+        to: PATHS.PROJECTS.OTHER,
         image: "other",
       },
     ],
@@ -488,7 +488,7 @@ const arabicContent = {
           },
           {
             text: titles.projects.title,
-            to: PATHS.PROJECTS.PATH,
+            to: PATHS.PROJECTCATEGORIES,
           },
           {
             text: titles.ourFacility,
@@ -505,23 +505,23 @@ const arabicContent = {
         links: [
           {
             text: titles.projects.children.hangers,
-            to: PATHS.PROJECTS.CHILDREN.HANGERS,
+            to: PATHS.PROJECTS.HANGERS,
           },
           {
             text: titles.projects.children.bridges,
-            to: PATHS.PROJECTS.CHILDREN.BRIDGES,
+            to: PATHS.PROJECTS.BRIDGES,
           },
           {
             text: titles.projects.children.tubes,
-            to: PATHS.PROJECTS.CHILDREN.TUBES,
+            to: PATHS.PROJECTS.TUBES,
           },
           {
             text: titles.projects.children.canopies,
-            to: PATHS.PROJECTS.CHILDREN.CANOPIES,
+            to: PATHS.PROJECTS.CANOPIES,
           },
           {
             text: titles.projects.children.other,
-            to: PATHS.PROJECTS.CHILDREN.OTHER,
+            to: PATHS.PROJECTS.OTHER,
           },
         ],
       },
@@ -584,7 +584,7 @@ const arabicContent = {
             {
               isLink: true,
               text: titles.projects.title,
-              to: PATHS.PROJECTS.PATH,
+              to: PATHS.PROJECTCATEGORIES,
             },
             {
               isLink: false,
@@ -600,7 +600,7 @@ const arabicContent = {
             {
               isLink: true,
               text: titles.projects.title,
-              to: PATHS.PROJECTS.PATH,
+              to: PATHS.PROJECTCATEGORIES,
             },
             {
               isLink: false,
@@ -616,7 +616,7 @@ const arabicContent = {
             {
               isLink: true,
               text: titles.projects.title,
-              to: PATHS.PROJECTS.PATH,
+              to: PATHS.PROJECTCATEGORIES,
             },
             {
               isLink: false,
@@ -632,7 +632,7 @@ const arabicContent = {
             {
               isLink: true,
               text: titles.projects.title,
-              to: PATHS.PROJECTS.PATH,
+              to: PATHS.PROJECTCATEGORIES,
             },
             {
               isLink: false,
@@ -648,7 +648,7 @@ const arabicContent = {
             {
               isLink: true,
               text: titles.projects.title,
-              to: PATHS.PROJECTS.PATH,
+              to: PATHS.PROJECTCATEGORIES,
             },
             {
               isLink: false,
