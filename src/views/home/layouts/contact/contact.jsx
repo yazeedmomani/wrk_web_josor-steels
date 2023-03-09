@@ -4,7 +4,7 @@ import Button from "../../../../components/buttons/Button";
 
 import styles from "./contact.module.css";
 
-import useContent from "../../../../hooks/use-content/use-content";
+import useContent from "../../../../hooks/use-content/";
 
 export default function Contact() {
   const [content] = useContent();

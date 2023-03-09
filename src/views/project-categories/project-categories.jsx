@@ -11,7 +11,7 @@ import styles from "./project-categories.module.css";
 
 import Slider from "../../components/slider/Slider";
 
-import useContent from "../../hooks/use-content/use-content";
+import useContent from "../../hooks/use-content/";
 
 export default function ProjectCategories() {
   const [isDesktop, setIsDesktop] = useState(false);

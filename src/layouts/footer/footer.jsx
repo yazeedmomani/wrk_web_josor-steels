@@ -11,7 +11,7 @@ import styles from "./footer.module.css";
 
 import LangContext from "../../contexts/lang";
 
-import useContent from "../../hooks/use-content/use-content";
+import useContent from "../../hooks/use-content/";
 
 export default function Footer() {
   const langContext = useContext(LangContext);

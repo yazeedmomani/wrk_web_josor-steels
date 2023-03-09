@@ -2,7 +2,7 @@ import { useState } from "react";
 import ImageModal from "../modals/ImageModal";
 
 import styles from "./ProjectCard.module.css";
-import useContent from "../../hooks/use-content/use-content";
+import useContent from "../../hooks/use-content/";
 
 function ProjectCard(props) {
   const [showModal, setShowModal] = useState(false);

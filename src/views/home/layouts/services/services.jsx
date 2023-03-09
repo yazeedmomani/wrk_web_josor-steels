@@ -7,7 +7,7 @@ import Image from "../../../../components/general/Image";
 
 import styles from "./services.module.css";
 
-import useContent from "../../../../hooks/use-content/use-content";
+import useContent from "../../../../hooks/use-content/";
 
 export default function Services() {
   const [content, images] = useContent();

@@ -9,7 +9,7 @@ import ImageModal from "../../components/modals/ImageModal";
 import styles from "./about-us.module.css";
 
 import PrimaryLink from "../../components/buttons/PrimaryLink";
-import useContent from "../../hooks/use-content/use-content";
+import useContent from "../../hooks/use-content/";
 
 export default function AboutUs() {
   const [showModal, setShowModal] = useState(false);

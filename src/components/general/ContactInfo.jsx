@@ -2,7 +2,7 @@ import ContactIcon from "../../svg/ContactIcon";
 
 import styles from "./ContactInfo.module.css";
 
-import useContent from "../../hooks/use-content/use-content";
+import useContent from "../../hooks/use-content/";
 
 function ContactInfo(props) {
   const [content] = useContent();
