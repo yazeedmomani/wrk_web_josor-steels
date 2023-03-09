@@ -3,7 +3,7 @@ import Image from "../../../../components/general/Image";
 import PrimaryLink from "../../../../components/buttons/PrimaryLink";
 
 import styles from "./about.module.css";
-import useContent from "../../../../hooks/use-content";
+import useContent from "../../../../hooks/use-content/use-content";
 
 export default function About() {
   const [content, images] = useContent();

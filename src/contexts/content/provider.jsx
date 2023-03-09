@@ -1,7 +1,7 @@
 import Content from "./";
 
-import enContent from "../../contents/english";
-import arContent from "../../contents/arabic";
+import enContent from "./contents/english";
+import arContent from "./contents/arabic";
 
 export default function Provider(props) {
   const content = {

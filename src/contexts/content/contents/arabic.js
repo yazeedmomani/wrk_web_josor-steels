@@ -1,4 +1,4 @@
-import { PATHS, TITLES } from "../constants";
+import { PATHS, TITLES } from "../../../constants";
 
 const arabic = {
   helmet: {

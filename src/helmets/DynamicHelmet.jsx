@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
-import useContent from "../hooks/use-content";
+import useContent from "../hooks/use-content/use-content";
 
 function DynamicHelmet(props) {
   const [content] = useContent();

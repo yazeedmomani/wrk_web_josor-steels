@@ -8,7 +8,7 @@ import LangChanger from "../buttons/LangChanger";
 import Expand from "react-expand-animated";
 
 import styles from "./NavModal.module.css";
-import useContent from "../../hooks/use-content";
+import useContent from "../../hooks/use-content/use-content";
 
 function NavModal(props) {
   const [showProjects, setShowProjects] = useState(false);

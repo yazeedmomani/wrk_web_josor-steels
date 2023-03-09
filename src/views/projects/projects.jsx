@@ -6,7 +6,7 @@ import PathNav from "../../components/general/PathNav";
 import styles from "./projects.module.css";
 
 import useWindowDimensions from "../../hooks/use-window-dimensions";
-import useContent from "../../hooks/use-content";
+import useContent from "../../hooks/use-content/use-content";
 
 export default function Projects(props) {
   const [content, images, pathNav] = useContent();

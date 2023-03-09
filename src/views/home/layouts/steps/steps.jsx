@@ -7,7 +7,7 @@ import DUMMY03 from "../../../../svg/DUMMY-03";
 import DUMMY04 from "../../../../svg/DUMMY-04";
 
 import styles from "./steps.module.css";
-import useContent from "../../../../hooks/use-content";
+import useContent from "../../../../hooks/use-content/use-content";
 
 export default function Steps() {
   const [content] = useContent();

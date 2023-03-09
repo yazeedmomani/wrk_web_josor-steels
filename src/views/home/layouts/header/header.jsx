@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 import styles from "./header.module.css";
 
 import Button from "../../../../components/buttons/Button";
-import useContent from "../../../../hooks/use-content";
+import useContent from "../../../../hooks/use-content/use-content";
 
 export default function Header() {
   const [content] = useContent();

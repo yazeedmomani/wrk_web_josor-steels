@@ -9,7 +9,7 @@ import ImageModal from "../../components/modals/ImageModal";
 import styles from "./our-facility.module.css";
 
 import useWindowDimensions from "../../hooks/use-window-dimensions";
-import useContent from "../../hooks/use-content";
+import useContent from "../../hooks/use-content/use-content";
 
 export default function OurFacility() {
   const [showModal, setShowModal] = useState(false);

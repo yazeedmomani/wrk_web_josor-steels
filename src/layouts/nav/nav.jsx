@@ -9,7 +9,7 @@ import Logo from "../../svg/Logo";
 import MenuButton from "../../svg/MenuButton";
 import NavModal from "../../components/modals/NavModal";
 
-import useContent from "../../hooks/use-content";
+import useContent from "../../hooks/use-content/use-content";
 
 export default function Nav() {
   const [showModal, setShowModal] = useState(false);

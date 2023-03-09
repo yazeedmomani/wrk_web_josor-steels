@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import RootHelmet from "../../helmets/RootHelmet";
-import useContent from "../../hooks/use-content";
+import useContent from "../../hooks/use-content/use-content";
 import ContactIcon from "../../svg/ContactIcon";
 
 import styles from "./not-found.module.css";
