@@ -2,7 +2,7 @@ import { useNavigate } from "react-router";
 
 import styles from "./header.module.css";
 
-import Button from "../../../../components/buttons/Button";
+import Button from "../../../../components/buttons/button/button";
 import useContent from "../../../../hooks/use-content/";
 
 export default function Header() {

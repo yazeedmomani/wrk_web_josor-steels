@@ -1,4 +1,4 @@
-import styles from "./SectionSpan.module.css";
+import styles from "./section-span.module.css";
 
 function SectionSpan(props) {
   return <span className={styles.span}>{props.children}</span>;

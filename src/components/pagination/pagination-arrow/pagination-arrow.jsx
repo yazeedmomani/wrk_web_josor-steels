@@ -1,6 +1,6 @@
-import Arrow from "../../svg/Arrow";
+import Arrow from "../../../svg/Arrow";
 
-import styles from "./PaginationArrow.module.css";
+import styles from "./pagination-arrow.module.css";
 
 function PaginationArrow(props) {
   return (

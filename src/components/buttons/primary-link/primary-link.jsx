@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import styles from "./PrimaryLink.module.css";
+import styles from "./primary-link.module.css";
 
 function PrimaryLink(props) {
   return (

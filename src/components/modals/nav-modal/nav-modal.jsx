@@ -2,13 +2,13 @@ import { useState } from "react";
 import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
 
-import CloseBtn from "../../svg/CloseBtn";
-import Backdrop from "./Backdrop";
-import LangChanger from "../buttons/LangChanger";
+import CloseBtn from "../../../svg/CloseBtn";
+import Backdrop from "../backdrop/backdrop";
+import LangChanger from "../../buttons/lang-changer/lang-changer";
 import Expand from "react-expand-animated";
 
-import styles from "./NavModal.module.css";
-import useContent from "../../hooks/use-content/";
+import styles from "./nav-modal.module.css";
+import useContent from "../../../hooks/use-content";
 
 function NavModal(props) {
   const [showProjects, setShowProjects] = useState(false);

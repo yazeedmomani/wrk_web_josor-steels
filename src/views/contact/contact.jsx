@@ -1,7 +1,7 @@
 import DynamicHelmet from "../../components/helmet/dynamic";
 import Breadcrumb from "../../components/general/breadcrumb/breadcrumb";
-import ContactInfo from "../../components/general/ContactInfo";
-import MyMap from "../../components/general/MyMap";
+import ContactInfo from "../../components/general/contact-info/contact-info";
+import MyMap from "../../components/general/my-map/my-map";
 import ContactIcon from "../../svg/ContactIcon";
 
 import styles from "./contact.module.css";

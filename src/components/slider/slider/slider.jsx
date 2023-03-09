@@ -1,13 +1,13 @@
 import Carousel from "react-multi-carousel";
-import CustomDot from "./CustomDot";
-import SliderArrow from "./SliderArrow";
+import CustomDot from "../custom-dot/custom-dot";
+import SliderArrow from "../slider-arrow/slider-arrow";
 
 import "react-multi-carousel/lib/styles.css";
 import { useContext } from "react";
 
-import LangContext from "../../contexts/lang";
+import LangContext from "../../../contexts/lang";
 
-import styles from "./Slider.module.css";
+import styles from "./slider.module.css";
 
 const responsive = {
   superLargeDesktop: {

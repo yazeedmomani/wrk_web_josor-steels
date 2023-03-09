@@ -1,11 +1,11 @@
 import React, { useState, useContext } from "react";
 import ReactPaginate from "react-paginate";
 
-import PaginationArrow from "./PaginationArrow";
+import PaginationArrow from "../pagination-arrow/pagination-arrow";
 
-import styles from "./PaginatedItems.module.css";
+import styles from "./paginated-items.module.css";
 
-import LangContext from "../../contexts/lang";
+import LangContext from "../../../contexts/lang";
 
 function PaginatedItems({
   itemsPerPage,

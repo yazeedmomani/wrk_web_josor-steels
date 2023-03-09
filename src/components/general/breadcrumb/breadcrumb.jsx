@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import PrimaryLink from "../../buttons/PrimaryLink";
+import PrimaryLink from "../../buttons/primary-link/primary-link";
 import Arrow from "../../../svg/Arrow";
 
 import styles from "./breadcrumb.module.css";

@@ -2,9 +2,9 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 
 import Logo from "../../svg/Logo";
-import LangChanger from "../../components/buttons/LangChanger";
+import LangChanger from "../../components/buttons/lang-changer/lang-changer";
 import ContactIcon from "../../svg/ContactIcon";
-import ContactInfo from "../../components/general/ContactInfo";
+import ContactInfo from "../../components/general/contact-info/contact-info";
 import ScrollToTop from "../../helpers/scroll-to-top";
 
 import styles from "./footer.module.css";

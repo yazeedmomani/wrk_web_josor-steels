@@ -1,10 +1,10 @@
 import { createPortal } from "react-dom";
 
-import Backdrop from "./Backdrop";
-import Slider from "../slider/Slider";
-import CloseBtn from "../../svg/CloseBtn";
+import Backdrop from "../backdrop/backdrop";
+import Slider from "../../slider/slider/slider";
+import CloseBtn from "../../../svg/CloseBtn";
 
-import styles from "./ImageModal.module.css";
+import styles from "./image-modal.module.css";
 
 const responsive = {
   superLargeDesktop: {

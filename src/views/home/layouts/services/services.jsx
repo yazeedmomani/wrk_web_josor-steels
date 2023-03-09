@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 
-import SectionSpan from "../../../../components/general/SectionSpan";
-import Slider from "../../../../components/slider/Slider";
-import Image from "../../../../components/general/Image";
+import SectionSpan from "../../../../components/general/section-span/section-span";
+import Slider from "../../../../components/slider/slider/slider";
+import Image from "../../../../components/general/image/image";
 
 import styles from "./services.module.css";
 

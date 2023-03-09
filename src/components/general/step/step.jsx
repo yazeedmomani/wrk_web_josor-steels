@@ -1,4 +1,4 @@
-import styles from "./Step.module.css";
+import styles from "./step.module.css";
 
 function Step(props) {
   return (

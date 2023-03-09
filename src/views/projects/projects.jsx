@@ -1,6 +1,6 @@
 import DynamicHelmet from "../../components/helmet/dynamic";
-import PaginatedItems from "../../components/pagination/PaginatedItems";
-import ProjectCard from "../../components/general/ProjectCard";
+import PaginatedItems from "../../components/pagination/paginated-items/paginated-items";
+import ProjectCard from "../../components/general/project-card/project-card";
 import Breadcrumb from "../../components/general/breadcrumb/breadcrumb";
 
 import styles from "./projects.module.css";

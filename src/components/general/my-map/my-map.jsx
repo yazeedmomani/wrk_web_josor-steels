@@ -1,6 +1,6 @@
 import { Map, Marker, ZoomControl } from "pigeon-maps";
 
-import styles from "./MyMap.module.css";
+import styles from "./my-map.module.css";
 
 function MyMap(props) {
   const coords = [32.11604367386156, 36.135051653208826];

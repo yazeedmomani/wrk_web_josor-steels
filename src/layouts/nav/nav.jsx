@@ -7,7 +7,7 @@ import useWindowDimensions from "../../hooks/use-window-dimensions";
 
 import Logo from "../../svg/Logo";
 import MenuButton from "../../svg/MenuButton";
-import NavModal from "../../components/modals/NavModal";
+import NavModal from "../../components/modals/nav-modal/nav-modal";
 
 import useContent from "../../hooks/use-content/";
 

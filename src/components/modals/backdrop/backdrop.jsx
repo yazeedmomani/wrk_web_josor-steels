@@ -1,4 +1,4 @@
-import styles from "./Backdrop.module.css";
+import styles from "./backdrop.module.css";
 
 function Backdrop(props) {
   return (

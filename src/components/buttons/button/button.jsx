@@ -1,4 +1,4 @@
-import classes from "./Button.module.scss";
+import classes from "./button.module.scss";
 import cn from "classnames";
 
 Button.defaultProps = {

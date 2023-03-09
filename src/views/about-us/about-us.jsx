@@ -2,13 +2,13 @@ import { useState } from "react";
 
 import DynamicHelmet from "../../components/helmet/dynamic";
 import Breadcrumb from "../../components/general/breadcrumb/breadcrumb";
-import Image from "../../components/general/Image";
-import Slider from "../../components/slider/Slider";
-import ImageModal from "../../components/modals/ImageModal";
+import Image from "../../components/general/image/image";
+import Slider from "../../components/slider/slider/slider";
+import ImageModal from "../../components/modals/image-modal/image-modal";
 
 import styles from "./about-us.module.css";
 
-import PrimaryLink from "../../components/buttons/PrimaryLink";
+import PrimaryLink from "../../components/buttons/primary-link/primary-link";
 import useContent from "../../hooks/use-content/";
 
 export default function AboutUs() {

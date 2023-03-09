@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 
-import Button from "../../../../components/buttons/Button";
+import Button from "../../../../components/buttons/button/button";
 
 import styles from "./contact.module.css";
 

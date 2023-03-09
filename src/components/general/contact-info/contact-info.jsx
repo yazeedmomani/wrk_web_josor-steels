@@ -1,8 +1,8 @@
-import ContactIcon from "../../svg/ContactIcon";
+import ContactIcon from "../../../svg/ContactIcon";
 
-import styles from "./ContactInfo.module.css";
+import styles from "./contact-info.module.css";
 
-import useContent from "../../hooks/use-content/";
+import useContent from "../../../hooks/use-content";
 
 function ContactInfo(props) {
   const [content] = useContent();

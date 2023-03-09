@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import useWindowDimensions from "../../hooks/use-window-dimensions";
 
 import DynamicHelmet from "../../components/helmet/dynamic";
-import Image from "../../components/general/Image";
+import Image from "../../components/general/image/image";
 import Breadcrumb from "../../components/general/breadcrumb/breadcrumb";
 
 import styles from "./project-categories.module.css";
 
-import Slider from "../../components/slider/Slider";
+import Slider from "../../components/slider/slider/slider";
 
 import useContent from "../../hooks/use-content/";
 

@@ -1,4 +1,4 @@
-import styles from "./Image.module.css";
+import styles from "./image.module.css";
 
 function Image(props) {
   return (
