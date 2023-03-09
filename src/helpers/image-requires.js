@@ -1,4 +1,4 @@
-const images = {
+const imagesRequires = {
   home: {
     aboutUs: require("../images/home/aboutUs.jpeg"),
   },
@@ -305,4 +305,4 @@ const images = {
   ],
 };
 
-export default images;
+export default image-requires;
