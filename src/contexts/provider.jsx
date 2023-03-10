@@ -1,5 +1,5 @@
-import LangProvider from "./lang/provider";
-import ContentProvider from "./content/provider";
+import { Provider as LangProvider } from "./lang/";
+import { Provider as ContentProvider } from "./content/";
 
 export default function Provider(props) {
   return (
