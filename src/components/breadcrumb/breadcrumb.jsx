@@ -11,7 +11,7 @@ export default memo(function Breadcrumb({ items, styles: className }) {
   const langContext = useContext(LangContext);
 
   // Determine the arrow direction based on the language direction
-  const arrowDirection = langContext.dir === "rtl" ? "left" : "right";
+  const arrowDirection = langContext.dir === "rtl" ? true : false;
 
   // Create the container class string by joining the container styles and the passed in className
   const containerClasses = [styles.container, className].join(" ");
