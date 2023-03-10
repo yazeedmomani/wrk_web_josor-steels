@@ -1,31 +1,43 @@
-.container {
+// This is a SCSS stylesheet for the Breadcrumb component.
+
+.breadcrumb {
+  /* Setting display and alignment properties for the breadcrumb container */
   display: flex;
   align-items: center;
-}
 
-.container svg {
-  margin: 0 1.2rem;
-}
+  & svg {
+    /* Adding margin to the Arrow component */
+    margin: 0 1.2rem;
+  }
 
-.ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  &_ul {
+    /* Setting display and alignment properties for the unordered list */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.li{
-  display: flex;
-  align-items: center;
-}
+  &_li {
+    /* Setting display and alignment properties for the list items */
+    display: flex;
+    align-items: center;
+  }
 
-.link a:link,
-.link a:visited {
-  text-decoration: underline;
-  border-bottom: none;
-  font-size: var(--font-size-p);
-}
+  &_link {
+    & a:link,
+    & a:visited {
+      /* Adding text decoration and font size properties to the link component */
+      text-decoration: underline;
+      border-bottom: none;
+      font-size: var(--font-size-p);
+    }
+  }
 
-.container span:last-of-type {
-  font-weight: var(--font-weight-bold);
-  cursor: default;
+  & span:last-of-type {
+    /* Adding font weight property to the last span element */
+    font-weight: var(--font-weight-bold);
+
+    /* Changing cursor type to default */
+    cursor: default;
+  }
 }
