@@ -1,23 +1,26 @@
+/* Defines styles for a backdrop element that can be used to create a background overlay */
 .backdrop {
+  /* Makes the backdrop cover the entire viewport */
   width: 100vw;
   height: 100vh;
+
+  /* Positions the backdrop at the top-left corner of the viewport */
   position: fixed;
   top: 0;
   left: 0;
+
+  /* Defines the color of the backdrop */
   background-color: var(--color-backdrop);
+
+  /* Makes the backdrop's opacity change smoothly over a duration of 0.2 seconds */
   transition: opacity 0.2s ease-in-out;
+
+  /* Makes the backdrop fully visible by default */
   opacity: 1;
-  // animation: 300ms show-modal forwards;
+
+  /* Changes the mouse cursor to a pointer when it hovers over the backdrop */
   cursor: pointer;
+
+  /* Positions the backdrop above most other elements on the page */
   z-index: 5000;
 }
-
-// @keyframes show-modal {
-//   0% {
-//     opacity: 0;
-//   }
-
-//   100% {
-//     opacity: 100%;
-//   }
-// }
