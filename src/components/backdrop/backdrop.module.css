@@ -5,13 +5,8 @@
   top: 0;
   left: 0;
   background-color: var(--color-backdrop);
-  transition: all 3s;
-  animation: 300ms show-modal forwards;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
   cursor: pointer;
-  z-index: 5000; }
-
-@keyframes show-modal {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 100%; } }
+  z-index: 5000;
+}

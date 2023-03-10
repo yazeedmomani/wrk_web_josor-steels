@@ -1,13 +1,20 @@
-import classes from "./backdrop.module.scss";
+import { useMemo, memo, forwardRef } from "react";
+import classes  from "./backdrop.module.scss";
 
-export default function Backdrop({ onClick, children, className }) {
-  const divClasses = `${classes.backdrop} ${className}`;
+export default memo(
+  forwardRef(function Backdrop({ onClick, children, className }, ref) {
+    const divClasses = useMemo(
+      () => [classes.backdrop, className].join(" "),
+      [className]
+    );
 
-  return (
-    <div
-      className={divClasses}
-      onClick={onClick}>
-      {children}
-    </div>
-  );
-}
+    return (
+      <div
+        ref={ref}
+        className={divClasses}
+        onClick={onClick}>
+        {children}
+      </div>
+    );
+  })
+);
