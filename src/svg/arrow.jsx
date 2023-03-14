@@ -1,4 +1,4 @@
-function Arrow(props) {
+export default function Arrow(props) {
   const leftTransform = "translate(538.393 7098.548) rotate(180)";
   const rightTransfrom = "translate(-530 -7083.678)";
 
@@ -17,5 +17,3 @@ function Arrow(props) {
     </svg>
   );
 }
-
-export default Arrow;
