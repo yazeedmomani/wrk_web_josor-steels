@@ -17,137 +17,83 @@ import NotFound from "../views/not-found";
 
 import { PATHS } from "../constants";
 
+const ROUTES = [
+  { path: undefined, index: true, element: <Home />, children: undefined },
+  {
+    path: PATHS.ABOUT_US,
+    index: undefined,
+    element: <AboutUs />,
+    children: undefined,
+  },
+  {
+    path: PATHS.PROJECT_CATEGORIES,
+    index: undefined,
+    element: <Outlet />,
+    children: [
+      { path: undefined, index: true, element: <ProjectCategories /> },
+      {
+        path: PATHS.PROJECTS.HANGERS,
+        index: undefined,
+        element: <Projects category="hangers" />,
+      },
+      {
+        path: PATHS.PROJECTS.BRIDGES,
+        index: undefined,
+        element: <Projects category="bridges" />,
+      },
+      {
+        path: PATHS.PROJECTS.TUBES,
+        index: undefined,
+        element: <Projects category="tubes" />,
+      },
+      {
+        path: PATHS.PROJECTS.CANOPIES,
+        index: undefined,
+        element: <Projects category="canopies" />,
+      },
+      {
+        path: PATHS.PROJECTS.OTHER,
+        index: undefined,
+        element: <Projects category="other" />,
+      },
+    ],
+  },
+
+  {
+    path: PATHS.OUR_FACILITY,
+    index: undefined,
+    element: <OurFacility />,
+    children: undefined,
+  },
+  {
+    path: PATHS.CONTACT,
+    index: undefined,
+    element: <Contact />,
+    children: undefined,
+  },
+  { path: "*", index: true, element: <NotFound />, children: undefined },
+];
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route
       path={PATHS.HOME}
       errorElement={<NotFound />}
       element={<Root />}>
-      {/* ///////////////////////////////////// */}
-      {/* Home */}
-      {/* ///////////////////////////////////// */}
-      <Route
-        index
-        element={<Home />}
-      />
-      {/* ///////////////////////////////////// */}
-      {/* About us */}
-      {/* ///////////////////////////////////// */}
-      <Route
-        path={PATHS.ABOUT_US}
-        element={
-          <>
-            <AboutUs />
-          </>
-        }
-      />
-      {/* ///////////////////////////////////// */}
-      {/* Projects */}
-      {/* ///////////////////////////////////// */}
-      <Route
-        path={PATHS.PROJECT_CATEGORIES}
-        element={
-          <>
-            <Outlet />
-          </>
-        }>
+      {ROUTES.map((route) => (
         <Route
-          index
-          element={
-            <>
-              <ProjectCategories />
-            </>
-          }
-        />
-        {/* ///////////////////////////////////// */}
-        {/* Hangers */}
-        {/* ///////////////////////////////////// */}
-        <Route
-          path={PATHS.PROJECTS.HANGERS}
-          element={
-            <>
-              <Projects category="hangers" />
-            </>
-          }
-        />
-        {/* ///////////////////////////////////// */}
-        {/* Bridges */}
-        {/* ///////////////////////////////////// */}
-        <Route
-          path={PATHS.PROJECTS.BRIDGES}
-          element={
-            <>
-              <Projects category="bridges" />
-            </>
-          }
-        />
-        {/* ///////////////////////////////////// */}
-        {/* Tubes */}
-        {/* ///////////////////////////////////// */}
-        <Route
-          path={PATHS.PROJECTS.TUBES}
-          element={
-            <>
-              <Projects category="tubes" />
-            </>
-          }
-        />
-        {/* ///////////////////////////////////// */}
-        {/* Canopies */}
-        {/* ///////////////////////////////////// */}
-        <Route
-          path={PATHS.PROJECTS.CANOPIES}
-          element={
-            <>
-              <Projects category="canopies" />
-            </>
-          }
-        />
-        {/* ///////////////////////////////////// */}
-        {/* Other */}
-        {/* ///////////////////////////////////// */}
-        <Route
-          path={PATHS.PROJECTS.OTHER}
-          element={
-            <>
-              <Projects category="other" />
-            </>
-          }
-        />
-      </Route>
-      {/* ///////////////////////////////////// */}
-      {/* Our facility */}
-      {/* ///////////////////////////////////// */}
-      <Route
-        path={PATHS.OUR_FACILITY}
-        element={
-          <>
-            <OurFacility />
-          </>
-        }
-      />
-      {/* ///////////////////////////////////// */}
-      {/* Contact */}
-      {/* ///////////////////////////////////// */}
-      <Route
-        path={PATHS.CONTACT}
-        element={
-          <>
-            <Contact />
-          </>
-        }
-      />
-      {/* ///////////////////////////////////// */}
-      {/* 404 */}
-      {/* ///////////////////////////////////// */}
-      <Route
-        path="*"
-        element={
-          <>
-            <NotFound />
-          </>
-        }
-      />
+          path={route.path}
+          index={route.index}
+          element={route.element}>
+          {route.children?.map((childRoute) => (
+            <Route
+              path={childRoute.path}
+              index={childRoute.index}
+              element={childRoute.element}
+            />
+          ))}
+        </Route>
+      ))}
     </Route>
   )
 );
