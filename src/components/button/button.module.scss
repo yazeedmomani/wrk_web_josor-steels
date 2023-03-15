@@ -1,4 +1,6 @@
+/* Styles for the button */
 .button {
+  /* Styles for the link when it is a normal or visited link */
   &:link,
   &:visited {
     padding: 1.2rem 2.4rem;
@@ -11,43 +13,53 @@
     font-weight: var(--font-weight-bold);
   }
 
+  /* Styles for the link when the mouse hovers over it */
   &:hover {
     box-shadow: var(--box-shadow-hover);
     transform: translateY(-2px);
   }
 
+  /* Styles for the link when it is active (i.e., being clicked) */
   &:active {
     box-shadow: var(--box-shadow-active);
     transform: translateY(-1px);
   }
 
+  /* Styles for the primary type */
   &___primary {
+    /* Styles for the link when it is a normal or visited link */
     &:link,
     &:visited {
       background-color: var(--color-primary);
       color: var(--color-white);
     }
 
+    /* Styles for the link when the mouse hovers over it */
     &:hover {
       background-color: var(--color-primary-dark);
     }
 
+    /* Styles for the link when it is active (i.e., being clicked) */
     &:active {
       background-color: var(--color-primary-dark);
     }
   }
 
+  /* Styles for the secondary type */
   &___secondary {
+    /* Styles for the link when it is a normal or visited link */
     &:link,
     &:visited {
       background-color: var(--color-white);
       color: var(--color-primary);
     }
 
+    /* Styles for the link when the mouse hovers over it */
     &:hover {
       background-color: var(--color-grey-light-01);
     }
 
+    /* Styles for the link when it is active (i.e., being clicked) */
     &:active {
       background-color: var(--color-grey-light-01);
     }
