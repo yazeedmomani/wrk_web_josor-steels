@@ -39,7 +39,8 @@ export default function AboutUs() {
         {aboutUsContext.articles.map((cur, i) => (
           <>
             <h2 className={`h3 ${styles["small-margin"]}`}>{cur.title}</h2>
-            <p className={styles["medium-margin"]}>{cur.paragraph}</p>
+            <p className={styles["small-margin"]}>{cur.firstParagraph}</p>
+            <p className={styles["medium-margin"]}>{cur.secondParagraph}</p>
             <Image
               src={imageContext.articles[i]}
               clickable={true}
