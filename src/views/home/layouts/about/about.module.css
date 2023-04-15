@@ -7,13 +7,17 @@
 }
 
 .section p {
-  margin-bottom: 7.2rem;
+  margin-bottom: 3.6rem;
+}
+
+.secondParagraph {
+  margin-bottom: 7.2rem !important;
 }
 
 .section span {
   display: inline-block;
 }
 
-.primary-link{
+.primary-link {
   margin-top: 9.6rem;
 }

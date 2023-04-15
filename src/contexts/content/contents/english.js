@@ -141,8 +141,10 @@ const english = {
     about: {
       span: "About company",
       title: "Our mission",
-      paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      firstParagraph:
+        "Our mission is to secure a leading role in the steel fabrication and construction community, driven by our team's expertise, dedication, and production prowess. We value the long-lasting relationships we have established with our esteemed clients, as they are a testament to our unwavering commitment to excellence.",
+      secondParagraph:
+        "Our primary objective is to deliver high-quality structural steel, ornamental, and miscellaneous iron work, while consistently ensuring customer satisfaction. By collaborating with contractors, construction managers, and owners, we aim to achieve the successful completion of each project, fostering a win-win partnership for all parties involved.",
       link: {
         text: "Learn more →",
         to: PATHS.ABOUT_US,

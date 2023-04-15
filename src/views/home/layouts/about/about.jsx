@@ -13,7 +13,8 @@ export default function About() {
     <section className={styles.section}>
       <SectionSpan>{aboutContent.span}</SectionSpan>
       <h2 className="h3">{aboutContent.title}</h2>
-      <p>{aboutContent.paragraph}</p>
+      <p>{aboutContent.firstParagraph}</p>
+      <p className={styles.secondParagraph}>{aboutContent.secondParagraph}</p>
       <Image
         src={images.home.aboutUs}
         alt="Hanger"
