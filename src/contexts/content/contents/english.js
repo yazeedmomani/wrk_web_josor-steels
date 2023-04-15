@@ -119,22 +119,22 @@ const english = {
         {
           title: "Application",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Begin by outlining your project requirements and specifications, providing a solid foundation for collaboration and ensuring all needs are addressed.",
         },
         {
           title: "Design",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Our skilled design team will create innovative and efficient blueprints, tailoring them to your unique vision and adhering to industry standards and regulations.",
         },
         {
           title: "Construction",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Our experienced professionals will bring your project to life, employing top-notch craftsmanship and utilizing high-quality materials to ensure structural integrity and longevity.",
         },
         {
           title: "Delivery",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Upon completion, we will thoroughly inspect the final product, ensuring it meets our high standards before handing over the keys to your successful and well-crafted project.",
         },
       ],
     },
